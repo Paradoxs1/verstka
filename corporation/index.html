@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <title>Столичная Финансовая Корпорация</title>
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon" /> <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
+    
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+    	<div class="container clearfix">
+    	    <img src="img/logo.png" class="left logo" alt="Логотип">
+    	    <div class="right head-contact">
+    	        <a href="tel:8 (495) 544-5444">8 (495) 544-5444</a><br>
+    	        <span class="inline-popups"><a href="#popup" data-effect="mfp-zoom-out">Перезвонить</a></span>
+    	    </div>
+    	</div>
+	</header>
+	<main>
+	    <section class="banner">
+             <div class="banner-inner">
+                  <p class="page-title"><span>Сохраните и приумножьте</span> сбережения<br> с финансовыми программами<br> «Столичной финансовой корпорации»</p>
+                  <div class="clearfix banner-center">
+                      <p class="left">До 22% годовых</p>
+                      <p class="right">100% гарантия <span>возврата + проценты</span></p>
+                  </div>
+                  <a href="#diagram" class="link">Перейти в калькулятор доходности</a>
+              </div>
+		</section>
+		<section class="contribution">
+		    <div class="container">
+		        <div class="contribution-inner">
+		            <div class="contribution-block"><span>Накопи<br>  на жилье</span></div>
+		            <div class="contribution-block"><span>Накопи<br>  на образование</span></div>
+		            <div class="contribution-block"><span>«Вклад<br>  Столичный»</span></div>
+		            <div class="contribution-block"><span>«Вклад<br>  Рантье»</span></div>
+		        </div>
+		    </div>
+		</section>
+		<section class="sentence">
+		    <div class="container">
+		        <p class="section-title">Наше предложение</p>
+		        <div class="clearfix sentence-inner">
+		            <div class="left video">
+		                <p>Инвестируйте 3 минуты в просмотр видео чтобы оценить наше предложение и принять решение</p>
+		                <iframe width="650" height="365" src="https://www.youtube.com/embed/UyZFXQO1qS0?ecver=1" frameborder="0" allowfullscreen></iframe>
+		            </div>
+		            <div class="right">
+		                <p>Назначьте встречу с нашим менеджером</p>
+		                <form action="#" id="form">
+		                    <input type="text" name="name" class="name" placeholder="Имя">
+		                    <input type="text" name="phone" class="phone" placeholder="Телефон">
+		                    <input type="text" id="datepicker"  size="30" placeholder="Желаемая дата визита">
+                            <input type="text" name='datevisit' id="data-visit" class="hide">
+                            <div class="btn-form">Хочу встретиться в вашем офисе</div>
+                            <div class="btn-form">Хочу стать вашим клиентом</div>
+                            <button type="submit" class="submit hide">Отправить</button>
+		                </form>
+		            </div>
+		        </div>
+		    </div>
+		</section>
+		<section class="diagram" id="diagram">
+		    <div class="container">
+		        <div class="tabs">
+                  <div class="tab active">сохранить и приумножить</div>
+                  <div class="tab">накопить</div>
+                  <div class="tab">жить на проценты</div>        
+              </div>
+              <div class="tab_content">
+                  <div class="tab_item">
+                      <p class="section-title">Хочу сохранить и преумножить</p>
+                      <div class="diagram-date">
+                          <div class="diagram-date-block">
+                              <p>Планирую инвестировать</p>
+                              <input type="checkbox" id="check" name="diagramm">
+                              <label class="amount" for="check">400000Р</label>
+                              <div class="slider-range-invest"></div>
+                          </div>
+                          <div class="diagram-date-block">
+                              <p>На срок</p>
+                              <input type="checkbox" id="check2" name="diagramm">
+                              <label class="amount2" for="check2" name="diagramm">3 года</label>
+                              <div class="slider-range-year"></div>
+                          </div>
+                          <div class="diagram-date-block">
+                              <p>Ежемесячный взнос</p>
+                              <input type="checkbox" id="check3" name="diagramm">
+                              <label class="amount3" for="check3" name="diagramm">20000 Р</label>
+                              <div class="slider-range-month"></div>
+                          </div>
+                          <div class="diagram-date-block">
+                              <span class="inline-popups"><a href="#diagram-popup" class="capital" data-effect="mfp-zoom-out">Капитализация</a></span>
+                          </div>
+                      </div>
+                      <div class="diagram-container">
+                          <div id="diagram-content">
+                          </div>
+                          <span class="line"></span>
+                          <span class="procent">25%</span>
+                          <span class="sum">cумма</span>
+                          <span class="time">время</span>
+                          <span class="title-diagram">«вклад<br> СОХРАНИТЬ<br> И ПРИУМНОЖИТЬ»</span>
+                          <span class="title-diagram2">«вклад СТОЛИЧНЫЙ»</span>
+                          <span class="title-diagram3">«вклад РАНТЬЕ »</span>
+                      </div>
+                  </div>
+                  <div class="tab_item">
+                      <p class="section-title">Хочу сохранить и преумножить</p>
+                      <div class="diagram-date">
+                          <div class="diagram-date-block">
+                              <p>Планирую инвестировать</p>
+                              <input type="checkbox" id="check4" name="diagramm">
+                              <label class="amount" for="check4">400000Р</label>
+                              <div class="slider-range-invest"></div>
+                          </div>
+                          <div class="diagram-date-block">
+                              <p>На срок</p>
+                              <input type="checkbox" id="check5" name="diagramm">
+                              <label class="amount2" for="check6" name="diagramm">3 года</label>
+                              <div class="slider-range-year"></div>
+                          </div>
+                          <div class="diagram-date-block">
+                              <p>Ежемесячный взнос</p>
+                              <input type="checkbox" id="check7" name="diagramm">
+                              <label class="amount3" for="check7" name="diagramm">20000 Р</label>
+                              <div class="slider-range-month"></div>
+                          </div>
+                          <div class="diagram-date-block">
+                              <span class="inline-popups"><a href="#diagram-popup" class="capital" data-effect="mfp-zoom-out">Капитализация</a></span>
+                          </div>
+                      </div>
+                      <div class="diagram-container">
+                          <div id="diagram-content2">
+                          </div>
+                          <span class="line"></span>
+                          <span class="procent">25%</span>
+                          <span class="sum">cумма</span>
+                          <span class="time">время</span>
+                          <span class="title-diagram">«вклад<br> СОХРАНИТЬ<br> И ПРИУМНОЖИТЬ»</span>
+                          <span class="title-diagram2">«вклад СТОЛИЧНЫЙ»</span>
+                          <span class="title-diagram3">«вклад РАНТЬЕ »</span>
+                      </div>
+                  </div>
+                  <div class="tab_item">
+                      <p class="section-title">Хочу сохранить и преумножить</p>
+                      <div class="diagram-date">
+                          <div class="diagram-date-block">
+                              <p>Планирую инвестировать</p>
+                              <input type="checkbox" id="check8" name="diagramm">
+                              <label class="amount" for="check8">400000Р</label>
+                              <div class="slider-range-invest"></div>
+                          </div>
+                          <div class="diagram-date-block">
+                              <p>На срок</p>
+                              <input type="checkbox" id="check9" name="diagramm">
+                              <label class="amount2" for="check9" name="diagramm">3 года</label>
+                              <div class="slider-range-year"></div>
+                          </div>
+                          <div class="diagram-date-block">
+                              <p>Ежемесячный взнос</p>
+                              <input type="checkbox" id="check10" name="diagramm">
+                              <label class="amount3" for="check10" name="diagramm">20000 Р</label>
+                              <div class="slider-range-month"></div>
+                          </div>
+                          <div class="diagram-date-block">
+                              <span class="inline-popups"><a href="#diagram-popup" class="capital" data-effect="mfp-zoom-out">Капитализация</a></span>
+                          </div>
+                      </div>
+                      <div class="diagram-container">
+                          <div id="diagram-content3">
+                          </div>
+                          <span class="line"></span>
+                          <span class="procent">25%</span>
+                          <span class="sum">cумма</span>
+                          <span class="time">время</span>
+                          <span class="title-diagram">«вклад<br> СОХРАНИТЬ<br> И ПРИУМНОЖИТЬ»</span>
+                          <span class="title-diagram2">«вклад СТОЛИЧНЫЙ»</span>
+                          <span class="title-diagram3">«вклад РАНТЬЕ »</span>
+                      </div>
+                  </div>
+              </div>
+		    </div>
+		</section>
+		<section class="advantages">
+		    <div class="container">
+		        <p class="section-title">Преимущества<br>  «Столичной финансовой корпорации»</p>
+		        <div class="advantages-container">
+		            <a href="#" class="advantage-block">
+		              <img src="img/advantage.png" alt="Преимущества">
+		              <p>Гарантия возврата вложений (даже свыше  1 400 000 Р)</p>
+		            </a>
+		            <a href="#" class="advantage-block">
+		              <img src="img/advantage2.png" alt="Преимущества">
+		              <p>Лицензия Центробанка РФ</p>
+		            </a>
+		            <a href="#" class="advantage-block">
+		              <img src="img/advantage3.png" alt="Преимущества">
+		              <p>Резервный фонд группы компаний</p>
+		            </a>
+		            <a href="#" class="advantage-block">
+		              <img src="img/advantage4.png" alt="Преимущества">
+		              <p>Гарантии</p>
+		            </a>
+		        </div>
+		    </div>
+		</section>
+		<section class="block-title">
+		    <div class="container">
+		        <p class="section-title">На данный момент<br> «Столичная финансовая корпорация»<br> проводит акцию</p>
+		    </div>
+		</section>
+		<section class="banner">
+             <div class="banner-inner">
+                  <p class="page-title"><span>Сохраните и приумножьте</span> сбережения<br> с финансовыми программами<br> «Столичной финансовой корпорации»</p>
+                  <div class="clearfix banner-center">
+                      <p class="left">До 22% годовых</p>
+                      <p class="right">100% гарантия <span>возврата + проценты</span></p>
+                  </div>
+                  <a href="#diagram" class="link">Перейти в калькулятор доходности</a>
+              </div>
+		</section>
+		<section class="advantages information">
+		    <div class="container">
+		        <p class="section-title">  Информация о<br>  «Столичной финансовой корпорации»</p>
+		        <div class="advantages-container">
+		            <a href="#" class="advantage-block">
+		              <img src="img/information.png" alt="Преимущества">
+		              <p>Публикации СМИ</p>
+		            </a>
+		            <a href="#" class="advantage-block">
+		              <img src="img/information2.png" alt="Преимущества">
+		              <p>Наши награды</p>
+		            </a>
+		            <a href="#" class="advantage-block">
+		              <img src="img/information3.png" alt="Преимущества">
+		              <p>Отзывы</p>
+		            </a>
+		            <a href="#" class="advantage-block">
+		              <img src="img/information4.png" alt="Преимущества">
+		              <p>Документы</p>
+		            </a>
+		        </div>
+		    </div>
+		</section>
+	</main>
+	
+	<div id="popup" class="white-popup mfp-with-anim mfp-hide">
+        <form action="#" method="post" class="popup-form" id="modal-form">
+            <p class="popup-title">Заказать звонок</p>
+            <input type="text" class="name" name="name" placeholder="Ваше имя" required="required"><br>
+            <input type="text" class="phone" name="phone" placeholder="Телефон" required="required"><br>
+            <button type="submit" class="btn-button submit">Отправить</button>
+        </form>
+    </div>
+     <div class="alert-wrapper">
+        <div class="alert">
+            <span class="alert-close"><img src="img/cancel2.png" alt="Close" title="Close"></span>
+            <div>Спасибо за обращение!</div>
+            <p>Мы свяжемся с Вами в самое ближайшее время и обсудим наше предложение</p>
+         </div>
+     </div>
+     
+     <div id="diagram-popup" class="white-popup mfp-with-anim mfp-hide">
+        <form action="#" method="post" class="popup-form" id="diagram-form">
+            <div>«вклад рантье»</div>
+            <p>Краткое описание особенностей и почему стоит выбрать именно эту программу инвестирования</p>
+            <p>Если у вас остались вопросы, то оставьте свои данные</p>
+            <input type="text" class="name" name="name" placeholder="Имя" required="required">
+            <input type="text" class="phone" name="phone" placeholder="Телефон" required="required">
+            <button type="submit" class="submit btn-consult">получить консультацию</button>
+        </form>
+    </div>
+     
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <title>Autologist</title>
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon" /> <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
+    
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/screen.css">
+</head>
+<body>
+    <header>
+		<div class="container clearfix">
+			<a href="/" class="left logo">
+			    <img src="img/logo.png" alt="">
+			</a>
+			<div class="right head-contact">
+               <ul class="clearfix">
+                 <li><a href="tel:+79031112223">+7(903)111-22-23</a></li><br/>
+                 <li><span>Москва</span> <a href="#">Все офисы</a></li>
+               </ul>
+               <p><a href="#" class="btn-basket">Корзина <span>2</span></a><a href="" class="btn-order">Заказы</a></p>
+			</div>
+			<div class="search">
+			    <div class="search-top">
+                  <div class="right">
+                    <a href="">Гараж</a>
+                    <div class="garage">
+                        <div class="garage-top">
+                            <div class="garage-title clearfix">
+                                <div class="left">Перейти в гараж</div>
+                                <div class="right">Из списка</div>
+                            </div>
+                            <div class="garage-content">
+                                <p>ВЫБЕРИТЕ ТРАНСПОРТНОЕ СРЕДСТВО <a href="#">Выбрать</a></p>
+                            </div>
+                        </div>
+                        <div class="garage-bottom">
+                            <div class="garage-title clearfix">
+                                <form action="" class="left">
+                                    <input type="text" placeholder="Поиск">
+                                    <input type="submit" class='right' value="">
+                                </form>
+                                <div class="right">Вернуться</div>
+                            </div>
+                            <div class="garage-content">
+                                <a href="#">ДОБАВИТЬ ТС</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <p>Продажа запчастей по низким ценам</p>
+			    </div>
+			    <div class="search-bottom">
+                    <form action="" class="clearfix">
+                        <input type="text" class="search-text" placeholder="Поиск">
+                        <input type="submit" value="" class="right">
+                        <select id="search">
+                          <option value="vin">по VIN-коду</option>
+                          <option value="articul">По артикулу</option>
+                          <option value="title">По названию</option>  
+                        </select> 
+                    </form>
+			    </div>
+			</div>
+		</div>
+         <nav class="nav-menu">
+              <div class="container">
+                  <ul>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Личный кабинет</a></li>
+                    <li><a href="#">Офисы</a></li>
+                  </ul>
+              </div>
+          </nav>
+    </header>
+    
+    <main>
+        <section class="basket">
+            <div class="container">
+                <div class="section-title">Корзина</div>
+                <div class="basket-block">
+                    <div class="basket-block-inner">
+                    <table>
+                        <thead>
+                            <tr>
+                              <td>Фирма</td>
+                              <td>Наименование</td>                         
+                              <td>Артикул</td>
+                              <td>Направление</td>
+                              <td>Кол-во</td>
+                              <td>Цена</td>
+                              <td>Сумма</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td>GMB</td>
+                              <td>Насос водяной</td>
+                              <td>23456789435678</td>
+                              <td>FVR</td>
+                              <td>2</td>
+                              <td>100 Р</td>
+                              <td>200 Р</td>
+                            </tr>
+                            <tr>
+                              <td>GMB</td>
+                              <td>Насос водяной</td>
+                              <td>23456789435678</td>
+                              <td>FVR</td>
+                              <td>2</td>
+                              <td>100 Р</td>
+                              <td>200 Р</td>
+                            </tr>
+                            <tr>
+                              <td>GMB</td>
+                              <td>Насос водяной</td>
+                              <td>23456789435678</td>
+                              <td>FVR</td>
+                              <td>2</td>
+                              <td>100 Р</td>
+                              <td>200 Р</td>
+                            </tr>
+                            <tr>
+                              <td>GMB</td>
+                              <td>Насос водяной</td>
+                              <td>23456789435678</td>
+                              <td>FVR</td>
+                              <td>2</td>
+                              <td>100 Р</td>
+                              <td>200 Р</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="price">Итого: <span>800 Р</span></div>
+                    </div>
+                </div>
+                <div class="basket-info">
+                    <p>Обратите внимание цены на позиции изменились с момента добавления их в корзину!!!</p>
+                    <div class="basket-check">
+                        <input type="checkbox" id="check"><label for="check"></label> <span>Допускаю изменение цены не более чем на <input type="text" class="procent" value="5"> <span>%</span></span>
+                    </div>
+                    <form action="" class="basket-form">
+                        <p>Заполните контактную информацию</p>
+                        <div class="clearfix">
+                            <div class="left">
+                                <div><label for="name">Имя, Фамилия</label><input id="name" name="name" class="name" type="text"></div>
+                                <div><label for="mail">E-mail</label><input id="mail" type="text"></div>
+                                <div><label for="tel">Телефон</label><input id="tel" class="phone" name="phone" type="text"></div>
+                                <div><label for="adress">Адрес</label><input id="adress" type="text"></div>
+                            </div>
+                            <div class="right">
+                                <div><label for="comment">Комментарии к заказу</label><textarea id="comment"></textarea></div>
+                                <div><input type="checkbox" id="conditions"><label for="conditions"></label> <span>С условиями возврата товара согласен</span></div>
+                            </div>
+                        </div>
+                        <input type="submit" class="submit" value="Заказать">
+                    </form>
+                </div>
+            </div>    
+        </section>
+    </main>   
+    <footer>
+        <div class="footer-top">
+            <div class="container clearfix">
+                <a href="#" class="left footer-logo"><img src="img/footer-logo.jpg" alt=""></a>
+                <div class="footer-contact right">
+                    <ul>
+                      <li><a href="tel:88003331717">8 (800) 333-17-17</a></li>
+                      <li>г. Москва, ул. Моховая, 14</li>
+                      <li><a href="mailto:info@avtodom.ru">info@avtodom.ru</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                      <li><a href="#">О компании</a></li>
+                      <li><a href="#">Каталог</a></li>
+                      <li><a href="#">Сотрудничество</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#">Веб-сервисы</a></li>
+                      <li><a href="#">Контакты</a></li>
+                      <li><a href="#">Доставка и оплата</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container clearfix">
+                <div class="left">© 2017 Copyright Text</div>
+                <div class="right"><a href="https://www.waytostart.ru">Разработка сайта веб студия Waytostart</a></div>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/hideShowPassword.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

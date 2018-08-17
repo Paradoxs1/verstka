@@ -1,0 +1,38 @@
+@charset 'UTF-8';
+
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    margin-top: -14px;
+    width: 14px;
+    height: 27px;
+    cursor: pointer;
+    border: none;
+    background: transparent url('../img/slider-arrow.png') no-repeat;
+}
+.slick-prev{
+  left: -60px;
+  background-position: left top;
+}
+.slick-prev:hover{
+  background-position: left bottom;
+}
+.slick-next{
+  right: -57px;
+  background-position: right top;
+}
+.slick-next:hover{
+  background-position: right bottom;
+}
+@media only screen and (max-width: 1200px){
+  .slick-next{
+    right: -12px;
+  }
+  .slick-prev{
+    left: -12px;
+  }
+}

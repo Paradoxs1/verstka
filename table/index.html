@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Таблица</title>		
+		<!--[if lt IE 9]> 
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+		<![endif]-->
+
+        <link  href="jquery-ui.css" rel="stylesheet" type="text/css" media="all" />
+        <link  href="magnific-popup.css" rel="stylesheet" type="text/css" media="all" />
+		<link  href="style.css" rel="stylesheet" type="text/css" media="all" />
+        
+	</head>
+<body>
+    
+    <div class="top_wrapper">
+    <div class="profile">Администратор <span></span></div>
+    <div class="full_profile">
+        <div class="ava"><img src="img/avatar3.png" alt=""/></div>
+        <div class="profile_links"><a href="#">ПРОФИЛЬ</a> <a href="#">ВЫЙТИ</a></div>
+    </div>
+    <div class="wrapper">
+        
+        <div class="top_block_title">Обратные звонки</div>
+        <div class="buttons_line">
+            <a href="#" class="vse">Все</a>
+            <a href="#" class="neobr">Не обработан</a>
+            <a href="#" class="nedoz">Недозвон</a>
+            <a href="#" class="podtv">Подтвержден</a>
+            <a href="#" class="otpr">Отправлен</a>
+            <a href="#" class="vozvr">Возврат</a>
+            <a href="#" class="otk">Отказался</a>
+            <a href="#" class="korz">Корзина</a>
+            <a href="#" class="btn-call">Обратные звонки</a>
+            <span>100</span>
+        </div>
+        
+    </div>
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <div class="wrapper">
+    
+    <table class="table">
+    <thead>
+        <tr>
+            <td class="id">ID</td>
+            <td class="order_date">Время создания</td>
+            <td class="ip_adress">IP адрес</td>
+            <td class="full_name">ФИО</td>
+            <td class="phone">Телефон</td>
+            <td class="text">Текст запроса</td>
+            <td class="notice">Заметки</td>
+            <td class="status">Статус</td>
+            <td class="empty"> </td>
+        </tr>
+    </thead>
+        
+        
+        
+        
+        
+    <tbody>
+        <tr>
+            <td class="id otpravlen">115544</td>
+            <td class="order_date">2016-12-23 12:30</td>
+            <td class="ip_adress">123.123.13.3</td>
+            <td class="full_name">Брикоткин-Абрамов В.О.</td>
+            <td class="phone">+7 (982) 998-48-66</td>
+            <td class="text">Размещайте ссылку на других ресурсах на ваш публичный профиль для убеждения клиентов в вашей компетентности.</td>
+            <td class="notice"></td>
+            <td class="status">
+                <select name="status" class="status-select">
+                  <option>Не обработан</option>
+                  <option>Обработан</option>
+                  <option>Недозвон</option>
+                  <option>Отказ</option>
+                </select>
+            </td>
+            <td class="empty">
+                <div>
+                    <a href="#" class="delete">Удалить</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="id ne_obrabotan">115544</td>
+            <td class="order_date">2016-12-23 12:30</td>
+            <td class="ip_adress">123.123.13.3</td>
+            <td class="full_name">Брикоткин-Абрамов В.О.</td>
+            <td class="phone">+7 (982) 998-48-66</td>
+            <td class="text">Размещайте ссылку на других ресурсах на ваш публичный профиль для убеждения клиентов в вашей компетентности.</td>
+            <td class="notice"></td>
+            <td class="status">
+                <select name="status" class="status-select">
+                  <option>Не обработан</option>
+                  <option>Обработан</option>
+                  <option>Недозвон</option>
+                  <option>Отказ</option>
+                </select>
+            </td>
+            <td class="empty">
+                <div>
+                    <a href="#" class="delete">Удалить</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="id ne_dozvon">115544</td>
+            <td class="order_date">2016-12-23 12:30</td>
+            <td class="ip_adress">123.123.13.3</td>
+            <td class="full_name">Брикоткин-Абрамов В.О.</td>
+            <td class="phone">+7 (982) 998-48-66</td>
+            <td class="text">Размещайте ссылку на других ресурсах на ваш публичный профиль для убеждения клиентов в вашей компетентности.</td>
+            <td class="notice"></td>
+            <td class="status">
+                <select name="status" class="status-select">
+                  <option>Не обработан</option>
+                  <option>Обработан</option>
+                  <option>Недозвон</option>
+                  <option>Отказ</option>
+                </select>
+            </td>
+            <td class="empty">
+                <div>
+                    <a href="#" class="delete">Удалить</a>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+    
+    
+         <form>
+             
+        <div class="bottom_block">
+        <div class="filter">
+       
+            
+        <span>Поиск</span>
+            
+        <input type="text" required />
+        <select>
+        <option>Искать везде</option>
+        <option>Искать везде</option>
+        <option>Искать везде</option>
+        <option>Искать везде</option>
+        </select>
+        <input type="submit" value="Поиск">
+            
+        <div class="clear_filter">
+            <input type="button" value="Очистить фильтрацию" class="search_clear">
+            </div>
+            
+       </div>
+        </div>
+        
+        <div class="last_block">
+        <div class="show_by">
+            <span>Показать</span> 
+            <select>
+            <option>10</option>
+            <option>10</option>
+            <option>10</option>
+            </select>
+            <span>записей</span>
+        </div>
+            
+        <div class="bottom_navigate">
+            <div class="link_wrapper">
+            <a href="" class="to_start">в начало</a>
+            <a href="" class="prev">назад</a>
+            </div>
+            <span>Страница</span> 
+            <select>
+            <option>10</option>
+            <option>10</option>
+            <option>10</option>
+            </select>
+            <span>Записей</span>
+            <div class="link_wrapper2">
+            <a href="" class="next">вперед</a>
+            <a href="" class="to_end">в конец</a>
+            </div>
+            <a href="" class="refresh">обновить</a>
+            
+            <span>Показано от 1 до 2 из 2 записей</span>
+        </div>
+        
+        
+        
+        </div>
+                 
+         </form>
+        
+    </div>
+    
+    <span class="inline-popups"><a href="#popup" class="popup" data-effect="mfp-3d-unfold">Попап окно нажми на меня</a></span>
+    
+    <div id="popup" class="white-popup mfp-with-anim mfp-hide">
+        <form action="#">
+            <div class="popup-top">
+                <div class="counter-block">
+                    <p>Количество:</p>
+                    <span class="counter-left"></span><input type="text" value="100" class="counter-num"><span class="counter-right"></span>
+                </div>
+                <div class="summer">
+                    <p>Сумма:</p>
+                    <span class="sum">1 000</span> руб.
+                </div>
+            </div>
+            <div class="popup-bottom">
+                <input type="checkbox" id="ad">
+                <label for="ad">по Акции:</label>
+                <button type="button" class="btn-send">отправить</button>
+            </div>
+        </form>
+    </div>
+    
+    <script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="jquery.mask.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    
+</body>
+</html>

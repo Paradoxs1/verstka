@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="lib/owl.carousel.css">
+		<link rel="stylesheet" href="lib/normalize.css">
+		<link rel="stylesheet" href="lib/select2.min.css">
+		<link rel="stylesheet" href="lib/social-likes_birman.css">
+		<link rel="stylesheet" href="lib/jquery.fancybox.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="http://yastatic.net/es5-shims/0.0.2/es5-shims.min.js" async></script>
+		<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+		<script src="http://yastatic.net/share2/share.js" async></script>
+		<script src="lib/jquery-3.0.0.min.js"></script>
+		<script src="lib/jquery-migrate-3.0.0.min.js"></script>
+		<script src="lib/owl.carousel.min.js"></script>
+		<script src="lib/jquery.fancybox.pack.js"></script>
+		<script src="lib/jquery.fancybox-media.js"></script>
+		<script src="lib/imageuploadify.js"></script>
+		<script src="script.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+
+		<script type="text/template" id="qq-template-manual-trigger">
+        <div class="qq-uploader-selector qq-uploader" qq-drop-area-text="Drop files here">
+            <div class="qq-total-progress-bar-container-selector qq-total-progress-bar-container">
+                <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-total-progress-bar-selector qq-progress-bar qq-total-progress-bar"></div>
+            </div>
+            <div class="qq-upload-drop-area-selector qq-upload-drop-area" qq-hide-dropzone>
+                <span class="qq-upload-drop-area-text-selector"></span>
+            </div>
+            <div class="buttons">
+                <div class="qq-upload-button-selector qq-upload-button">
+                    <div>Select files</div>
+                </div>
+                <button type="button" id="trigger-upload" class="btn btn-primary">
+                    <i class="icon-upload icon-white"></i> Upload
+                </button>
+            </div>
+            <span class="qq-drop-processing-selector qq-drop-processing">
+                <span>Processing dropped files...</span>
+                <span class="qq-drop-processing-spinner-selector qq-drop-processing-spinner"></span>
+            </span>
+            <ul class="qq-upload-list-selector qq-upload-list" aria-live="polite" aria-relevant="additions removals">
+                <li>
+                    <div class="qq-progress-bar-container-selector">
+                        <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-progress-bar-selector qq-progress-bar"></div>
+                    </div>
+                    <span class="qq-upload-spinner-selector qq-upload-spinner"></span>
+                    <img class="qq-thumbnail-selector" qq-max-size="100" qq-server-scale>
+                    <span class="qq-upload-file-selector qq-upload-file"></span>
+                    <span class="qq-edit-filename-icon-selector qq-edit-filename-icon" aria-label="Edit filename"></span>
+                    <input class="qq-edit-filename-selector qq-edit-filename" tabindex="0" type="text">
+                    <span class="qq-upload-size-selector qq-upload-size"></span>
+                    <button type="button" class="qq-btn qq-upload-cancel-selector qq-upload-cancel">Cancel</button>
+                    <button type="button" class="qq-btn qq-upload-retry-selector qq-upload-retry">Retry</button>
+                    <button type="button" class="qq-btn qq-upload-delete-selector qq-upload-delete">Delete</button>
+                    <span role="status" class="qq-upload-status-text-selector qq-upload-status-text"></span>
+                </li>
+            </ul>
+
+            <dialog class="qq-alert-dialog-selector">
+                <div class="qq-dialog-message-selector"></div>
+                <div class="qq-dialog-buttons">
+                    <button type="button" class="qq-cancel-button-selector">Close</button>
+                </div>
+            </dialog>
+
+            <dialog class="qq-confirm-dialog-selector">
+                <div class="qq-dialog-message-selector"></div>
+                <div class="qq-dialog-buttons">
+                    <button type="button" class="qq-cancel-button-selector">No</button>
+                    <button type="button" class="qq-ok-button-selector">Yes</button>
+                </div>
+            </dialog>
+
+            <dialog class="qq-prompt-dialog-selector">
+                <div class="qq-dialog-message-selector"></div>
+                <input type="text">
+                <div class="qq-dialog-buttons">
+                    <button type="button" class="qq-cancel-button-selector">Cancel</button>
+                    <button type="button" class="qq-ok-button-selector">Ok</button>
+                </div>
+            </dialog>
+        </div>
+    </script>
+
+	</head>
+	<body>
+		<div class="header">
+			<div class="header__wrap wrap wrap--big">
+				<div class="js-burger header__burger circle-icon circle-icon--burger"></div><a class="header__logo logo" href="/"><img class="logo__image" src="img/logo.png"><img class="logo__text logo__text--header" src="img/logo-text.png"></a>
+				<div class="header__nav nav"><a class="nav__item" href="/">О клинике</a><a class="nav__item" href="/">Услуги</a><a class="nav__item" href="/">Работы</a><a class="nav__item" href="/">Партнёры</a><a class="nav__item" href="/">Акции</a><a class="nav__item" href="/">Контакты</a></div>
+				<div class="js-phone header__phone phone">
+					<div class="circle-icon circle-icon--phone"></div>
+					<div class="phone__main phone__main--header">
+						<div class="phone__number">+7 (495) 226 35 00</div>
+						<div class="phone__link">Заказать обратный звонок</div>
+						<div class="phone__info">(We speak english)</div>
+					</div>
+				</div><a class="header__language" href="/">English</a>
+			</div>
+		</div>
+		<div class="main-image main-image--small" style="background-image: url(pic/smile.jpg)">
+			<div class="main-image__wrap main-image__wrap--h-left wrap wrap--small title-page">
+				<div class="text text--middle-title text--w">Отзывы о лечении</div>
+			</div>
+			<div class="l-social-block"><a class="social-icon social-icon--v social-icon--vk-white" href="/"></a><a class="social-icon social-icon--v social-icon--facebook-white" href="/"></a><a class="social-icon social-icon--v social-icon--instagram-white" href="/"></a></div>
+		</div>
+		<div class="wrap wrap--small">
+			<div class="breadcrumbs">
+                <a href="#">Главная</a>
+				<span>/</span>
+				<span>Отзывы о лечении</span>
+			</div>
+		</div>
+        <div class="reviews">
+            <div class="wrap wrap--medium">
+            	<span class="link-review"><a href="#review">Добавить отзыв</a></span>
+                <div class="line"></div>
+            </div>
+            <div class="wrap wrap--big">
+                <div class="review-block">
+                    <div class="review-img">
+                        <img src="img/face.jpg" alt="">
+                    </div>
+                    <div class="review-content">
+                        <span class="right">03/07/2017</span>
+                        <div class="review-title">Моргунова Валерия Витальевна</div>
+                        <p><strong>Какое лечение проходил(a):</strong></p>
+                        <p>Ортодонтия</p>
+                        <p><strong>Отзыв:</strong></p>
+                        <p>С помощью Инвизилайн можно решить те же проблемы, что и при постановке брекетов. При этом эластичные, гладкие на ощупь прозрачные капы для выравнивания зубов намного приятнее носить. У элайнеров намного ниже шансы раздражения слизистой, повреждений языка и болезненного давления.</p>
+                        <div class="review-service">
+                            <p><strong>Оценка услуги:</strong></p>
+                            <div class="review-service-top">
+                                <strong>4.5</strong>
+                                <div class="raiting_star">
+                                    <div class="raiting">
+                                    <div class="raiting_blank"></div>
+                                    <div class="raiting_votes"><span>4.5</span></div>
+                                    </div>
+                                    </div>
+                                    <div class="clear">
+                                </div>
+                                <span>Раскрыть оценку</span>
+                            </div>
+                            <div class="review-service-block">
+                                <div>
+                                    <div class="left">Компетентность врачей</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>3</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Не вызвало никаких эмоций</span>
+                                        
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Соотношение Цены / Качества</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>5</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Отлично</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Оборудование</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>2</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Плохо</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Чистота клиники</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>1</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Очень плохо</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Компетентность администраторов</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>4</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Хорошо</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Вы довольны результатом лечения?</div>
+                                    <div class="right"><strong>Да</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="review-block">
+                    <div class="review-img">
+                    </div>
+                    <div class="review-content">
+                        <span class="right">03/07/2017</span>
+                        <div class="review-title">Моргунова Валерия Витальевна</div>
+                        <p><strong>Какое лечение проходил(a):</strong></p>
+                        <p>Ортодонтия</p>
+                        <p><strong>Отзыв:</strong></p>
+                        <p>С помощью Инвизилайн можно решить те же проблемы, что и при постановке брекетов. При этом эластичные, гладкие на ощупь прозрачные капы для выравнивания зубов намного приятнее носить. У элайнеров намного ниже шансы раздражения слизистой, повреждений языка и болезненного давления.</p>
+                        <div class="review-service">
+                            <p><strong>Оценка услуги:</strong></p>
+                            <div class="review-service-top">
+                                <strong>4.5</strong>
+                                <div class="raiting_star">
+                                    <div class="raiting">
+                                    <div class="raiting_blank"></div>
+                                    <div class="raiting_votes"><span>4.5</span></div>
+                                    </div>
+                                    </div>
+                                    <div class="clear">
+                                </div>
+                                <span>Раскрыть оценку</span>
+                            </div>
+                            <div class="review-service-block">
+                                <div>
+                                    <div class="left">Компетентность врачей</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>3</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Не вызвало никаких эмоций</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Соотношение Цены / Качества</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>5</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Отлично</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Оборудование</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>2</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Плохо</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Чистота клиники</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>1</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Очень плохо</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Компетентность администраторов</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>4</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Хорошо</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Вы довольны результатом лечения?</div>
+                                    <div class="right"><strong>Да</strong></div>
+                                </div>
+                            </div>
+                            <div class="eye-block">
+                            	<p><strong>Результат услуги:</strong></p>
+	                            <div class="review-result">
+	                                <div class="left">
+	                                    <span>До</span>
+	                                    <img src="img/before.jpg" alt="">
+	                                </div>
+	                                <div class="right">
+	                                    <span>После</span>
+	                                    <img src="img/after.jpg" alt="">
+	                                </div>
+	                            </div>
+                            </div>
+                            <div class="eye">Смотреть рукописный отзыв</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="review-block">
+                    <div class="review-img">
+                        <img src="img/face2.jpg" alt="">
+                    </div>
+                    <div class="review-content">
+                        <span class="right">03/07/2017</span>
+                        <div class="review-title">Моргунова Валерия Витальевна</div>
+                        <p><strong>Какое лечение проходил(a):</strong></p>
+                        <p>Ортодонтия</p>
+                        <p><strong>Отзыв:</strong></p>
+                        <p>С помощью Инвизилайн можно решить те же проблемы, что и при постановке брекетов. При этом эластичные, гладкие на ощупь прозрачные капы для выравнивания зубов намного приятнее носить. У элайнеров намного ниже шансы раздражения слизистой, повреждений языка и болезненного давления.</p>
+                        <div class="review-service">
+                            <p><strong>Оценка услуги:</strong></p>
+                            <div class="review-service-top">
+                                <strong>4.5</strong>
+                                <div class="raiting_star">
+                                    <div class="raiting">
+                                    <div class="raiting_blank"></div>
+                                    <div class="raiting_votes"><span>4.5</span></div>
+                                    </div>
+                                    </div>
+                                    <div class="clear">
+                                </div>
+                                <span>Раскрыть оценку</span>
+                            </div>
+                            <div class="review-service-block">
+                                <div>
+                                    <div class="left">Компетентность врачей</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>3</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Не вызвало никаких эмоций</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Соотношение Цены / Качества</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>5</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Отлично</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Оборудование</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>2</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Очень плохо</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Чистота клиники</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>1</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Плохо</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Компетентность администраторов</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>4</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Хорошо</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Вы довольны результатом лечения?</div>
+                                    <div class="right"><strong>Да</strong></div>
+                                </div>
+                            </div>
+                            <div class="eye-block">
+                            	<p><strong>Результат услуги:</strong></p>
+	                            <div class="review-result">
+	                                <div class="left">
+	                                    <span>До</span>
+	                                    <img src="img/before.jpg" alt="">
+	                                </div>
+	                                <div class="right">
+	                                    <span>После</span>
+	                                    <img src="img/after.jpg" alt="">
+	                                </div>
+	                            </div>
+                            </div>
+                            <div class="eye">Смотреть рукописный отзыв</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="wrap wrap--small">
+            	<div class="add-review" id="review">
+            		<p>Добавить отзыв</p>
+            		<div class="add-social">
+            			<span>Зайти через </span>
+            			<a href="#" data-src="img/add1.jpg"></a>
+            			<a href="#" data-src="img/add2.jpg"></a>
+            			<a href="#" data-src="img/add3.jpg"></a>
+            		</div>
+            		<div class="add-social-curent">
+            			<img src="" alt=""> <span class="social-name">Моргунова Валерия Витальевна</span><input type="text" value="Моргунова Валерия Витальевна"><span class="close"><img src="img/close3.jpg" alt=""></span>
+            		</div>
+            		<form action="">
+            		    <div class="add-form-top">
+            		    	<div class="left">
+	            				<input type="text" class="name" placeholder="Имя*">
+	            				<input type="text" placeholder="E-mail*">
+	            				<input type="text" placeholder="Какое лечение проходил(а):">
+	            			</div>
+	            			<div class="right">
+	            				<textarea placeholder="Ваш отзыв"></textarea>
+	            			</div>
+            		    </div>
+            			<div class="review-service">
+                            <span>Поставьте оценку клинике</span>
+                            <div class="review-service-block">
+                                <div>
+                                    <div class="left">Компетентность врачей</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>3</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Не вызвало никаких эмоций</span>
+                                        
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Соотношение Цены / Качества</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>5</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Отлично</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Оборудование</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>2</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Плохо</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Чистота клиники</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>1</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Очень плохо</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="left">Компетентность администраторов</div>
+                                    <div class="right">
+                                        <div class="raiting_star">
+                                            <div class="raiting">
+                                            <div class="raiting_blank"></div>
+                                            <div class="raiting_votes"><span>4</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="clear">
+                                        </div>
+                                        <span>Хорошо</span>
+                                    </div>
+                                </div>
+                                <div class="last">
+                                    <div class="left">Вы довольны результатом лечения?</div>
+                                    <div class="right">
+                                    	<input type="checkbox" id="yes"><label for="yes">Да</label><input type="checkbox" id="no"><label for="no">Нет</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="file" class="review-file" accept="image/*" multiple>
+                        <div class="add-review-bottom">
+                        	<input type="checkbox" id="check"><label for="check">Я ознакомился и согласен с</label> <a href="#">политикой обработки персональных данных</a>
+                        	<input type="submit" class="btn-submit" value="Оставить отзыв">
+                        </div>
+            		</form>
+            	</div>
+            </div>
+        </div>
+      
+        <div class="consultation">
+		    <div class="wrap wrap--big">
+                <div class="consultation-block">
+                    <div class="consultation-title">Запишитесь на консультацию с ведущими специалистами</div>
+                    <form action="">
+                        <p>Оставьте ваш телефон*</p>
+                        <input type="text" class="phone" placeholder="+7 (123) 456 78 90 ">
+                        <input type="submit" value="Хочу красивую улыбку">
+                        <span>*Мы гарантируем, что используем данные только для связи с вами.</span>
+                    </form>
+                </div>
+		    </div>
+		</div>
+		<div class="footer">
+			<div class="footer__wrap wrap wrap--big">
+				<div class="footer__nav-add nav-add"><a class="nav-add__item" href="/">Органы РФ по надзору ОМС</a><a class="nav-add__item" href="/">Права и обязанности граждан</a><a class="nav-add__item" href="/">Правила диагностики</a><a class="nav-add__item" href="/">Правила и сроки госпитализации</a><a class="nav-add__item" href="/">Лекарственные препараты</a><a class="nav-add__item" href="/">Прайс-лист</a></div>
+				<div class="footer__social"><a class="social-icon social-icon--h social-icon--vk-blue" href="/"></a><a class="social-icon social-icon--h social-icon--facebook-blue" href="/"></a><a class="social-icon social-icon--h social-icon--instagram-blue" href="/"></a></div>
+				<div class="footer__info">© 2014–2016 <b>Международный Ортодонтический Центр Invisalign®</b> <br>Лицензия № ЛО-77-01-00-9290 от 14 ноября 2014 года.</div>
+				<div class="footer__copyright">
+					 Сделано в <a href="/">Skydental</a></div>
+			</div>
+		</div>
+		<div class="overlay js-modal-overlay-close">
+			<div class="modal" data-modal="appeal">
+				<div class="js-modal-close modal__close"></div>
+				<form class="form">
+					<div class="form__title text text--subtitle">Записаться на приём</div>
+					<div class="form__inner">
+						<div class="form__row">
+							<div class="form__input form__input--half input">
+								<input class="input__control input__control--bb" placeholder="Имя">
+							</div>
+							<div class="form__input form__input--half input">
+								<input class="input__control input__control--bb" placeholder="E-mail">
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__input form__input--full input">
+								<input class="input__control input__control--bb" placeholder="Как вы узнали о нас?">
+							</div>
+						</div>
+					</div>
+					<input class="form__submit button button--regular button--regular_m button--round button--ab" value="Записаться на приём" type="submit">
+				</form>
+			</div>
+			<div class="modal" data-modal="price">
+				<div class="js-modal-close modal__close"></div>
+				<form class="form">
+					<div class="form__title text text--subtitle">Узнать цену лечения</div>
+					<div class="form__inner">
+						<div class="form__row">
+							<div class="form__input form__input--half input">
+								<input class="input__control input__control--bb" placeholder="Имя">
+							</div>
+							<div class="form__input form__input--half input">
+								<input class="input__control input__control--bb" placeholder="E-mail">
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__input form__input--full input">
+								<input class="input__control input__control--bb" placeholder="Как вы узнали о нас?">
+							</div>
+						</div>
+					</div>
+					<input class="form__submit button button--regular button--regular_m button--round button--ab" value="Узнать цену лечения" type="submit">
+				</form>
+			</div>
+		</div>
+		<div class="js-adaptive-popup adaptive-popup">
+			<div class="adaptive-popup__header">
+				<div class="js-close-burger circle-icon circle-icon--cross"></div>
+			</div>
+			<div class="container">
+				<div class="mobile-menu-item mobile-menu-item--list is-active">
+					<div class="mobile-menu-item__control mobile-menu-item__control--list">О клинике</div>
+					<div class="mobile-menu-item__list"><a class="mobile-menu-item__list-item" href="">Информация</a><a class="mobile-menu-item__list-item is-active" href="">Информация</a><a class="mobile-menu-item__list-item" href="">Информация</a><a class="mobile-menu-item__list-item" href="">Информация</a></div>
+				</div>
+				<div class="mobile-menu-item"><a class="mobile-menu-item__control" href="">Услуги</a></div>
+				<div class="mobile-menu-item"><a class="mobile-menu-item__control" href="">Услуги</a></div>
+				<div class="mobile-menu-item"><a class="mobile-menu-item__control" href="">Услуги</a></div>
+				<div class="mobile-menu-item"><a class="mobile-menu-item__control" href="">Услуги</a></div>
+			</div>
+			<div class="adaptive-popup__footer"><a class="social-icon social-icon--h social-icon--vk-blue" href="/"></a><a class="social-icon social-icon--h social-icon--facebook-blue" href="/"></a><a class="social-icon social-icon--h social-icon--instagram-blue" href="/"></a></div>
+		</div>
+
+	</body>
+</html>

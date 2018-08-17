@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <title>Autologist</title>
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon" /> <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
+    
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/screen.css">
+</head>
+<body>
+    <header>
+		<div class="container clearfix">
+			<a href="/" class="left logo">
+			    <img src="img/logo.png" alt="">
+			</a>
+			<div class="right head-contact">
+               <ul class="clearfix">
+                 <li><a href="tel:+79031112223">+7(903)111-22-23</a></li><br/>
+                 <li><span>Москва</span> <a href="#">Все офисы</a></li>
+               </ul>
+               <p><a href="#" class="btn-basket">Корзина <span>2</span></a><a href="" class="btn-order">Заказы</a></p>
+			</div>
+			<div class="search">
+			    <div class="search-top">
+                  <div class="right">
+                    <a href="">Гараж</a>
+                    <div class="garage">
+                        <div class="garage-top">
+                            <div class="garage-title clearfix">
+                                <div class="left">Перейти в гараж</div>
+                                <div class="right">Из списка</div>
+                            </div>
+                            <div class="garage-content">
+                                <p>ВЫБЕРИТЕ ТРАНСПОРТНОЕ СРЕДСТВО <a href="#">Выбрать</a></p>
+                            </div>
+                        </div>
+                        <div class="garage-bottom">
+                            <div class="garage-title clearfix">
+                                <form action="" class="left">
+                                    <input type="text" placeholder="Поиск">
+                                    <input type="submit" class='right' value="">
+                                </form>
+                                <div class="right">Вернуться</div>
+                            </div>
+                            <div class="garage-content">
+                                <a href="#">ДОБАВИТЬ ТС</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <p>Продажа запчастей по низким ценам</p>
+			    </div>
+			    <div class="search-bottom">
+                    <form action="" class="clearfix">
+                        <input type="text" class="search-text" placeholder="Поиск">
+                        <input type="submit" value="" class="right">
+                        <select id="search">
+                          <option value="vin">по VIN-коду</option>
+                          <option value="articul">По артикулу</option>
+                          <option value="title">По названию</option>  
+                        </select> 
+                    </form>
+			    </div>
+			</div>
+		</div>
+         <nav class="nav-menu">
+              <div class="container">
+                  <ul>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Личный кабинет</a></li>
+                    <li><a href="#">Офисы</a></li>
+                  </ul>
+              </div>
+          </nav>
+    </header>
+    
+    <main>
+        <section class="order">
+            <div class="container">
+                <div class="section-title">Заказы</div>
+                <div class="order-inner">
+                <div class="order-block">
+                    <div class="order-top clearfix">
+                        <div class="left">
+                            <a href="#">Текущие</a>
+                            <a href="#">Архивные</a>
+                            <a href="#">Все</a>
+                        </div>
+                        <div class="right">
+                            <span>Показывать на странице</span>
+                            <input type="text" class="number" value="10">
+                        </div>
+                    </div>
+                    <div class="order-bottom">
+                        <form action="">
+                            <table>
+                              <thead>
+                                <tr>
+                                  <td><input id="order1" type="checkbox"><label for="order1"></label></td>
+                                  <td><p>Дата</p><input type="text" id="datepicker" placeholder="Все"></td>
+                                  <td><p>№</p><input type="text" placeholder="Поиск"></td>
+                                  <td><p>Бренд</p><input type="text" placeholder="Поиск"></td>
+                                  <td><p>Артикул</p><input type="text" placeholder="Поиск"></td>
+                                  <td><p>Наименование</p><input type="text" placeholder="Поиск"></td>
+                                  <td>Кол-во</td>
+                                  <td>Цена руб.</td>
+                                  <td>Сумма руб.</td>
+                                  <td>Дата измен.</td>
+                                  <td><p>Напр.</p><input type="text" placeholder="Поиск"></td>
+                                  <td>Доставка</td>
+                                  <td><p>Комментарий</p><input type="text" placeholder="Поиск"></td>
+                                  <td colspan="2">Состояние</td>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><input id="order2" type="checkbox"><label for="order2"></label></td>
+                                  <td>12.04.17</td>
+                                  <td>2702837</td>
+                                  <td>KIA</td>
+                                  <td>1884310020</td>
+                                  <td>Свеча зажиг...</td>
+                                  <td>1</td>
+                                  <td>255.45</td>
+                                  <td>255.45</td>
+                                  <td>12.04.17</td>
+                                  <td>MLD19</td>
+                                  <td>2/3</td>
+                                  <td>...</td>
+                                  <td><img src="img/arrow-bottom.png" alt=""></td>
+                                  <td><img src="img/envelop.png" alt=""> <img src="img/close2.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                  <td><input id="order3" type="checkbox"><label for="order3"></label></td>
+                                  <td>12.04.17</td>
+                                  <td>2702837</td>
+                                  <td>KIA</td>
+                                  <td>1884310020</td>
+                                  <td>Свеча зажиг...</td>
+                                  <td>1</td>
+                                  <td>255.45</td>
+                                  <td>255.45</td>
+                                  <td>12.04.17</td>
+                                  <td>MLD19</td>
+                                  <td>2/3</td>
+                                  <td>...</td>
+                                  <td><img src="img/arrow-bottom.png" alt=""></td>
+                                  <td><img src="img/envelop.png" alt=""> <img src="img/close2.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                  <td><input id="order4" type="checkbox"><label for="order4"></label></td>
+                                  <td>12.04.17</td>
+                                  <td>2702837</td>
+                                  <td>KIA</td>
+                                  <td>1884310020</td>
+                                  <td>Свеча зажиг...</td>
+                                  <td>1</td>
+                                  <td>255.45</td>
+                                  <td>255.45</td>
+                                  <td>12.04.17</td>
+                                  <td>MLD19</td>
+                                  <td>2/3</td>
+                                  <td>...</td>
+                                  <td><img src="img/arrow-bottom.png" alt=""></td>
+                                  <td><img src="img/envelop.png" alt=""> <img src="img/close2.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                  <td><input id="order5" type="checkbox"><label for="order5"></label></td>
+                                  <td>12.04.17</td>
+                                  <td>2702837</td>
+                                  <td>KIA</td>
+                                  <td>1884310020</td>
+                                  <td>Свеча зажиг...</td>
+                                  <td>1</td>
+                                  <td>255.45</td>
+                                  <td>255.45</td>
+                                  <td>12.04.17</td>
+                                  <td>MLD19</td>
+                                  <td>2/3</td>
+                                  <td>...</td>
+                                  <td><img src="img/arrow-bottom.png" alt=""></td>
+                                  <td><img src="img/envelop.png" alt=""> <img src="img/close2.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                  <td><input id="order6" type="checkbox"><label for="order6"></label></td>
+                                  <td>12.04.17</td>
+                                  <td>2702837</td>
+                                  <td>KIA</td>
+                                  <td>1884310020</td>
+                                  <td>Свеча зажиг...</td>
+                                  <td>1</td>
+                                  <td>255.45</td>
+                                  <td>255.45</td>
+                                  <td>12.04.17</td>
+                                  <td>MLD19</td>
+                                  <td>2/3</td>
+                                  <td>...</td>
+                                  <td><img src="img/arrow-bottom.png" alt=""></td>
+                                  <td><img src="img/envelop.png" alt=""> <img src="img/close2.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                  <td><input id="order7" type="checkbox"><label for="order7"></label></td>
+                                  <td>12.04.17</td>
+                                  <td>2702837</td>
+                                  <td>KIA</td>
+                                  <td>1884310020</td>
+                                  <td>Свеча зажиг...</td>
+                                  <td>1</td>
+                                  <td>255.45</td>
+                                  <td>255.45</td>
+                                  <td>12.04.17</td>
+                                  <td>MLD19</td>
+                                  <td>2/3</td>
+                                  <td>...</td>
+                                  <td><img src="img/arrow-bottom.png" alt=""></td>
+                                  <td><img src="img/envelop.png" alt=""> <img src="img/close2.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                  <td><input id="order8" type="checkbox"><label for="order8"></label></td>
+                                  <td>12.04.17</td>
+                                  <td>2702837</td>
+                                  <td>KIA</td>
+                                  <td>1884310020</td>
+                                  <td>Свеча зажиг...</td>
+                                  <td>1</td>
+                                  <td>255.45</td>
+                                  <td>255.45</td>
+                                  <td>12.04.17</td>
+                                  <td>MLD19</td>
+                                  <td>2/3</td>
+                                  <td>...</td>
+                                  <td><img src="img/arrow-bottom.png" alt=""></td>
+                                  <td><img src="img/envelop.png" alt=""> <img src="img/close2.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                  <td><input id="order9" type="checkbox"><label for="order9"></label></td>
+                                  <td>12.04.17</td>
+                                  <td>2702837</td>
+                                  <td>KIA</td>
+                                  <td>1884310020</td>
+                                  <td>Свеча зажиг...</td>
+                                  <td>1</td>
+                                  <td>255.45</td>
+                                  <td>255.45</td>
+                                  <td>12.04.17</td>
+                                  <td>MLD19</td>
+                                  <td>2/3</td>
+                                  <td>...</td>
+                                  <td><img src="img/arrow-bottom.png" alt=""></td>
+                                  <td><img src="img/envelop.png" alt=""> <img src="img/close2.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                  <td><input id="order10" type="checkbox"><label for="order10"></label></td>
+                                  <td>12.04.17</td>
+                                  <td>2702837</td>
+                                  <td>KIA</td>
+                                  <td>1884310020</td>
+                                  <td>Свеча зажиг...</td>
+                                  <td>1</td>
+                                  <td>255.45</td>
+                                  <td>255.45</td>
+                                  <td>12.04.17</td>
+                                  <td>MLD19</td>
+                                  <td>2/3</td>
+                                  <td>...</td>
+                                  <td><img src="img/arrow-bottom.png" alt=""></td>
+                                  <td><img src="img/envelop.png" alt=""> <img src="img/close2.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                  <td><input id="order11" type="checkbox"><label for="order11"></label></td>
+                                  <td>12.04.17</td>
+                                  <td>2702837</td>
+                                  <td>KIA</td>
+                                  <td>1884310020</td>
+                                  <td>Свеча зажиг...</td>
+                                  <td>1</td>
+                                  <td>255.45</td>
+                                  <td>255.45</td>
+                                  <td>12.04.17</td>
+                                  <td>MLD19</td>
+                                  <td>2/3</td>
+                                  <td>...</td>
+                                  <td><img src="img/arrow-bottom.png" alt=""></td>
+                                  <td><img src="img/envelop.png" alt=""> <img src="img/close2.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                  <td><input id="order12" type="checkbox"><label for="order12"></label></td>
+                                  <td>12.04.17</td>
+                                  <td>2702837</td>
+                                  <td>KIA</td>
+                                  <td>1884310020</td>
+                                  <td>Свеча зажиг...</td>
+                                  <td>1</td>
+                                  <td>255.45</td>
+                                  <td>255.45</td>
+                                  <td>12.04.17</td>
+                                  <td>MLD19</td>
+                                  <td>2/3</td>
+                                  <td>...</td>
+                                  <td><img src="img/arrow-bottom.png" alt=""></td>
+                                  <td><img src="img/envelop.png" alt=""> <img src="img/close2.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                  <td><input id="order13" type="checkbox"><label for="order13"></label></td>
+                                  <td>12.04.17</td>
+                                  <td>2702837</td>
+                                  <td>KIA</td>
+                                  <td>1884310020</td>
+                                  <td>Свеча зажиг...</td>
+                                  <td>1</td>
+                                  <td>255.45</td>
+                                  <td>255.45</td>
+                                  <td>12.04.17</td>
+                                  <td>MLD19</td>
+                                  <td>2/3</td>
+                                  <td>...</td>
+                                  <td><img src="img/arrow-bottom.png" alt=""></td>
+                                  <td><img src="img/envelop.png" alt=""> <img src="img/close2.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                  <td><input id="order14" type="checkbox"><label for="order14"></label></td>
+                                  <td>12.04.17</td>
+                                  <td>2702837</td>
+                                  <td>KIA</td>
+                                  <td>1884310020</td>
+                                  <td>Свеча зажиг...</td>
+                                  <td>1</td>
+                                  <td>255.45</td>
+                                  <td>255.45</td>
+                                  <td>12.04.17</td>
+                                  <td>MLD19</td>
+                                  <td>2/3</td>
+                                  <td>...</td>
+                                  <td><img src="img/arrow-bottom.png" alt=""></td>
+                                  <td><img src="img/envelop.png" alt=""> <img src="img/close2.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                  <td><input id="order15" type="checkbox"><label for="order15"></label></td>
+                                  <td>12.04.17</td>
+                                  <td>2702837</td>
+                                  <td>KIA</td>
+                                  <td>1884310020</td>
+                                  <td>Свеча зажиг...</td>
+                                  <td>1</td>
+                                  <td>255.45</td>
+                                  <td>255.45</td>
+                                  <td>12.04.17</td>
+                                  <td>MLD19</td>
+                                  <td>2/3</td>
+                                  <td>...</td>
+                                  <td><img src="img/arrow-bottom.png" alt=""></td>
+                                  <td><img src="img/envelop.png" alt=""> <img src="img/close2.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                  <td><input id="order16" type="checkbox"><label for="order16"></label></td>
+                                  <td>12.04.17</td>
+                                  <td>2702837</td>
+                                  <td>KIA</td>
+                                  <td>1884310020</td>
+                                  <td>Свеча зажиг...</td>
+                                  <td>1</td>
+                                  <td>255.45</td>
+                                  <td>255.45</td>
+                                  <td>12.04.17</td>
+                                  <td>MLD19</td>
+                                  <td>2/3</td>
+                                  <td>...</td>
+                                  <td><img src="img/arrow-bottom.png" alt=""></td>
+                                  <td><img src="img/envelop.png" alt=""> <img src="img/close2.png" alt=""></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </div>    
+        </section>
+    </main>   
+    <footer>
+        <div class="footer-top">
+            <div class="container clearfix">
+                <a href="#" class="left footer-logo"><img src="img/footer-logo.jpg" alt=""></a>
+                <div class="footer-contact right">
+                    <ul>
+                      <li><a href="tel:88003331717">8 (800) 333-17-17</a></li>
+                      <li>г. Москва, ул. Моховая, 14</li>
+                      <li><a href="mailto:info@avtodom.ru">info@avtodom.ru</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                      <li><a href="#">О компании</a></li>
+                      <li><a href="#">Каталог</a></li>
+                      <li><a href="#">Сотрудничество</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#">Веб-сервисы</a></li>
+                      <li><a href="#">Контакты</a></li>
+                      <li><a href="#">Доставка и оплата</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container clearfix">
+                <div class="left">© 2017 Copyright Text</div>
+                <div class="right"><a href="https://www.waytostart.ru">Разработка сайта веб студия Waytostart</a></div>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/hideShowPassword.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

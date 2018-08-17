@@ -1,0 +1,70 @@
+/********************************************General********************************************************/
+body{
+    font: 16px 'TrebuchetMS-Regular';
+    background: #fff;
+    color: #424242;
+    min-width: 1260px;
+}
+html {
+    min-width: 1260px;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+textarea{
+    resize: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.modal{
+    display: none;
+}
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 900;
+}
+.wrapper_2{
+    width: 1430px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+.screen_4{
+    width: 100%;
+    height: 953px;
+    background: url("../images/bg13.png") no-repeat center 0;
+    overflow: hidden;
+    position: relative;
+}
+.screen_4_bg {
+    background:  url("../images/animate_bg2.jpg") no-repeat left 0;
+    transition: 70s all ease;
+    height: 100%;
+    width: 800px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.screen_bg_animate {
+    background-position: right 0!important;
+    transition: 30s all ease!important;
+}
+.screen_bg_animate.screen_4_bg {
+    background-position: right 0!important;
+    transition: 70s all ease!important;
+}

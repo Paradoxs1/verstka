@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <title>ТК Сварка</title>
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon" /> <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
+    
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top-line"></div>
+    <div class="wrapper">
+        <header>
+            <div class="container clearfix">
+               
+                <a href="/" class="left logo"><img src="img/logo.jpg" alt="Логотип"></a>
+
+                <div class="right">
+                    <nav>
+                        <div class="toggle-block">
+                            <span>Меню</span>
+                            <a href="#" class="toggle-mnu hidden-lg"><span></span></a>
+                        </div>
+                        <ul id="menu">
+                            <li><a href="#">Новости</a></li>
+                            <li><span>::</span></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                            <li><span>::</span></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><span>::</span></li>
+                            <li><a href="#">Полезная информация</a></li>
+                        </ul>
+                    </nav>
+                    <div class="head-middle">
+                        <ul>
+                            <li><a href="tel:8-800-500-74-18">8 -800- 500-74-18</a></li>
+                            <li><a href="tel:8-(812)-407-26-52">8 (812)-407-26-52</a></li>
+                        </ul>
+                        <ul>
+                            <li>ПН - ПТ: 9:00 - 17:30</li>
+                            <li>CБ - ВС: Выходной</li>
+                        </ul>
+                        <ul>
+                            <li><a href="mailto:info@tksvarka.ru">info@tksvarka.ru"</a></li>
+                        </ul>
+                    </div>
+                    <div class="head-bottom">
+                          <div class="left">CПб, Якорная дом 8а</div>
+                          <form action="#" id="head-form">
+                              <div>Подпишись на рассылку</div>
+                              <input type="text" placeholder="E-mail" class="mail">
+                              <button type="submit" class="submit">ок</button>
+                          </form>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <main>
+            <section class="search">
+                <div class="container">
+                    <div class="search-inner clearfix">
+                        <div class="left">
+                            <span>Найти</span>
+                            <div class="search-block">
+                                <input type="text" placeholder="Запрос для поиска..."><button class="right"></button>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <a href="#" class="sale"></a>
+                            <div class="basket right">Ваша корзина пуста.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="catalog">
+                <div class="container">
+                    <div class="breadcreambs">
+                        <ul>
+                          <li><a href="#">Главная</a></li>
+                          <li><span>></span></li>
+                          <li><a href="#">Каталог</a></li>
+                          <li><span>></span></li>
+                          <li><a href="#">Круги и диски</a></li>
+                          <li><span>></span></li>
+                          <li><span>Зачистные и обдирочные круги</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container clearfix">
+                    <p class="btn-aside"><span>Фильтр</span></p>
+                    <aside class="left">
+                        <div class="filter catalog-block">
+                            <div class="filter-title catalog-block-title">Фильтр товаров <span class="right"></span></div>
+                            <form class="hide-block">
+                              <div class="price">
+                                    <p>Цена (руб.):</p>
+                                    <div class="form-range">
+                                      <input type="text" id="min-range" value="250"><span></span><input type="text" id="max-range" value="1720">
+                                    </div>
+                                    <div id="slider-range"></div>
+                                </div>
+                                <div class="outer-diametr">
+                                    <p>Наружный диаметр:</p>
+                                    <div class="form-range">
+                                        <input type="text" id="min-range2" value="65"><span></span><input type="text" id="max-range2" value="600">
+                                    </div>
+                                    <div id="slider-range2"></div>
+                                </div>
+                                <div class="land-diametr">
+                                    <p>Посадочный диаметр:</p>
+                                    <div class="form-range">
+                                        <input type="text" id="min-range3" value="10.0"><span></span><input type="text" id="max-range3" value="50.0">
+                                    </div>
+                                    <div id="slider-range3"></div>
+                                </div>
+                                <div class="type">
+                                    <p>Тип: <span class="right arrow"></span></p>
+                                    <div class="hide-block">
+                                      <input type="checkbox" id="type"><label for="type">корона</label>
+                                      <input type="checkbox" id="type2"><label for="type2">сегмент</label>
+                                      <input type="checkbox" id="type3"><label for="type3">корона</label>
+                                      <input type="checkbox" id="type4"><label for="type4">корона</label>
+                                      <div class="label-hide">
+                                          <input type="checkbox" id="type5"><label for="type5">сегмент</label>
+                                          <input type="checkbox" id="type6"><label for="type6">корона</label>
+                                          <input type="checkbox" id="type7"><label for="type7">сегмент</label>
+                                          <input type="checkbox" id="type8"><label for="type8">корона</label>
+                                          <input type="checkbox" id="type9"><label for="type9">сегмент</label>
+                                          <input type="checkbox" id="type10"><label for="type10">корона</label>
+                                      </div>
+                                      <p class="double-arrow"><span></span></p>
+                                    </div>
+                                </div>
+                                <div class="type-two">
+                                    <p>Тип: <span class="right arrow"></span></p>
+                                    <div class="hide-block">
+                                      <input type="checkbox" id="type11"><label for="type11">корона</label>
+                                      <input type="checkbox" id="type12"><label for="type12">сегмент</label>
+                                      <input type="checkbox" id="type13"><label for="type13">корона</label>
+                                      <input type="checkbox" id="type14"><label for="type14">корона</label>
+                                      <div class="label-hide">
+                                          <input type="checkbox" id="type15"><label for="type15">корона</label>
+                                          <input type="checkbox" id="type16"><label for="type16">сегмент</label>
+                                          <input type="checkbox" id="type17"><label for="type17">корона</label>
+                                          <input type="checkbox" id="type18"><label for="type18">корона</label>
+                                      </div>
+                                      <p class="double-arrow"><span></span></p>
+                                    </div>
+                                </div>
+                                <div class="sect">
+                                    <p>Раздел: <span class="right arrow"></span></p>
+                                    <div class="hide-block">
+                                      <input type="checkbox" id="type19"><label for="type19">корона</label>
+                                      <input type="checkbox" id="type20"><label for="type20">сегмент</label>
+                                      <input type="checkbox" id="type21"><label for="type21">корона</label>
+                                      <input type="checkbox" id="type22"><label for="type22">корона</label>
+                                      <div class="label-hide">
+                                          <input type="checkbox" id="type23"><label for="type23">сегмент</label>
+                                          <input type="checkbox" id="type24"><label for="type24">корона</label>
+                                          <input type="checkbox" id="type25"><label for="type25">сегмент</label>
+                                          <input type="checkbox" id="type26"><label for="type26">корона</label>
+                                          <input type="checkbox" id="type27"><label for="type27">сегмент</label>
+                                          <input type="checkbox" id="type28"><label for="type28">корона</label>
+                                      </div>
+                                      <p class="double-arrow"><span></span></p>
+                                    </div>
+                                </div>
+                                <div class="filter-block">
+                                    <button type="submit" class="btn-filter">Подобрать товар</button>
+                                    <a href="#" class="reset">Сбросить фильтр</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="manufacturer">
+                            <p>Производитель:</p>
+                            <ul>
+                              <li><a href="#">Луга Абразив</a></li>
+                            </ul>
+                            <p>По назначению:</p>
+                            <ul>
+                              <li><a href="#">по металлу</a></li>
+                              <li><a href="#">по граниту</a></li>
+                              <li><a href="#">по дереву</a></li>
+                              <li><a href="#">по ...</a></li>
+                            </ul>
+                            <p>По диаметру (d):</p>
+                            <ul class="list-inline">
+                              <li><a href="#">115 мм</a></li>
+                              <li><a href="#">115 мм</a></li>
+                              <li><a href="#">125 мм</a></li>
+                              <li><a href="#">125 мм</a></li>
+                              <li><a href="#">150 мм</a></li>
+                              <li><a href="#">150 мм</a></li>
+                              <li><a href="#">180 мм</a></li>
+                              <li><a href="#">180 мм</a></li>
+                              <li><a href="#">200 мм</a></li>
+                              <li><a href="#">200 мм</a></li>
+                            </ul>
+                            <p>По посадочному диаметру :</p>
+                            <ul>
+                              <li><a href="#">22 мм</a></li>
+                            </ul>
+                            <p>По толщине :</p>
+                            <ul>
+                              <li><a href="#">6.0 мм</a></li>
+                            </ul>
+                        </div>
+                        <div class="catalog-product catalog-block">
+                            <div class="catalog-product-title catalog-block-title">Каталог товаров <span class="right"></span></div>
+                            <ul class="accordeon hide-block">
+                                <li><span></span>Круги и диски</li>
+                                <ul>
+                                    <li>Зачистные и обдирочные круги</li>
+                                    <ul>
+                                        <li><a href="#">Первое название товара </a></li>
+                                        <li><a href="#">Второе название товара </a></li>
+                                        <li><a href="#">Третие название товара </a></li>
+                                        <li><a href="#">Четвертое название товара </a></li>
+                                        <li><a href="#">Пятое название товара </a></li>
+                                    </ul>
+                                    <li>Лепестковые круги</li>
+                                    <ul>
+                                        <li><a href="#">Первое название товара </a></li>
+                                        <li><a href="#">Второе название товара </a></li>
+                                        <li><a href="#">Третие название товара </a></li>
+                                        <li><a href="#">Четвертое название товара </a></li>
+                                        <li><a href="#">Пятое название товара </a></li>
+                                    </ul>
+                                    <li>Шлифовальные круги</li>
+                                    <ul>
+                                        <li><a href="#">Первое название товара </a></li>
+                                        <li><a href="#">Второе название товара </a></li>
+                                        <li><a href="#">Третие название товара </a></li>
+                                        <li><a href="#">Четвертое название товара </a></li>
+                                        <li><a href="#">Пятое название товара </a></li>
+                                    </ul>
+                                    <li>Алмазные круги</li>
+                                    <ul>
+                                        <li><a href="#">Первое название товара </a></li>
+                                        <li><a href="#">Второе название товара </a></li>
+                                        <li><a href="#">Третие название товара </a></li>
+                                        <li><a href="#">Четвертое название товара </a></li>
+                                        <li><a href="#">Пятое название товара </a></li>
+                                    </ul>
+                                    <li>Отрезные круги</li>
+                                    <ul>
+                                        <li><a href="#">Первое название товара </a></li>
+                                        <li><a href="#">Второе название товара </a></li>
+                                        <li><a href="#">Третие название товара </a></li>
+                                        <li><a href="#">Четвертое название товара </a></li>
+                                        <li><a href="#">Пятое название товара </a></li>
+                                    </ul>
+                                </ul>
+                                <li><span></span>Сварочные электроды</li>
+                                <ul>
+                                    <li>Зачистные и обдирочные круги</li>
+                                    <li>Лепестковые круги</li>
+                                    <li>Шлифовальные круги</li>
+                                    <li>Алмазные круги</li>
+                                    <li>Отрезные круги</li>
+                                </ul>
+                                <li><span></span>Металлопрокат</li>
+                                <ul>
+                                    <li>Зачистные и обдирочные круги</li>
+                                    <ul>
+                                        <li><a href="#">Первое название товара </a></li>
+                                        <li><a href="#">Второе название товара </a></li>
+                                    </ul>
+                                    <li>Алмазные круги</li>
+                                    <li>Отрезные круги</li>
+                                </ul>
+                                <li><span></span>Оборудование Kemper</li>
+                                <ul>
+                                    <li>Зачистные и обдирочные круги</li>
+                                    <li>Лепестковые круги</li>
+                                    <li>Шлифовальные круги</li>
+                                    <li>Алмазные круги</li>
+                                    <li>Отрезные круги</li>
+                                </ul>
+                                <li><span></span>Сварочная проволока  и прутки</li>
+                                <ul>
+                                    <li>Зачистные и обдирочные круги</li>
+                                    <li>Лепестковые круги</li>
+                                    <li>Шлифовальные круги</li>
+                                    <li>Алмазные круги</li>
+                                    <li>Отрезные круги</li>
+                                </ul>
+                                <li><span></span>Сварочные маски</li>
+                                <ul>
+                                    <li>Зачистные и обдирочные круги</li>
+                                    <li>Лепестковые круги</li>
+                                    <li>Шлифовальные круги</li>
+                                    <li>Алмазные круги</li>
+                                    <li>Отрезные круги</li>
+                                </ul>
+                                <li><span></span>Электролизные сварочные установки</li>
+                                <ul>
+                                    <li>Зачистные и обдирочные круги</li>
+                                    <li>Лепестковые круги</li>
+                                    <li>Шлифовальные круги</li>
+                                    <li>Алмазные круги</li>
+                                    <li>Отрезные круги</li>
+                                </ul>
+                                <li><span></span>Электросварка</li>
+                                <ul>
+                                    <li>Зачистные и обдирочные круги</li>
+                                    <li>Лепестковые круги</li>
+                                    <li>Шлифовальные круги</li>
+                                    <li>Алмазные круги</li>
+                                    <li>Отрезные круги</li>
+                                </ul>
+                                <li><span></span>Плазменная резка (CUT)</li>
+                                <ul>
+                                    <li>Зачистные и обдирочные круги</li>
+                                    <li>Лепестковые круги</li>
+                                    <li>Шлифовальные круги</li>
+                                    <li>Алмазные круги</li>
+                                    <li>Отрезные круги</li>
+                                </ul>
+                                <li><span></span>Кабель сварочный (КГ)</li>
+                                <ul>
+                                    <li>Зачистные и обдирочные круги</li>
+                                    <li>Лепестковые круги</li>
+                                    <li>Шлифовальные круги</li>
+                                    <li>Алмазные круги</li>
+                                    <li>Отрезные круги</li>
+                                </ul>
+                                <li><span></span>Электрооборудование</li>
+                                <ul>
+                                    <li>Зачистные и обдирочные круги</li>
+                                    <li>Лепестковые круги</li>
+                                    <li>Шлифовальные круги</li>
+                                    <li>Алмазные круги</li>
+                                    <li>Отрезные круги</li>
+                                </ul>
+                                <li><span></span>Газосварка - оборудование</li>
+                                <ul>
+                                    <li>Зачистные и обдирочные круги</li>
+                                    <li>Лепестковые круги</li>
+                                    <li>Шлифовальные круги</li>
+                                    <li>Алмазные круги</li>
+                                    <li>Отрезные круги</li>
+                                </ul>
+                                <li><span></span>Припой</li>
+                                <ul>
+                                    <li>Зачистные и обдирочные круги</li>
+                                    <li>Лепестковые круги</li>
+                                    <li>Шлифовальные круги</li>
+                                    <li>Алмазные круги</li>
+                                    <li>Отрезные круги</li>
+                                </ul>
+                                <li><span></span>Флюс</li>
+                                <ul>
+                                    <li>Зачистные и обдирочные круги</li>
+                                    <li>Лепестковые круги</li>
+                                    <li>Шлифовальные круги</li>
+                                    <li>Алмазные круги</li>
+                                    <li>Отрезные круги</li>
+                                </ul>
+                                <li><span></span>Наплавочные расходные материалы</li>
+                                <ul>
+                                    <li>Зачистные и обдирочные круги</li>
+                                    <li>Лепестковые круги</li>
+                                    <li>Шлифовальные круги</li>
+                                    <li>Алмазные круги</li>
+                                    <li>Отрезные круги</li>
+                                </ul>
+                                <li><span></span>Горелки MIG/TIG</li>
+                                <ul>
+                                    <li>Зачистные и обдирочные круги</li>
+                                    <li>Лепестковые круги</li>
+                                    <li>Шлифовальные круги</li>
+                                    <li>Алмазные круги</li>
+                                    <li>Отрезные круги</li>
+                                </ul>
+                          </ul>
+                        </div>
+                    </aside>
+                    <div class="catalog-content">
+                        <div class="catalog-content-title">Зачистные, обдирочные круги и диски</div>
+                        <div class="mark">
+                            <div>
+                                <ul>
+                                    <li><span>Значение:</span></li>
+                                    <li><a href="#">Метка 1</a></li>
+                                    <li><a href="#">Метка 2</a></li>
+                                    <li><a href="#">Метка 3</a></li>
+                                    <li><a href="#">Метка 4</a></li>
+                                    <li><a href="#">Метка 5</a></li>
+                                    <li><a href="#">Метка 6</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><span>Значение:</span></li>
+                                    <li><a href="#">Метка 7</a></li>
+                                    <li><a href="#">Метка 8</a></li>
+                                    <li><a href="#">Метка 9</a></li>
+                                    <li><a href="#">Метка 10</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="catalog-text">
+                            <div>Лужские отрезные диски</div>
+                            <p>Под «отрезными дисками» (или «отрезными кругами») понимается абразивный режущий инструмент для ручных шлифовальных машинок – в разговорной речи «болгарок». Сам принцип работы шлифовального круга подразумевает его неизбежное стачивание (порой весьма интенсивное). Поэтому отрезные диски в буквальном смысле являются «расходным материалом». А значит, необходимо чётко разбираться в характеристиках, качестве и назначении отрезных кругов различного типа – чтобы не ошибиться при комплектовании рабочими материалами (особенно при закупке кругов большими партиями).</p>
+                            <p>«Лужскими» отрезными дисками (или просто «Лугами», или на английский манер «Luga») называют режущий инструмент, выпускаемый «Лужским абразивным заводом», расположенным в городе Луга, Ленинградской области. Высокие стандарты качества, отлаженная логистика и очень доступная цена определяют широкую популярность отрезных кругов именно этого производителя.</p>
+                        </div>
+                        <div class="catalog-sort">
+                            <div class="left">
+                                 <span>Сортировка</span>
+                                 <select name="sort" id="sort">
+                                    <option selected="selected">По умолчанию</option>
+                                    <option>По популярности</option>
+                                    <option>По увеличению цены</option>
+                                    <option>По уменьшению цены</option>
+                                    <option>По количеству покупок</option>
+                                </select>
+                            </div>
+                            <div class="right">
+                                <span>Показать</span>
+                                <select name="number" id="number">
+                                    <option selected="selected">15</option>
+                                    <option>30</option>
+                                    <option>40</option>
+                                    <option>50</option>
+                                    <option>100</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="catalog-product-container">
+                             <div class="catalog-product-block">
+                                 <div class="catalog-product-img">
+                                     <a href="#"><img src="img/big-circe.jpg" alt="Зачистной круг"></a>
+                                 </div>
+                                 <a href="#">Зачистной круг 115 * 6 * 22 мм по металлу Луга Абразив</a>
+                                 <div class="code">Код товара: 123f324</div>
+                                 <div class="clearfix block-price">
+                                     <div class="left price">499 р.</div>
+                                     <div class="right status">В наличие</div>
+                                 </div>
+                                 <a href="#" class="btn-basket">В корзину</a>
+                                 <div class="box">
+                                     <a href="#" class="buy-box">Купить упоковкой</a>
+                                     <div class="box-hover">
+                                        <p>В упоковке 50 штук</p>
+                                        <p>Цена за упоковку: 1 200 р.</p>
+                                        <p>Цена за ед. товара: 24 р.</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="catalog-product-block">
+                                 <div class="catalog-product-img">
+                                     <a href="#"><img src="img/big-circe2.jpg" alt="Зачистной круг"></a>
+                                 </div>
+                                 <a href="#">Зачистной круг 115 * 6 * 22 мм по металлу Луга Абразив</a>
+                                 <div class="code">Код товара: 123f324</div>
+                                 <div class="clearfix block-price">
+                                     <div class="left price">499 р.</div>
+                                     <div class="right status">В наличие</div>
+                                 </div>
+                                 <a href="#" class="btn-basket">В корзину</a>
+                                 <div class="box">
+                                     <a href="#" class="buy-box">Купить упоковкой</a>
+                                     <div class="box-hover">
+                                        <p>В упоковке 50 штук</p>
+                                        <p>Цена за упоковку: 1 200 р.</p>
+                                        <p>Цена за ед. товара: 24 р.</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="catalog-product-block">
+                                 <span class="stock">Акция</span>
+                                 <div class="catalog-product-img">
+                                     <a href="#"><img src="img/big-circe3.jpg" alt="Зачистной круг"></a>
+                                 </div>
+                                 <a href="#">Зачистной круг 115 * 6 * 22 мм по металлу Луга Абразив</a>
+                                 <div class="code">Код товара: 123f324</div>
+                                 <div class="clearfix block-price">
+                                     <div class="left price">499 р.</div>
+                                     <div class="right status">В наличие</div>
+                                 </div>
+                                 <a href="#" class="btn-basket">В корзину</a>
+                                 <div class="box">
+                                     <a href="#" class="buy-box">Купить упоковкой</a>
+                                     <div class="box-hover">
+                                        <p>В упоковке 50 штук</p>
+                                        <p>Цена за упоковку: 1 200 р.</p>
+                                        <p>Цена за ед. товара: 24 р.</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="catalog-product-block">
+                                 <div class="catalog-product-img">
+                                     <a href="#"><img src="img/big-circe.jpg" alt="Зачистной круг"></a>
+                                 </div>
+                                 <a href="#">Зачистной круг 115 * 6 * 22 мм по металлу Луга Абразив</a>
+                                 <div class="code">Код товара: 123f324</div>
+                                 <div class="clearfix block-price">
+                                     <div class="left price">499 р.</div>
+                                     <div class="right status">В наличие</div>
+                                 </div>
+                                 <a href="#" class="btn-basket">В корзину</a>
+                                 <div class="box">
+                                     <a href="#" class="buy-box">Купить упоковкой</a>
+                                     <div class="box-hover">
+                                        <p>В упоковке 50 штук</p>
+                                        <p>Цена за упоковку: 1 200 р.</p>
+                                        <p>Цена за ед. товара: 24 р.</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="catalog-product-block">
+                                 <div class="catalog-product-img">
+                                     <a href="#"><img src="img/big-circe2.jpg" alt="Зачистной круг"></a>
+                                 </div>
+                                 <a href="#">Зачистной круг 115 * 6 * 22 мм по металлу Луга Абразив</a>
+                                 <div class="code">Код товара: 123f324</div>
+                                 <div class="clearfix block-price">
+                                     <div class="left price">499 р.</div>
+                                     <div class="right status">В наличие</div>
+                                 </div>
+                                 <a href="#" class="btn-basket">В корзину</a>
+                                 <div class="box">
+                                     <a href="#" class="buy-box">Купить упоковкой</a>
+                                     <div class="box-hover">
+                                        <p>В упоковке 50 штук</p>
+                                        <p>Цена за упоковку: 1 200 р.</p>
+                                        <p>Цена за ед. товара: 24 р.</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="catalog-product-block">
+                                 <span class="stock">Акция</span>
+                                 <div class="catalog-product-img">
+                                     <a href="#"><img src="img/big-circe3.jpg" alt="Зачистной круг"></a>
+                                 </div>
+                                 <a href="#">Зачистной круг 115 * 6 * 22 мм по металлу Луга Абразив</a>
+                                 <div class="code">Код товара: 123f324</div>
+                                 <div class="clearfix block-price">
+                                     <div class="left price">499 р.</div>
+                                     <div class="right status">В наличие</div>
+                                 </div>
+                                 <a href="#" class="btn-basket">В корзину</a>
+                                 <div class="box">
+                                     <a href="#" class="buy-box">Купить упоковкой</a>
+                                     <div class="box-hover">
+                                        <p>В упоковке 50 штук</p>
+                                        <p>Цена за упоковку: 1 200 р.</p>
+                                        <p>Цена за ед. товара: 24 р.</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="catalog-product-block">
+                                 <div class="catalog-product-img">
+                                     <a href="#"><img src="img/big-circe.jpg" alt="Зачистной круг"></a>
+                                 </div>
+                                 <a href="#">Зачистной круг 115 * 6 * 22 мм по металлу Луга Абразив</a>
+                                 <div class="code">Код товара: 123f324</div>
+                                 <div class="clearfix block-price">
+                                     <div class="left price">499 р.</div>
+                                     <div class="right status">В наличие</div>
+                                 </div>
+                                 <a href="#" class="btn-basket">В корзину</a>
+                                 <div class="box">
+                                     <a href="#" class="buy-box">Купить упоковкой</a>
+                                     <div class="box-hover">
+                                        <p>В упоковке 50 штук</p>
+                                        <p>Цена за упоковку: 1 200 р.</p>
+                                        <p>Цена за ед. товара: 24 р.</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="catalog-product-block">
+                                 <div class="catalog-product-img">
+                                     <a href="#"><img src="img/big-circe2.jpg" alt="Зачистной круг"></a>
+                                 </div>
+                                 <a href="#">Зачистной круг 115 * 6 * 22 мм по металлу Луга Абразив</a>
+                                 <div class="code">Код товара: 123f324</div>
+                                 <div class="clearfix block-price">
+                                     <div class="left price">499 р.</div>
+                                     <div class="right status">В наличие</div>
+                                 </div>
+                                 <a href="#" class="btn-basket">В корзину</a>
+                                 <div class="box">
+                                     <a href="#" class="buy-box">Купить упоковкой</a>
+                                     <div class="box-hover">
+                                        <p>В упоковке 50 штук</p>
+                                        <p>Цена за упоковку: 1 200 р.</p>
+                                        <p>Цена за ед. товара: 24 р.</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="catalog-product-block">
+                                 <span class="stock">Акция</span>
+                                 <div class="catalog-product-img">
+                                     <a href="#"><img src="img/big-circe3.jpg" alt="Зачистной круг"></a>
+                                 </div>
+                                 <a href="#">Зачистной круг 115 * 6 * 22 мм по металлу Луга Абразив</a>
+                                 <div class="code">Код товара: 123f324</div>
+                                 <div class="clearfix block-price">
+                                     <div class="left price">499 р.</div>
+                                     <div class="right status">В наличие</div>
+                                 </div>
+                                 <a href="#" class="btn-basket">В корзину</a>
+                                 <div class="box">
+                                     <a href="#" class="buy-box">Купить упоковкой</a>
+                                     <div class="box-hover">
+                                        <p>В упоковке 50 штук</p>
+                                        <p>Цена за упоковку: 1 200 р.</p>
+                                        <p>Цена за ед. товара: 24 р.</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="catalog-product-block">
+                                 <div class="catalog-product-img">
+                                     <a href="#"><img src="img/big-circe.jpg" alt="Зачистной круг"></a>
+                                 </div>
+                                 <a href="#">Зачистной круг 115 * 6 * 22 мм по металлу Луга Абразив</a>
+                                 <div class="code">Код товара: 123f324</div>
+                                 <div class="clearfix block-price">
+                                     <div class="left price">499 р.</div>
+                                     <div class="right status">В наличие</div>
+                                 </div>
+                                 <a href="#" class="btn-basket">В корзину</a>
+                                 <div class="box">
+                                     <a href="#" class="buy-box">Купить упоковкой</a>
+                                     <div class="box-hover">
+                                        <p>В упоковке 50 штук</p>
+                                        <p>Цена за упоковку: 1 200 р.</p>
+                                        <p>Цена за ед. товара: 24 р.</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="catalog-product-block">
+                                 <div class="catalog-product-img">
+                                     <a href="#"><img src="img/big-circe2.jpg" alt="Зачистной круг"></a>
+                                 </div>
+                                 <a href="#">Зачистной круг 115 * 6 * 22 мм по металлу Луга Абразив</a>
+                                 <div class="code">Код товара: 123f324</div>
+                                 <div class="clearfix block-price">
+                                     <div class="left price">499 р.</div>
+                                     <div class="right status">В наличие</div>
+                                 </div>
+                                 <a href="#" class="btn-basket">В корзину</a>
+                                 <div class="box">
+                                     <a href="#" class="buy-box">Купить упоковкой</a>
+                                     <div class="box-hover">
+                                        <p>В упоковке 50 штук</p>
+                                        <p>Цена за упоковку: 1 200 р.</p>
+                                        <p>Цена за ед. товара: 24 р.</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="catalog-product-block">
+                                 <span class="stock">Акция</span>
+                                 <div class="catalog-product-img">
+                                     <a href="#"><img src="img/big-circe3.jpg" alt="Зачистной круг"></a>
+                                 </div>
+                                 <a href="#">Зачистной круг 115 * 6 * 22 мм по металлу Луга Абразив</a>
+                                 <div class="code">Код товара: 123f324</div>
+                                 <div class="clearfix block-price">
+                                     <div class="left price">499 р.</div>
+                                     <div class="right status">В наличие</div>
+                                 </div>
+                                 <a href="#" class="btn-basket">В корзину</a>
+                                 <div class="box">
+                                     <a href="#" class="buy-box">Купить упоковкой</a>
+                                     <div class="box-hover">
+                                        <p>В упоковке 50 штук</p>
+                                        <p>Цена за упоковку: 1 200 р.</p>
+                                        <p>Цена за ед. товара: 24 р.</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="catalog-product-block">
+                                 <div class="catalog-product-img">
+                                     <a href="#"><img src="img/big-circe.jpg" alt="Зачистной круг"></a>
+                                 </div>
+                                 <a href="#">Зачистной круг 115 * 6 * 22 мм по металлу Луга Абразив</a>
+                                 <div class="code">Код товара: 123f324</div>
+                                 <div class="clearfix block-price">
+                                     <div class="left price">499 р.</div>
+                                     <div class="right status">В наличие</div>
+                                 </div>
+                                 <a href="#" class="btn-basket">В корзину</a>
+                                 <div class="box">
+                                     <a href="#" class="buy-box">Купить упоковкой</a>
+                                     <div class="box-hover">
+                                        <p>В упоковке 50 штук</p>
+                                        <p>Цена за упоковку: 1 200 р.</p>
+                                        <p>Цена за ед. товара: 24 р.</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="catalog-product-block">
+                                 <div class="catalog-product-img">
+                                     <a href="#"><img src="img/big-circe2.jpg" alt="Зачистной круг"></a>
+                                 </div>
+                                 <a href="#">Зачистной круг 115 * 6 * 22 мм по металлу Луга Абразив</a>
+                                 <div class="code">Код товара: 123f324</div>
+                                 <div class="clearfix block-price">
+                                     <div class="left price">499 р.</div>
+                                     <div class="right status">В наличие</div>
+                                 </div>
+                                 <a href="#" class="btn-basket">В корзину</a>
+                                 <div class="box">
+                                     <a href="#" class="buy-box">Купить упоковкой</a>
+                                     <div class="box-hover">
+                                        <p>В упоковке 50 штук</p>
+                                        <p>Цена за упоковку: 1 200 р.</p>
+                                        <p>Цена за ед. товара: 24 р.</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="catalog-product-block">
+                                 <span class="stock">Акция</span>
+                                 <div class="catalog-product-img">
+                                     <a href="#"><img src="img/big-circe3.jpg" alt="Зачистной круг"></a>
+                                 </div>
+                                 <a href="#">Зачистной круг 115 * 6 * 22 мм по металлу Луга Абразив</a>
+                                 <div class="code">Код товара: 123f324</div>
+                                 <div class="clearfix block-price">
+                                     <div class="left price">499 р.</div>
+                                     <div class="right status">В наличие</div>
+                                 </div>
+                                 <a href="#" class="btn-basket">В корзину</a>
+                                 <div class="box">
+                                     <a href="#" class="buy-box">Купить упоковкой</a>
+                                     <div class="box-hover">
+                                        <p>В упоковке 50 штук</p>
+                                        <p>Цена за упоковку: 1 200 р.</p>
+                                        <p>Цена за ед. товара: 24 р.</p>
+                                     </div>
+                                 </div>
+                             </div>
+                        </div>
+                        <a href="#" class="btn-else">Показать еще 15 товаров >></a>
+                        <div class="pagination clearfix">
+                            <span class="left">Найденно товаров: 543</span>
+                            <div class="right">
+                               <a href="#">1</a>
+                               <a href="#">2</a>
+                               <a href="#">3</a>
+                               <a href="#">4</a>
+                               <a href="#">...</a>
+                            </div>
+                        </div>
+                        <div class="mark">
+                            <div>
+                                <ul>
+                                    <li><span>Значение:</span></li>
+                                    <li><a href="#">Метка 1</a></li>
+                                    <li><a href="#">Метка 2</a></li>
+                                    <li><a href="#">Метка 3</a></li>
+                                    <li><a href="#">Метка 4</a></li>
+                                    <li><a href="#">Метка 5</a></li>
+                                    <li><a href="#">Метка 6</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><span>Значение:</span></li>
+                                    <li><a href="#">Метка 7</a></li>
+                                    <li><a href="#">Метка 8</a></li>
+                                    <li><a href="#">Метка 9</a></li>
+                                    <li><a href="#">Метка 10</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="catalog-text">
+                            <div>Отрезные круги по камню</div>
+                            <p>Специализированная серия инструмента (к примеру, марки «Луга 2791» или «Луга 2795») для обработки твёрдых заготовок из натурального и искусственного камня, бетона, кирпича, включая огнеупорный, мрамора, керамических плит и т.п.</p>
+                            <p>Важно не путать «обычные» отрезные диски по камню и «алмазные» круги:</p>
+                            <p>Первые отличаются низкой ценой, но обладают сравнительно небольшим ресурсом. Отличный выбор для профессиональных или бытовых разовых работ; алмазные отрезные диски могут иметь на порядок большую стоимость. Но это оправдано их значительной стойкостью. Поэтому выбор алмазных дисков целесообразен для выполнения большого объёма работ по резке каменных заготовок.</p>
+                            <p>При абразивной обработке материалов отрезные круги неизбежно изнашиваются – расходуются. Поэтому для более-менее значительного объёма работ потребуются десятки (если не сотни!) отрезных дисков. При покупке таких крупных партий однотипного режущего инструмента важно не ошибиться с выбором качественного товара. Иначе будет трудно избежать проблем с дальнейшей обработкой заготовок (итоговая сумма ущерба от которых может значительно перекрыть экономию от покупки дешёвых дисков!).</p>
+                            <p>Отрезной круг – это абразивный материал (карбиды кремния или оксиды алюминия), закреплённый на прочной основе (бакелит с несколькими слоями стеклоткани – для защиты от разрушения при изгибных нагрузках на диск). Следовательно, характеристики круга будут определяться типом основы (бакелитом – или более «продвинутой» керамической связкой) и сортом абразивного материала. От его вида в свою очередь зависит назначение кругов – для работы по металлу, легированной стали или камню.</p>
+                            <p>Таким образом, выбор качественного отрезного круга начинается с определения вида обрабатываемого материала.</p>
+                            <p>Затем выбирается нужная серия кругов (солидный производитель всегда позиционирует свой инструмент под конкретный вид обработки!). Выбирается требуемый типоразмер инструмента (внешний диаметр, внутренний посадочный диаметр и толщина круга) – с учётом предельной окружной скорости резания и/или максимальных оборотов шлифовальной машинки. Следует отметить, что цена, стойкость отрезных кругов и производительность обработки являются противоречивыми требованиями. И только солидный производитель абразивного инструмента может обеспечить их оптимальный для потребителя баланс!</p>
+                        </div>
+                        <div class="catalog-news">
+                            <div class="news-title">Полезные статьи</div>
+                            <div class="news-slider">
+                                <div class="news-slide">
+                                    <div class="date">05.04.2017</div>
+                                    <a href="#">Какой стабилизатор выбрать для дома и дачи?</a>
+                                    <p>Затем выбирается нужная серия кругов (солидный производитель всегда позиционирует свой инструмент под конкретный вид обработки!). Выбирается требуемый типоразмер </p>
+                                </div>
+                                <div class="news-slide">
+                                    <div class="date">05.04.2017</div>
+                                    <a href="#">Как выбрать стабилизатор напряжения для газового котла, холодильника?</a>
+                                    <p>Затем выбирается нужная серия кругов (солидный производитель всегда позиционирует свой инструмент под конкретный вид обработки!). Выбирается требуемый типоразмер </p>
+                                </div>
+                                <div class="news-slide">
+                                    <div class="date">05.04.2017</div>
+                                    <a href="#">Принцип работы, виды и применение стабилизаторов напряжения</a>
+                                    <p>Затем выбирается нужная серия кругов (солидный производитель всегда позиционирует свой инструмент под конкретный вид обработки!). Выбирается требуемый типоразмер </p>
+                                </div>
+                                <div class="news-slide">
+                                    <div class="date">05.04.2017</div>
+                                    <a href="#">Какой стабилизатор выбрать для дома и дачи?</a>
+                                    <p>Затем выбирается нужная серия кругов (солидный производитель всегда позиционирует свой инструмент под конкретный вид обработки!). Выбирается требуемый типоразмер </p>
+                                </div>
+                                <div class="news-slide">
+                                    <div class="date">05.04.2017</div>
+                                    <a href="#">Как выбрать стабилизатор напряжения для газового котла, холодильника?</a>
+                                    <p>Затем выбирается нужная серия кругов (солидный производитель всегда позиционирует свой инструмент под конкретный вид обработки!). Выбирается требуемый типоразмер </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer>
+            <div class="container">
+                <div class="footer-inner clearfix">
+                    <div class="left">
+                      <p>Компания "ТК Сварка", Россия, <br>г. Санкт-Петербург, Якорная дом 8</p>
+                      <ul>
+                        <li><a href="#">Условия публичной оферты</a></li>
+                        <li><a href="#">Условия использования и конфиденциальности</a></li>
+                      </ul>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><a href="#"><img src="img/money.jpg" alt="Яндекс Деньги"></a></li>
+                            <li><a href="#"><img src="img/vtb.jpg" alt="ВТБ"></a></li>
+                            <li><a href="#"><img src="img/bliz.jpg" alt="Блиц"></a></li>
+                            <li><a href="#"><img src="img/live.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="button-top"></div>
+        </footer>
+
+    </div>
+     
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.rateit.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+@media only screen and (max-width: 1485px) {
+    .wrapper_2 {
+        width: 1240px;
+    }
+    .main_left {
+        width: 700px;
+    }
+    .main_slider {
+        margin-left: 155px;
+        width: 520px;
+        margin-top: 556px;
+    }
+    .slick_main {
+        width: 480px;
+    }
+    .main_right {
+        width: 500px;
+        float: left;
+        margin-left: 30px;
+        box-sizing: border-box;
+    }
+    .main_delivery_text {
+        font-size: 21px;
+    }
+    .main_phone_text {
+        font-size: 20px;
+    }
+    .main_phone_text span {
+        font: 24px 'TrebuchetMS-Bold';
+    }
+    .main_title {
+        font: 48px 'TrebuchetMS-Bold';
+        margin-top: 105px;
+    }
+    .control_system {
+        margin-left: 340px;
+    }
+    .cs_scheme {
+        right: -160px;
+    }
+    .m_contact_form input {
+        width: 90%;
+    }
+    .mcf_btn {
+        left: -20px;
+        position: relative;
+    }
+
+    .screen_4 {
+        overflow: hidden;
+    }
+}

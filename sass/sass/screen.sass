@@ -1,0 +1,29 @@
+$color: blue
+
+=box-shadow($shadow)
+	-webkit-box-shadow: $shadow
+	-moz-box-shadow: $shadow
+	-ms-box-shadow: $shadow
+	-o-box-shadow: $shadow
+	box-shadow: $shadow
+
+
+@import "compass/reset"
+
+%class
+	text-align: center
+
+h1
+	color: $color
+
+	span
+		font-size: 14px
+
+p 
+	padding: 10px
+	+box-shadow(2px 3px 0 #ccc)
+
+	@extend %class
+
+p + span 
+	background: #fff

@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="yandex-verification" content="4078ee68724c63b5">
+    <title>Libk.ru магазин - металлоискатели, пинпоинтер, мультитулы - низкие цены, купить с доставкой.</title>
+    
+    <link rel="stylesheet" href="/css/lightSlider.css">
+    <link rel="stylesheet" href="/css/lightGallery.css">
+    <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon" /> <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Металлоискатель, металлоискатели цена, магазин металлоискателей.">
+    <meta name="description" content="Магазин метаталлоискатели, катушки для металлоискателей, пинпоинтеры в Москве - Libk.ru. Цены на металлоискатели от производителя. Официальный диллер Minelab, Garrett, Ака.">
+    
+    <link href="css/kernel_main.css" type="text/css" rel="stylesheet">
+    <link href="css/template.css" type="text/css" rel="stylesheet">
+    <link href="css/kernel_main.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+</head>
+<body class="" itemscope="" itemtype="http://schema.org/WebPage" cz-shortcut-listen="true">	
+   <div class="popup saw">
+       <div class="window">
+       	   <div class="close"></div>
+           <div class="content">
+               <div class="name">Быстрый заказ</div>
+               <div class="lr"></div>
+           </div>
+       </div>
+    </div>
+   <div class="popup fast">
+       <div class="window">
+           <div class="close"></div>
+           <div class="content">
+               <div class="name">Быстрый заказ</div>
+               <div class="lr">
+                   <img src="/" alt="">
+                   <div class="r">
+                       <div class="title"></div>
+                       <div class="itemid" style="display: none;"></div>
+                       <div class="bulk">
+                           <div class="row">
+                               <span>Количество:</span>
+                               <div class="count">
+                                   <input type="text" class="cnt" value="1 шт">
+                                   <div class="ctrl">
+                                       <div class="add"></div>
+                                       <div class="rem"></div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <span>На сумму:</span>
+                               <p data-price="" class="prico"></p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="t1">Для оформления заказа заполните форму</div>
+               <form action="/">
+                   <input type="text" placeholder="Ваше Имя" class="namo">
+                   <input type="text" placeholder="Телефон" class="phona">
+                   <div class="erra" style="color: red"></div>
+                   <input type="submit" value="Оформить заказ">
+               </form>
+           </div>
+       </div>
+   </div>
+   <div class="popup added">
+       <div class="in_added">
+           <div class="cart">
+           <div class="arrow"></div>
+           <div class="t1">Спасибо:<span>Ваш товар добавлен в коризину</span></div>
+           <div class="lr">
+               <div class="l"><img src="img/293.png" alt=""></div>
+               <div class="r">
+                   <a href="#">Explorer SE фирмы Minelab</a>
+                   <span>Артикул:37346746</span>
+                   <p>Сумма:12.122 руб</p>
+               </div>
+           </div>
+           <div class="nav">
+               <div class="back">Вернутся</div>
+               <div class="go">Перейти в корзину</div>
+           </div>
+       </div>
+       </div>
+   </div>
+   <div class="popup call">
+       <div class="in_call">
+           <div class="window">
+               <div class="close"></div>
+               <div class="content">
+                   <div class="name">Заказать звонок</div>
+                   <form action="">
+                       <input type="text" placeholder="Ваше имя" id="call_name" name="name">
+                       <input type="text" placeholder="Телефон" id="call_phone" name="phone">
+                       <textarea placeholder="Комментарий" id="call_comment"></textarea>
+                       <div class="callerr" style="color: red"></div>
+                       <input type="submit" value="Отправить">
+                   </form>
+               </div>
+           </div>
+        </div>
+   </div>
+   <div class="popup cart">
+       <div class="window">
+           <div class="close"></div>
+           <div class="content">
+               <div class="name">Товары в корзине</div>
+               <div class="table">
+                   <div class="thead">
+                       <div class="names">Наименование товара</div>
+                       <div class="price">Цена</div>
+                       <div class="countt">Количество</div>
+                       <div class="cost">Стоимость</div>
+                   </div>
+                   <div class="tbody"></div>
+               </div>
+               <div class="res">
+                   <div class="result" data-price="">
+                       <span>Итого:</span><p>0 руб</p>
+                       <div id="skidon" style="position: absolute; margin-left: 0px; margin-top: 25px; font-size: 17px; display: none"></div>
+                   </div>
+               </div>
+               <div class="buttons">
+                   <div class="continue">Продолжить покупки</div>
+                   <a href="/order/" class="next">Оформление заказа</a>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="popup checkout">
+       <div class="window">
+           <div class="close"></div>
+           <div class="content">
+               <div class="t1">Спасибо!</div>
+               <div class="t2">Вы можете на нас положиться, мы не подведем!<br>Нам очень важно что бы вы остались довольны!</div>
+               <div class="t3">Для уточнения дополнительной информации наш менеджер свяжется с Вами по указанному телефону в самое ближайшее время пн-пт с 10:00 до 20:00 и сб-вс с 11:00 до 17:00 по мск. За покупкой Вы можете приехать в наш магазин и оплатить ее на месте, а также, можно заказать курьера с оплатой наличными при получении товара.</div>
+               <div class="t4">Звоните нам:</div>
+               <div class="t5">
+                   <div class="t51">8 (495) 923-50-49</div>
+                   <div class="t52"></div>
+               </div>
+               <div class="t6">
+                   <div class="button">Вернутся в список покупок</div>
+               </div>
+           </div>
+       </div>
+   </div>
+   
+   <header>
+       <div class="wrapper">
+           <div class="top">
+               <div class="logo" style="cursor: pointer" onclick="window.location = '/'"></div>
+               <div class="b1">
+               		<div class="t1">11 лет на рынке</div>
+               		<div class="loc">Магазины в Москве:<br> <a href="" style="color:#FF0000;">М. ПРАЖСКАЯ</a><br> ТЦ Электронный Рай 2А-27<br> <a href="/" style="color:#FF0000;">М. КОМСОМОЛЬСКАЯ</a><br> Казанский вокзал <p>Пн - Вс 09:00-21:00 </p>
+               		</div>
+               </div>
+               <div class="b2">
+               	   <div class="t1">Звоните нам:</div>
+                   <div class="phone">8 (495) 923-50-49</div>
+                   <p><br>или<span><i>Мы перезвоним</i></span></p>
+               </div>
+               <div class="b3">
+               		<div class="t1"><a href="">Написать нам</a></div>
+               		<div class="t2"><a href="">Доставка</a> по всей России</div>
+               		<div class="t2"><a href="">Оплата</a> любым Способом</div>
+               		<div class="t2"><a href="">Акции</a> для всех Клиентов</div>
+               </div>
+               <div class="b4">
+                   <div class="login"><a href="">Войти</a> или <a href="">Зарегистрироваться</a></div>
+                   <div class="cart" data-count="">Вы ещё ничего<br>не положили в корзину.</div>
+                   <div class="t1"><a href="">Как купить?</a></div>
+               </div>
+           </div>
+           <div class="nav">
+               <form action="/search/">
+                   <input type="text" name="q" id="q" placeholder="Пример:Garret 250" class="ui-autocomplete-input" autocomplete="off">
+                   <input type="submit" value="Поиск">
+               </form>
+               <a href="/" class="home"></a>
+               <ul>
+                  <li><a href="">Каталог</a></li>
+		          <li><a href="">Контакты</a></li>
+                  <li><a href="">Доставка</a></li>
+                  <li><a href="">Гарантии</a></li>
+                  <li><a href="">Отзывы</a></li>
+                  <li><a href="">Статьи</a></li>
+                  <li><a href="">Галерея</a></li>
+                  <li><a href="">Прокат</a></li>
+               </ul>
+            </div>
+            <div class="advantages">
+               <div class="t1">Почему МЫ:</div>
+               <div class="b1"><b>Мы любим</b><br>нашего Покупателя</div>
+               <div class="b2"><b>Товары</b><br>в наличии</div>
+               <div class="b3"><b>100%</b> оригинал мы<br>официальные дилеры</div>
+               <div class="b4"><b>Скидки</b><br>постоянным клиентам</div>
+            </div>
+      </div>
+  </header>
+  <div class="main">
+       <div class="background" id="background1"></div>
+       <div class="background" id="background2"></div>
+       <aside>
+           <ul class="production">
+               <li class="">
+                   <div class="icon" style="background-image: url(../img/5850ec7a2d1086f3d4db673dcfb15318.png)"></div>
+                   <a href="/catalog/metaloiskateli/" class="span">Металлоискатели</a><div class="clear"></div>
+                   <ul class="right">
+		               <li><a href="/catalog/metaloiskateli/minelab/">Minelab</a></li>
+                       <li><a href="/catalog/metaloiskateli/garrett/">Garrett</a></li>
+                       <li><a href="/catalog/metaloiskateli/fisher/">Fisher</a></li>
+                       <li><a href="/catalog/metaloiskateli/xp/">XP</a></li>
+                       <li><a href="/catalog/metaloiskateli/aka/">AKA</a></li>
+                       <li><a href="/catalog/metaloiskateli/whites/">Whites</a></li>
+                       <li><a href="/catalog/metaloiskateli/tesoro/">Tesoro</a></li>
+                       <li><a href="/catalog/metaloiskateli/lethrus/">Lethrus</a></li>
+                       <li><a href="/catalog/metaloiskateli/pinpointery/">Пинпоинтеры</a></li>
+                       <li><a href="/catalog/metaloiskateli/dosmotrovye/">Досмотровые</a>
+                           <ul class="right">
+                               <li><a href="/catalog/metaloiskateli/dosmotrovye/aka/">Aka</a></li>
+                               <li><a href="/catalog/metaloiskateli/dosmotrovye/garrett/">Garrett</a></li>
+                               <li><a href="/catalog/metaloiskateli/dosmotrovye/sphinx/">Sphinx</a></li>
+                           </ul>
+                       </li>
+                    </ul>
+		            <ul class="inside">
+                   		<li class="six">
+                            <ul class="inside">
+                                <li><a href="/catalog/metaloiskateli/minelab/">Minelab</a></li>
+                                <li><a href="/catalog/metaloiskateli/garrett/">Garrett</a></li>
+                                <li><a href="/catalog/metaloiskateli/fisher/">Fisher</a></li>
+                                <li><a href="/catalog/metaloiskateli/xp/">XP</a></li>
+                                <li><a href="/catalog/metaloiskateli/aka/">AKA</a></li>
+                                <li><a href="/catalog/metaloiskateli/whites/">Whites</a></li>
+                                <li><a href="/catalog/metaloiskateli/tesoro/">Tesoro</a></li>
+                                <li><a href="/catalog/metaloiskateli/lethrus/">Lethrus</a></li>
+                                <li><a href="/catalog/metaloiskateli/pinpointery/">Пинпоинтеры</a></li>
+                                <li><a href="/catalog/metaloiskateli/dosmotrovye/">Досмотровые</a>
+                                    <ul class="right">
+                                        <li><a href="/catalog/metaloiskateli/dosmotrovye/aka/">Aka</a></li>
+                                        <li><a href="/catalog/metaloiskateli/dosmotrovye/garrett/">Garrett</a></li>
+                                        <li><a href="/catalog/metaloiskateli/dosmotrovye/sphinx/">Sphinx</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                       </li>                    
+                    </ul>
+                </li>
+                <li class=""><div class="icon" style="background-image: url(../img/c111727bbdec8d07ae47502b630b0134.png)"></div>
+                   <a href="/catalog/katushki/" class="span">Катушки</a><div class="clear"></div>
+                   <ul class="right">
+		               <li><a href="/catalog/katushki/dlya-aka/">АКА</a></li>
+                       <li><a href="/catalog/katushki/detech/">Detech</a></li>
+                       <li><a href="/catalog/katushki/mars-md/">Mars</a>
+                           <ul class="right">
+                               <li><a href="/catalog/katushki/mars-md/dlya-fisher-mars/">Для Fisher</a></li>
+                               <li><a href="/catalog/katushki/mars-md/dlya-garrett-mars/">Для Garrett </a></li>
+                               <li><a href="/catalog/katushki/mars-md/dlya-minelab-mars/">Для Minelab</a></li>
+                               <li><a href="/catalog/katushki/mars-md/dlya-whites-mars/">Для Whites</a></li>
+                           </ul>
+                       </li>
+                       <li><a href="/catalog/katushki/nel-tornado/">NEL</a>
+                           <ul class="right">
+                               <li><a href="/catalog/katushki/nel-tornado/nel-dlya-fisher/">Для Fisher</a></li>
+                               <li><a href="/catalog/katushki/nel-tornado/nel-dlya-garrett/">Для Garrett</a></li>
+                               <li><a href="/catalog/katushki/nel-tornado/nel-dlya-minelab/">Для Minelab</a></li>
+                               <li><a href="/catalog/katushki/nel-tornado/nel-dlya-aka/">Для АКА</a></li>
+                           </ul>
+                       </li>
+                           <li><a href="/catalog/katushki/dlya-garrett/">Garrett</a></li>
+                           <li><a href="/catalog/katushki/dlya-fisher/">Fisher</a></li>
+                           <li><a href="/catalog/katushki/dlya-minelab/">Minelab</a></li>
+                           <li><a href="/catalog/katushki/katushki-na-xp/">XP</a></li>
+                           <li><a href="/catalog/katushki/dlya-whites/">Whites</a></li>
+                           <li><a href="/catalog/katushki/coiltek/">Coiltek</a></li>
+                    </ul>
+		            <ul class="inside">
+                   	    <li class="six">
+                            <ul class="inside">
+                                <li><a href="/catalog/katushki/dlya-aka/">АКА</a></li>
+                                <li><a href="/catalog/katushki/detech/">Detech</a></li>
+                                <li><a href="/catalog/katushki/mars-md/">Mars</a>
+                                    <ul class="right">
+                                        <li><a href="/catalog/katushki/mars-md/dlya-fisher-mars/">Для Fisher</a></li>
+                                        <li><a href="/catalog/katushki/mars-md/dlya-garrett-mars/">Для Garrett</a></li>
+                                        <li><a href="/catalog/katushki/mars-md/dlya-minelab-mars/">Для Minelab</a></li>
+                                        <li><a href="/catalog/katushki/mars-md/dlya-whites-mars/">Для Whites</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/catalog/katushki/nel-tornado/">NEL</a>
+                                    <ul class="right">
+                                        <li><a href="/catalog/katushki/nel-tornado/nel-dlya-fisher/">Для Fisher</a></li>
+                                        <li><a href="/catalog/katushki/nel-tornado/nel-dlya-garrett/">Для Garrett</a></li>
+                                        <li><a href="/catalog/katushki/nel-tornado/nel-dlya-minelab/">Для Minelab</a></li>
+                                        <li><a href="/catalog/katushki/nel-tornado/nel-dlya-aka/">Для АКА</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/catalog/katushki/dlya-garrett/">Garrett</a></li>
+                                <li><a href="/catalog/katushki/dlya-fisher/">Fisher</a></li>
+                                <li><a href="/catalog/katushki/dlya-minelab/">Minelab</a></li>
+                                <li><a href="/catalog/katushki/katushki-na-xp/">XP</a></li>
+                                <li><a href="/catalog/katushki/dlya-whites/">Whites</a></li>
+                                <li><a href="/catalog/katushki/coiltek/">Coiltek</a></li>
+                            </ul>
+                        </li>                     
+                    </ul>
+                </li>
+                <li class=""><div class="icon" style="background-image: url(../img/53981ddd79ca956cc8b8759b886be3f0.png)"></div>
+                   <a href="/catalog/aksessuary/" class="span">Снаряжение</a><div class="clear"></div>
+                   <ul class="right">
+                       <li><a href="/catalog/aksessuary/sumki/">Сумки и рюкзаки</a>
+                           <ul class="right">
+                               <li><a href="/catalog/aksessuary/sumki/ryukzak/">Рюкзак</a></li>
+                           </ul>
+                       </li>
+                       <li><a href="/catalog/aksessuary/zashchity/">Защиты</a></li>
+                       <li><a href="/catalog/aksessuary/chekhly/">Чехлы</a></li>
+                       <li><a href="/catalog/aksessuary/lopaty-sovki/">Лопаты</a></li>
+                       <li><a href="/catalog/aksessuary/naushniki/">Наушники</a></li>
+                       <li><a href="/catalog/aksessuary/karty/">Карты</a></li>
+                       <li><a href="/catalog/aksessuary/batareyki-i-zu/">Батарейки и ЗУ</a></li>
+                       <li><a href="/catalog/aksessuary/zap-chasti/">Зап Части</a></li>
+                       <li><a href="/catalog/aksessuary/literatura/">Литература</a></li>
+                       <li><a href="/catalog/aksessuary/suveniry/">Сувениры</a></li>
+                   </ul>
+		           <ul class="inside">
+                   	   <li class="six">
+                           <ul class="inside">
+                               <li><a href="/catalog/aksessuary/sumki/">Сумки и рюкзаки</a>
+                                   <ul class="right">
+                           		       <li><a href="/catalog/aksessuary/sumki/ryukzak/">Рюкзак</a></li>
+                                   </ul>
+                               </li>
+                               <li><a href="/catalog/aksessuary/zashchity/">Защиты</a></li>
+                               <li><a href="/catalog/aksessuary/chekhly/">Чехлы</a></li>
+                               <li><a href="/catalog/aksessuary/lopaty-sovki/">Лопаты</a></li>
+                               <li><a href="/catalog/aksessuary/naushniki/">Наушники</a></li>
+                               <li><a href="/catalog/aksessuary/karty/">Карты</a></li>
+                               <li><a href="/catalog/aksessuary/batareyki-i-zu/">Батарейки и ЗУ</a></li>
+                               <li><a href="/catalog/aksessuary/zap-chasti/">Зап Части</a></li>
+                               <li><a href="/catalog/aksessuary/literatura/">Литература</a></li>
+                               <li><a href="/catalog/aksessuary/suveniry/">Сувениры</a></li>
+                            </ul>
+                        </li>                    
+                    </ul>
+                </li>
+                <li class="">
+                   <div class="icon" style="background-image: url(../img/9a9a598342c2930d6c7f9d2ef242a6af.png)"></div>
+                   <a href="/catalog/magnity/" class="span">Магниты</a><div class="clear"></div>
+                   <ul class="right">
+		               <li><a href="/catalog/magnity/poiskovye-magnity/">Поисковые магниты</a></li>
+                       <li><a href="/catalog/magnity/magnity-dlya-schetchikov/">Магниты для счетчиков</a></li>
+                   </ul>
+		           <ul class="inside">
+                   	   <li class="six">
+                           <ul class="inside">
+                               <li><a href="/catalog/magnity/poiskovye-magnity/">Поисковые магниты</a></li>
+                               <li><a href="/catalog/magnity/magnity-dlya-schetchikov/">Магниты для счетчиков</a></li>
+                           </ul>
+                       </li>                   
+                   </ul>
+                </li>
+                <li class="">
+                   <div class="icon" style="background-image: url(../img/4b6c942b0a98770f1df4e39e96ce3785.png)"></div>
+                   <a href="/catalog/multituly/" class="span">Мультитулы</a><div class="clear"></div>
+                   <ul class="right">
+		               <li><a href="/catalog/multituly/leatherman/">Leatherman</a></li>
+                       <li><a href="/catalog/multituly/ganzo/">Ganzo</a></li>
+                       <li><a href="/catalog/multituly/arhont/">Arhont</a></li>
+                   </ul>
+		           <ul class="inside">
+                   	   <li class="six">
+                           <ul class="inside">
+                               <li><a href="/catalog/multituly/leatherman/">Leatherman</a></li>
+                               <li><a href="/catalog/multituly/ganzo/">Ganzo</a></li>
+                               <li><a href="/catalog/multituly/arhont/">Arhont</a></li>
+                           </ul>
+                       </li>                      
+                   </ul>
+                </li>
+                <li class="">
+                   <div class="icon" style="background-image: url(../img/d4ed4bbd3bc1bcfe2ea93335e9186724.png)"></div>
+                   <a href="/catalog/numizmatu/" class="span">Нумизмату</a><div class="clear"></div>
+                   <ul class="right">
+		               <li><a href="/catalog/numizmatu/albomy/">Альбомы</a>
+                           <ul class="right">
+                               <li><a href="/catalog/numizmatu/albomy/albom/">Альбом</a></li>
+                               <li><a href="/catalog/numizmatu/albomy/albomy-dlya-bon/">Альбомы для Бон</a></li>
+                               <li><a href="/catalog/numizmatu/albomy/kollektsioner/">КоллекционерЪ</a></li>
+                               <li><a href="/catalog/numizmatu/albomy/monetniki/">Монетники</a></li>
+                               <li><a href="/catalog/numizmatu/albomy/albomy-planshety/">Планшеты</a></li>
+                           </ul>
+                       </li>
+                       <li><a href="/catalog/numizmatu/vesy/">Весы</a></li>
+                       <li><a href="/catalog/numizmatu/listy-dlya-albomov/">Листы для альбомов</a></li>
+                       <li><a href="/catalog/numizmatu/lupy/">Лупы</a></li>
+                       <li><a href="/catalog/numizmatu/sredstva-dlya-chistki-monet/">Средства для чистки монет</a></li>
+                    </ul>
+		            <ul class="inside">
+                   		<li class="six">
+                            <ul class="inside">
+                                <li><a href="/catalog/numizmatu/albomy/">Альбомы</a>
+                                    <ul class="right">
+                           		        <li><a href="/catalog/numizmatu/albomy/albom/">Альбом</a></li>
+                                        <li><a href="/catalog/numizmatu/albomy/albomy-dlya-bon/">Альбомы для Бон</a></li>
+                                        <li><a href="/catalog/numizmatu/albomy/kollektsioner/">КоллекционерЪ</a></li>
+                                        <li><a href="/catalog/numizmatu/albomy/monetniki/">Монетники</a></li>
+                                        <li><a href="/catalog/numizmatu/albomy/albomy-planshety/">Планшеты</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/catalog/numizmatu/vesy/">Весы</a></li>
+                                <li><a href="/catalog/numizmatu/listy-dlya-albomov/">Листы для альбомов</a></li>
+                                <li><a href="/catalog/numizmatu/lupy/">Лупы</a></li>
+                                <li><a href="/catalog/numizmatu/sredstva-dlya-chistki-monet/">Средства для чистки монет</a></li>
+                             </ul>
+                         </li>                   
+                     </ul>
+                 </li>
+                 <li class="">
+                   <div class="icon" style="background-image: url(../img/b143613b18c42a9f57a8cb8f25a3b2e8.png)"></div>
+                   <a href="/catalog/nozhi/" class="span">Ножи</a><div class="clear"></div>
+                   <ul class="right">
+		               <li><a href="/catalog/nozhi/ganzo-nozi/">Ganzo</a></li>
+                       <li><a href="/catalog/nozhi/air-zlatoust/">АиР</a></li>
+                       <li><a href="/catalog/nozhi/boker/">Boker</a></li>
+                       <li><a href="/catalog/nozhi/crkt/">CRKT</a></li>
+                       <li><a href="/catalog/nozhi/cold-steel/">Cold Steel</a></li>
+                       <li><a href="/catalog/nozhi/kershaw-nozhi/">Kershaw</a></li>
+                       <li><a href="/catalog/nozhi/kizlyar/">Кизляр</a></li>
+                       <li><a href="/catalog/nozhi/nozhi-mcusta/">Mcusta</a></li>
+                       <li><a href="/catalog/nozhi/ontario/">Ontario</a></li>
+                       <li><a href="/catalog/nozhi/opinel/">Opinel</a></li>
+                       <li><a href="/catalog/nozhi/ip-sazhin/">ИП Сажин</a></li>
+                   </ul>
+		           <ul class="inside">
+                   	   <li class="six">
+                           <ul class="inside">
+                               <li><a href="/catalog/nozhi/ganzo-nozi/">Ganzo</a></li>
+                               <li><a href="/catalog/nozhi/air-zlatoust/">АиР</a></li>
+                               <li><a href="/catalog/nozhi/boker/">Boker</a></li>
+                               <li><a href="/catalog/nozhi/crkt/">CRKT</a></li>
+                               <li><a href="/catalog/nozhi/cold-steel/">Cold Steel</a></li>
+                               <li><a href="/catalog/nozhi/kershaw-nozhi/">Kershaw</a></li>
+                               <li><a href="/catalog/nozhi/kizlyar/">Кизляр</a></li>
+                               <li><a href="/catalog/nozhi/nozhi-mcusta/">Mcusta</a></li>
+                               <li><a href="/catalog/nozhi/ontario/">Ontario</a></li>
+                               <li><a href="/catalog/nozhi/opinel/">Opinel</a></li>
+                               <li><a href="/catalog/nozhi/ip-sazhin/">ИП Сажин</a></li>
+                           </ul>
+                        </li>                     
+                   </ul>
+                 </li>
+                 <li class="">
+                   <div class="icon" style="background-image: url(../img/c1670a409361e0e245974ff089a0a7f5.png)"></div>
+                   <a href="/catalog/monety/" class="span">Монеты</a><div class="clear"></div>
+                   <ul class="right">
+		               <li><a href="/catalog/monety/monety-rossii/">Монеты России</a>
+                           <ul class="right">
+                               <li><a href="/catalog/monety/monety-rossii/bimetallicheskie-monety-10-rubley/">Биметаллические монеты 10 рублей</a></li>
+                               <li><a href="/catalog/monety/monety-rossii/stalnye-monety-10-rubley/">Стальные монеты 10 рублей</a></li>
+                           </ul>
+                       </li>
+                       <li><a href="/catalog/monety/monety-rossiiyskoy-imperii/">Монеты Россиийской Империи</a>
+                           <ul class="right">
+                               <li><a href="/catalog/monety/monety-rossiiyskoy-imperii/1-rubl/">1 РУБЛЬ</a></li>
+                               <li><a href="/catalog/monety/monety-rossiiyskoy-imperii/50-kopeek-poltina/">50 КОПЕЕК (ПОЛТИНА)</a></li>
+                           </ul>
+                       </li>
+                       <li><a href="/catalog/monety/monety-sssr/">Монеты СССР</a></li>
+                    </ul>
+		            <ul class="inside">
+                   		<li class="six">
+                            <ul class="inside">
+                                <li><a href="/catalog/monety/monety-rossii/">Монеты России</a>
+                                    <ul class="right">
+                           		        <li><a href="/catalog/monety/monety-rossii/bimetallicheskie-monety-10-rubley/">Биметаллические монеты 10 рублей</a>
+                                            <ul class="right" style="left: 215px;">
+                                                <li><a href="/catalog/monety/monety-rossii/bimetallicheskie-monety-10-rubley/drevnie-goroda-rossii/">ДРЕВНИЕ ГОРОДА РОССИИ</a></li>
+                                                <li><a href="/catalog/monety/monety-rossii/bimetallicheskie-monety-10-rubley/ministerstva/">МИНИСТЕРСТВА</a></li>
+                                                <li><a href="/catalog/monety/monety-rossii/bimetallicheskie-monety-10-rubley/pamyatnye-daty/">ПАМЯТНЫЕ ДАТЫ</a></li>
+                                                <li><a href="/catalog/monety/monety-rossii/bimetallicheskie-monety-10-rubley/rossiyskaya-federatsiya/">РОССИЙСКАЯ ФЕДЕРАЦИЯ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/catalog/monety/monety-rossii/stalnye-monety-10-rubley/">Стальные монеты 10 рублей</a>
+                                            <ul class="right" style="left: 215px;">
+                                                <li><a href="/catalog/monety/monety-rossii/stalnye-monety-10-rubley/goroda-voinskoy-slavy/">ГОРОДА ВОИНСКОЙ СЛАВЫ</a></li>
+                                                <li><a href="/catalog/monety/monety-rossii/stalnye-monety-10-rubley/znamenatelnye-daty/">ЗНАМЕНАТЕЛЬНЫЕ ДАТЫ</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                 </li>
+                                 <li><a href="/catalog/monety/monety-rossiiyskoy-imperii/">Монеты Россиийской Империи</a>
+                                     <ul class="right">
+                                         <li><a href="/catalog/monety/monety-rossiiyskoy-imperii/1-rubl/">1 РУБЛЬ</a></li>
+                                         <li><a href="/catalog/monety/monety-rossiiyskoy-imperii/50-kopeek-poltina/">50 КОПЕЕК (ПОЛТИНА)</a></li>
+                                     </ul>
+                                 </li>
+                                 <li><a href="/catalog/monety/monety-sssr/">Монеты СССР</a></li>
+                              </ul>
+                         </li>                  
+                     </ul>
+                  </li>
+                  <li class="">
+                     <div class="icon" style="background-image: url(../img/b38313b55418ef449c9a28ec54d844cf.png)"></div>
+                     <a href="/catalog/fonari/" class="span">Фонари</a><div class="clear"></div>
+                     <ul class="right">
+                         <li><a href="/catalog/fonari/led-lenser/">Led Lenser</a></li>
+                         <li><a href="/catalog/fonari/fenix/">Fenix</a></li>
+                         <li><a href="/catalog/fonari/ferei/">Ferei</a></li>
+                     </ul>
+		             <ul class="inside">
+                   		 <li class="six">
+                             <ul class="inside">
+                                 <li><a href="/catalog/fonari/led-lenser/">Led Lenser</a></li>
+                                 <li><a href="/catalog/fonari/fenix/">Fenix</a></li>
+                                 <li><a href="/catalog/fonari/ferei/">Ferei</a></li>
+                             </ul>
+                         </li>                     
+                     </ul>
+                  </li>
+                  <li class="">
+                     <div class="icon" style="background-image: url(../img/2a50717eaf8b1620f90590bbeb4e01ae.png)"></div>
+                     <a href="/catalog/zazhigalki/" class="span">Зажигалки</a><div class="clear"></div>
+                     <ul class="right">
+		                 <li><a href="/catalog/zazhigalki/zipo/">ZIPO</a></li>
+                     </ul>
+		             <ul class="inside">
+                   		 <li class="six">
+                             <ul class="inside">
+                                 <li><a href="/catalog/zazhigalki/zipo/">ZIPO</a></li>
+                             </ul>
+                         </li>                     
+                     </ul>
+                   </li>
+                   <li class="">
+                       <div class="icon" style="background-image: url(../img/9a73e5070d42fcbed4235171520cedd4.jpg)"></div>
+                       <a href="/catalog/Mebel-dlya-dachi/" class="span">Мебель для дачи</a><div class="clear"></div>
+                       <ul class="inside"></ul>
+                   </li>
+                   <li class="">
+                       <div class="icon" style="background-image: url(../img/5facfcda1865ac928d63ea5bf7b28bce.png)"></div>
+                       <a href="/catalog/takticheskie-ruchki/" class="span">Самооборона</a><div class="clear"></div>
+                       <ul class="right">
+		                   <li><a href="/catalog/takticheskie-ruchki/edc/">EDC</a></li>
+                           <li><a href="/catalog/takticheskie-ruchki/gazovye-ballony/">Газовые баллоны</a></li>
+                           <li><a href="/catalog/takticheskie-ruchki/takticheskie-ruchki/">Тактические ручки</a></li>
+                       </ul>
+		               <ul class="inside">
+                   		   <li class="six">
+                               <ul class="inside">
+                                   <li><a href="/catalog/takticheskie-ruchki/edc/">EDC</a></li>
+                                   <li><a href="/catalog/takticheskie-ruchki/gazovye-ballony/">Газовые баллоны</a></li>
+                                   <li><a href="/catalog/takticheskie-ruchki/takticheskie-ruchki/">Тактические ручки</a></li>
+                               </ul>
+                           </li>                  
+                       </ul>
+                    </li>
+                    <li class="">
+                        <div class="icon" style="background-image: url(../img/1c1ced87c08859361c266be3c8c23e4f.png)"></div>
+                        <a href="/catalog/sertifikat/" class="span">Сертификат</a><div class="clear"></div>
+                        <ul class="inside"></ul>
+                    </li>
+                 </ul>
+           
+           <div class="video">
+               <div class="name">Видео презентация</div>
+               <iframe width="249" height="140" src="https://www.youtube.com/embed/CdSsKGycJ1A?rel=0" frameborder="0" allowfullscreen=""></iframe>
+           </div>
+           <div class="articles">
+               <div class="name">Статьи</div>
+               <article>
+                   <div class="title">Закладные монеты</div>
+                   <div class="detail">
+                       <img src="img/d869d65af7f0ed86c4079b92d3f9d49d.jpg" alt="" width="64">
+                       <p style="margin-top: 0">Закладные монеты Приносить жертву перед началом важного дела -&nbsp;...</p>
+                   </div>
+                   <div class="more">
+                       <a href="">Подробнее</a>
+                   </div>
+               </article>
+               <article>
+                   <div class="title">История одного выезда </div>
+                   <div class="detail">
+                       <img src="img/ff6022f924f2542e180e8b254e7ee221.jpg" alt="" width="64">
+                       <p style="margin-top: 0">История одного выезда В этот пасмурный день я собрался проверить пол...</p>
+                   </div>
+                   <div class="more">
+                       <a href="">Подробнее</a>
+                   </div>
+               </article>
+            </div>
+            <div class="reviews">
+               <div class="name">Отзывы</div>
+               <div class="review">
+                   <div class="top">
+                       <span>Владимир, - март 2012, Победит...</span>
+                   </div>
+                   <div class="text">Николай спасибо! [ /images/article/konkurs_metalloiskatel_pobeditel.jpg ] [ /images/article/konkurs_metallois...</div>
+               </div>
+               <div class="review">
+                   <div class="top">
+                       <span>Иван Скоров, Тула - декабрь 20...</span>
+                   </div>
+                   <div class="text">Знакомые искатели много рассказывали что в libk.ru грамотные консультанты по поисковой технике. Видел приб...</div>
+               </div>
+               <div class="review">
+                   <div class="top">
+                       <span>Анатолий Вершинин, Курск - дек...</span>
+                   </div>
+                   <div class="text">Заказывал уже ни один металлоискатель на libk.ru, себе и знакомым. Здесь меня всё устраивает. Отзывчивая с...</div>
+               </div>
+               <div class="all"><a href="">Читать все отзывы</a></div>
+            </div>
+       </aside>
+       <div class="content">
+            <div class="text2">
+                <h1 align="center">Libk: металлоискатели и товары для активного отдыха</h1><hr>
+                <p align="center"><a href="" target="_blank"><img src="img/metalloiskateli-minelab.jpg" alt="metalloiskateli-minelab" title="metalloiskateli-minelab" width="970" border="0" align="«center»" height="90"></a></p>
+            </div>                
+            <div class="products">
+                <div class="item2">
+                   <div class="name"><a href="">Металлоискатели</a></div>
+                   <div class="text">
+                       <a href=""><img alt="логотип minelab" src="img/minelab-logo.jpg" title="логотип minelab" width="63" height="37"></a>
+                       <a href=""><img alt="логотип garrett" src="img/garrett-logo.jpg" title="логотип garrett" width="63" height="37"></a>
+                       <a href=""><img alt="fisher-logo" src="img/fisher-logo.jpg" title="fisher-logo" width="63" height="37"></a>
+                       <a href=""><img alt="логотип xp" src="img/xp-logo.jpg" title="логотип xp" width="63" height="37"></a>
+                       <a href=""><img alt="ака металлоискатели" src="img/aka-logo.jpg" title="ака металлоискатели" width="63" height="37"></a>
+                       <a href=""><img alt="whites металлоискатели" src="img/whites-logo.jpg" title="whites металлоискатели" width="63" height="37"></a>
+                   </div>
+                </div>
+                <div class="item " data-article="405">
+               	   <a href="" class="div"><img src="img/b5cd35f29c965b98f6bcc9dca4515a4d.jpg" alt="" width="167" height="167"></a>
+                   <div class="title">АКА Сигнум MFT 7272М</div><div class="itemid">405</div>
+                   <div class="fun">
+                       <div class="l">
+                           <a href="/catalog/aka-signum-mft-7272m.php" class="detail">Подробнее</a>
+                           <a href="#" class="cart">В корзину</a>
+                       </div>
+                       <div class="price">48 780</div>
+                       <div class="one"><a href="#">Купить в 1 клик</a></div>
+                    </div>
+                </div>
+                <div class="item " data-article="424">
+               		 <a href="" class="div"><img src="img/19fae6b8308a8567b76fa05b0e403fa6.jpg" alt="" width="167" height="167"></a>
+                     <div class="title">Пинпоинтер Garrett Pro pointer AT</div>
+                     <div class="itemid">424</div>
+                     <div class="fun">
+                         <div class="l">
+                             <a href="/catalog/pinpointer-garrett-pro-pointer-at.php" class="detail">Подробнее</a>
+                             <a href="#" class="cart">В корзину</a>
+                         </div>
+                         <div class="price">9 550</div>
+                         <div class="one"><a href="#">Купить в 1 клик</a></div>
+                     </div>
+                 </div>
+                 <div class="item last" data-article="461">
+               		  <a href="" class="div"><img src="img/aabce89030a7578e4cbcc48b819606cd.jpg" alt="" width="215" height="145"></a>
+                      <div class="title">Minelab x-terra 705 DD</div>
+                      <div class="itemid">461</div>
+                      <div class="fun">
+                      <div class="l">
+                           <a href="/catalog/minelab-x-terra-705-dd.php" class="detail">Подробнее</a>
+                           <a href="#" class="cart">В корзину</a>
+                      </div>
+                      <div class="price">35 990</div>
+                           <div class="one"><a href="#">Купить в 1 клик</a></div>
+                      </div>
+                 </div>       
+                 <div class="clear"></div>
+             </div>   
+             <div class="products">
+                 <div class="item2">
+                     <div class="name"><a href="">Снаряжение</a></div>
+                     <div class="text">
+                         <a href=""><img alt="Катушки для металлоискателя" src="img/logo-katushka.png" title="Катушки для металлоискателя"></a>
+                         <a href=""><img src="img/logo-ryukzakz.png" title="Рюкзаки" alt="Рюкзаки"></a>
+                         <a href=""><img src="img/logo-lopata.png" title="Лопаты" alt="Лопаты"></a>
+                         <a href=""><img alt="Наушники для металлоискателя" src="img/logo-naushniki.png" title="Наушники для металлоискателя"></a>
+                         <a href=""><img src="img/logo-shechol.png" title="Чехлы" alt="Чехлы"></a>
+                         <a href=""><img alt="Защита на катушку" src="img/logo-zashita.png" title="Защита на катушку"></a>
+                         <a href=""><img src="img/logo-suvenir.png" title="Сувениры" alt="Сувениры"></a>
+                         <a href=""><img src="img/magniti.png" title="Магниты" alt="Магниты"></a></div>
+                 </div>
+                 <div class="item " data-article="2190">
+               		  <a href="" class="div"><img src="img/8f530ef5c8930d80c29026203b5bf818.jpg" alt="" width="167" height="167"></a>
+                      <div class="title">Рюкзак для металлоискателя Cordura</div>
+                      <div class="itemid">2190</div>
+                      <div class="fun">
+                          <div class="l">
+                               <a href="" class="detail">Подробнее</a>
+                               <a href="#" class="cart">В корзину</a>
+                          </div>
+                          <div class="price">5 650</div>
+                          <div class="one"><a href="#">Купить в 1 клик</a></div>
+                      </div>
+                  </div>
+                  <div class="item " data-article="2561">
+               		   <a href="" class="div"><img src="img/5d8075a9f3c186c54e9e7bb7b96af1e5.jpg" alt="" width="167" height="167"></a>
+                       <div class="title">Универсальное зарядное устройство Robiton ProCharger1000</div>
+                       <div class="itemid">2561</div>
+                       <div class="fun">
+                           <div class="l">
+                               <a href="" class="detail">Подробнее</a>
+                               <a href="#" class="cart">В корзину</a>
+                           </div>
+                           <div class="price">2 500</div>
+                           <div class="one"><a href="#">Купить в 1 клик</a></div>
+                       </div>
+                   </div>
+                   <div class="item last" data-article="2727">
+               		    <a href="" class="div"><img src="img/06b925763daef8ed7d536a379129e52f.jpg" alt="" width="167" height="167"></a>
+                        <div class="title">Скуб для пляжного поиска</div>
+                        <div class="itemid">2727</div>
+                        <div class="fun">
+                           <div class="l">
+                               <a href="/catalog/skub-dlya-plyazhnogo-poiska.php" class="detail">Подробнее</a>
+                               <a href="#" class="cart">В корзину</a>
+                           </div>
+                           <div class="price">5 000</div>
+                           <div class="one"><a href="#">Купить в 1 клик</a></div>
+                        </div>
+                    </div>      
+                    <div class="clear"></div>
+                </div>   
+                <div class="products">
+                     <div class="item2">
+                         <div class="name"><a href="">Мультитулы</a></div>
+                         <div class="text"><a href=""><img alt="мультитулы ganzo" src="img/ganzo.jpg" title="мультитулы ganzo"></a> <a href=""><img alt="мультитулы leatherman" src="img/leatherman.jpg" title="мультитулы leatherman"></a></div>
+                     </div>
+                     <div class="item " data-article="696">
+               		      <a href="" class="div"><img src="img/a669bfe384fd701baf6e4e820e083e85.jpg" alt="" width="167" height="167"></a>
+                          <div class="title">Мультитул Ganzo G202B черный корпус</div>
+                          <div class="itemid">696</div>
+                          <div class="fun">
+                              <div class="l">
+                                  <a href="" class="detail">Подробнее</a>
+                                  <a href="#" class="cart">В корзину</a>
+                              </div>
+                              <div class="price">1 956</div>
+                              <div class="one"><a href="#">Купить в 1 клик</a></div>
+                          </div>
+                     </div>
+                     <div class="item " data-article="711">
+               		      <a href="" class="div"><img src="img/064c9d1258c4eef329818df7dd793d68.jpg" alt="" width="167" height="167"></a>
+                          <div class="title">Мультитул Leatherman Wingman 831436</div>
+                          <div class="itemid">711</div>
+                          <div class="fun">
+                               <div class="l">
+                                   <a href="/catalog/multitul-leatherman-wingman-831436.php" class="detail">Подробнее</a>
+                                   <a href="#" class="cart">В корзину</a>
+                               </div>
+                               <div class="price">5 130</div>
+                               <div class="one"><a href="#">Купить в 1 клик</a></div>
+                          </div>
+                     </div>
+                    <div class="item last" data-article="1984">
+               		     <a href="" class="div"><img src="img/a04424dc25f8bd626f36de0ebaf1914a.jpg" alt="" width="167" height="167"></a>
+                        <div class="title">Браслет Leatherman Tread 831998</div>
+                        <div class="itemid">1984</div>
+                        <div class="fun">
+                            <div class="l">
+                                <a href="/catalog/braslet-leatherman-tread-stainless-stel-.php" class="detail">Подробнее</a>
+                                <a href="#" class="cart">В корзину</a>
+                            </div>
+                            <div class="price">9 999</div>
+                            <div class="one"><a href="#">Купить в 1 клик</a></div>
+                        </div>
+                   </div>     
+                   <div class="clear"></div>
+              </div>
+              <div class="products">
+                   <div class="item2">
+                       <div class="name"><a href="">Нумизмату</a></div>
+                       <div class="text"></div>
+                   </div>
+                   <div class="item " data-article="1880">
+               		    <a href="" class="div"><img src="img/6a375a6f233440dd0cf3a1205fc0e6ec.jpg" alt="" width="167" height="167"></a>
+                        <div class="title">Шаберы для чистки монет</div>
+                        <div class="itemid">1880</div>
+                        <div class="fun">
+                            <div class="l">
+                                <a href="" class="detail">Подробнее</a>
+                                <a href="#" class="cart">В корзину</a>
+                            </div>
+                            <div class="price">1 990</div>
+                            <div class="one"><a href="#">Купить в 1 клик</a></div>
+                        </div>
+                    </div>
+                    <div class="item " data-article="1990">
+               		     <a href="" class="div"><img src="img/d869d65af7f0ed86c4079b92d3f9d49d.jpg" alt="" width="167" height="167"></a>
+                         <div class="title">Средство для чистки монет СССР</div>
+                         <div class="itemid">1990</div>
+                         <div class="fun">
+                             <div class="l">
+                                 <a href="" class="detail">Подробнее</a>
+                                 <a href="#" class="cart">В корзину</a>
+                             </div>
+                             <div class="price">250</div>
+                             <div class="one"><a href="#">Купить в 1 клик</a></div>
+                         </div>
+                     </div>
+                     <div class="item last" data-article="2368">
+               		      <a href="" class="div"><img src="img/23c7e78f0c490270f478203d30fb72c9.jpg" alt="" width="111" height="167"></a>
+                         <div class="title">Альбом для юбилейных и памятных монет России (по хронологии выпуска)</div>
+                         <div class="itemid">2368</div>
+                         <div class="fun">
+                             <div class="l">
+                                 <a href="" class="detail">Подробнее</a>
+                                 <a href="#" class="cart">В корзину</a>
+                             </div>
+                             <div class="price">2 000</div>
+                             <div class="one"><a href="#">Купить в 1 клик</a></div>
+                         </div>
+                     </div>
+                     <div class="clear"></div>
+               </div>   
+               <div class="products">
+                   <div class="item2">
+                       <div class="name"><a href="">Ножи</a></div>
+                       <div class="text">
+                            <a href=""><img alt="ножи ganzo" src="img/logo-ganzo.jpg" title="ножи ganzo"></a>
+                            <a href=""><img alt="ножи кизляр" src="img/logo-kizlyar.jpg" title="ножи кизляр"></a>
+                            <a href=""><img alt="ножи kershaw" src="img/logo-kershaw.jpg" title="ножи kershaw"></a>
+                            <a href=""><img alt="ножи boker" src="img/logo-boker.jpg" title="ножи boker"></a></div>
+                   </div>
+                   <div class="item " data-article="2397">
+               		   <a href="" class="div"><img src="img/739f4e0dd095926cc483342587e40893.jpg" alt="" width="167" height="167"></a>
+                       <div class="title">Универсальный точильный станок Touch Pro Ultra</div>
+                       <div class="itemid">2397</div>
+                       <div class="fun">
+                           <div class="l">
+                               <a href="" class="detail">Подробнее</a>
+                               <a href="#" class="cart">В корзину</a>
+                           </div>
+                           <div class="price">3 600</div>
+                           <div class="one"><a href="#">Купить в 1 клик</a></div>
+                       </div>
+                    </div>
+                    <div class="item " data-article="2450">
+               		     <a href="" class="div"><img src="img/2a3c79d5d625d3379d2c68a782bef6b4.JPG" alt="" width="167" height="167"></a>
+                         <div class="title">Складной нож Ganzo G7211</div>
+                         <div class="itemid">2450</div>
+                         <div class="fun">
+                             <div class="l">
+                                 <a href="" class="detail">Подробнее</a>
+                                 <a href="#" class="cart">В корзину</a>
+                             </div>
+                             <div class="price">1 930</div>
+                             <div class="one"><a href="#">Купить в 1 клик</a></div>
+                         </div>
+                     </div>
+                     <div class="item last" data-article="2545">
+               		     <a href="" class="div"><img src="img/884faa8343d62daa819d18c259743d53.jpg" alt="" width="167" height="167"></a>
+                         <div class="title">Нож разделочный Кизляр «Руз»</div>
+                         <div class="itemid">2545</div>
+                         <div class="fun">
+                             <div class="l">
+                                 <a href="" class="detail">Подробнее</a>
+                                 <a href="#" class="cart">В корзину</a>
+                             </div>
+                             <div class="price">2 000</div>
+                             <div class="one"><a href="#">Купить в 1 клик</a></div>
+                         </div>
+                     </div>    
+                     <div class="clear"></div>
+                 </div> 
+                 <div class="abo">
+           		      <div class="text">
+                           <p style="text-align: justify;"><img src="img/foto.jpg" alt="владелец Libk центра металлоискателей" align="left" hspace="5" border="0" vspace="5">Всем привет :-)<br> Я Николай Кукушкин, владелец Libk центра металлоискателей и товаров для активного отдыха.</p>
+                           <p style="text-align: justify;">Поиск с металлоискателем это мое хобби и увлечение всей моей жизни.<br> Кто же из Вас не хотел найти клад и разбогатеть? <br> Я и моя команда не просто продадим Вам металлоискатель, а поможем воплотить Вашу мечту в реальность, подберем прибор и снаряжение под Вашу задачу. Мы продаем только проверенные бренды, и за каждый проданный товар можем ручаться.</p>
+                           <p style="text-align: justify;">Лично для меня важно, чтобы каждый остался доволен и стал нашим постоянным покупателем, и для этого я и моя команда  стараемся совершенствоваться. <br> И за это Нас  рекомендуют!<br><br></p>
+                      </div>
+                      <div class="link"><a href="/about/">Подробнее</a></div>
+                      <hr><h2 align="center">ОБЯЗАТЕЛЬНО приходите к нам в гости:</h2>
+                      <p align="center"><iframe width="640" height="360" src="https://www.youtube.com/embed/Mb_bJ8lHIj4?rel=0" frameborder="0" allowfullscreen=""></iframe></p></div>
+                      <div itemscope="" itemtype="http://schema.org/Organization">
+                          <meta itemprop="name" content="Libk.ru магазин - металлоискатели, пинпоинтер, мультитулы.">
+                          <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                              <meta itemprop="streetAddress" content="г. Москва, Комсомольская площадь д2, Казанский вокзал метро Комсомольская, 10 метров от метро, последний вагон из центра(Радиальная), по ступенькам выход нелево и направо.В самом здании Казанского вокзала Торговый центр ТЦ Казанский павильон 24">
+                              <meta itemprop="telephone" content="+7 (495) 923-50-49">
+                          </div>
+                          <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                              <meta itemprop="streetAddress" content="г. Москва, улица Кировоградская 15 стр. 1, метро Пражская, 10 метров от метро, первый вагон из центра. Торговый центр 'Электронный рай',павильон 2А-27 правый вход, 1 этаж.">
+                              <meta itemprop="telephone" content="+7 (495) 923-50-49">
+                          </div>
+                      </div>
+                </div>
+       <div class="clear"></div>
+   </div>
+   <div class="to_top" style="display: none;">
+       <div class="top"></div>
+   </div>
+   <footer>
+       <div class="wrapper">
+           <div class="top">
+           		<div class="l">
+           		    <div>Телефон: + 7 (495)923-50-49 (многоканальный)</div>
+                </div>
+               <div class="r">
+                   <div>© «Libk.ru™» 2006–2017</div>
+                   <div>Информация, представленная на сайте, не является публичной офертой.</div>
+                   <div>ТМ Использование и перепечатка материалов возможны только с письменного разрешения владельца</div>
+               </div>
+           </div>
+           <div class="bottom">
+               <nav>
+                   <ul>
+                   	  <li><a href="/about/delivery/">Доставка и оплата</a></li>
+                      <li><a href="/sales/">Акции и подарки</a></li>
+                      <li><a href="/garantii/">Гарантии</a></li>
+                      <li><a href="/map/">Карта сайта</a></li>
+                   </ul>
+               </nav>
+               <div class="rating" style="height: 31px; overflow: hidden">
+               		                   <div>                		
+						  <!--LiveInternet counter--><script type="text/javascript"><!--
+						document.write("<a href='https://www.liveinternet.ru/click' "+
+						"target=_blank><img src='//counter.yadro.ru/hit?t45.6;r"+
+						escape(document.referrer)+((typeof(screen)=="undefined")?"":
+						";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+						screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+						";"+Math.random()+
+						"' alt='' title='LiveInternet' "+
+						"border='0' width='31' height='31'><\/a>")
+						//--></script><a href="https://www.liveinternet.ru/click" target="_blank"><img src="//counter.yadro.ru/hit?t45.6;rhttps%3A//libk.ru/articles/iskatel-kladov.php;s1920*1080*24;uhttps%3A//libk.ru/articles/sovety-kladoiskatelyam.php;0.8793580971527104" alt="" title="LiveInternet" border="0" width="31" height="31"></a><!--/LiveInternet-->
+                   </div>                                    
+                   
+                   <div><a href="https://clck.yandex.ru/redir/dtype=stred/pid=47/cid=1248/*https://market.yandex.ru/shop/30055/reviews/add"><img src="https://clck.yandex.ru/redir/dtype=stred/pid=47/cid=1248/*https://img.yandex.ru/market/informer12.png" border="0" alt="Оцените качество магазина на Яндекс.Маркете."></a>
+ 
+  </div>
+                   <!--/google-analitic-->
+<script type="text/javascript">
+				
+				  var _gaq = _gaq || [];
+				  _gaq.push(['_setAccount', 'UA-11241295-2']);
+				  _gaq.push(['_trackPageview']);
+				
+				  (function() {
+				    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				  })();
+				
+				</script>
+				<!--/google-analitic-->
+                   <!-- Yandex.Metrika counter --><div style="display:none;"><script type="text/javascript">(function(w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter6054556 = new Ya.Metrika({id:6054556, clickmap:true, trackLinks:true, webvisor:true}); } catch(e) { } }); })(window, "yandex_metrika_callbacks");</script></div><script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script><noscript>&lt;div&gt;&lt;img src="//mc.yandex.ru/watch/6054556" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript><!-- /Yandex.Metrika counter -->
+                                  </div>
+           </div>  
+       </div>
+   </footer>
+
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="js/jquery.lightSlider.min.js"></script>
+    <script src="js/lightGallery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/stopsovetnik/latest/ss.min.js"></script>
+    
+    
+  </body>
+</html>

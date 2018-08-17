@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fallout</title>
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon" /> <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
+
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container clearfix">
+			<img src="images/logo.png" class="logo left" alt="logo">
+			<p class="right">Убежище 101</p>
+		</div>
+	</header>
+	<main>
+		<div class="container clearfix">
+			<img src="images/main-boy.png" class="left boy" alt="boy">
+			<form action="#" method="post" class="right fallout-form">
+				<div class="clearfix">
+					<div class="left hero">
+						<p class="form-title">Name:</p>
+						<ul>
+							<li data-src="images/strength.png">Strength</li>
+							<li data-src="images/perception.png">Perception</li>
+							<li data-src="images/endurance.png">Endurance</li>
+							<li data-src="images/charisma.png">Charisma</li>
+							<li data-src="images/intelligence.png">Intelligence</li>
+							<li data-src="images/agility.png">Agility</li>
+							<li data-src="images/luck.png">Luck</li>
+						</ul>
+					</div>
+					<div class="left">
+						<p class="name-hero">
+                            <input type="text" name="name" placeholder="Введите имя">
+                        </p>
+						<div class="counter-block">
+		                    <span class="counter-left"></span>
+		                    <input type="text" class="counter-num" value="" name="Strength" max="10" data-src="images/strength.png">
+		                    <span class="counter-right"></span>
+		                </div>
+		                <div class="counter-block">
+		                    <span class="counter-left"></span>
+		                    <input type="text" class="counter-num" value="" name="Perception" data-src="images/perception.png">
+		                    <span class="counter-right"></span>
+		                </div>
+		                <div class="counter-block">
+		                    <span class="counter-left"></span>
+		                    <input type="text" class="counter-num" value="" name="Endurance" data-src="images/endurance.png">
+		                    <span class="counter-right"></span>
+		                </div>
+		                <div class="counter-block">
+		                    <span class="counter-left"></span>
+		                    <input type="text" class="counter-num" value="" name="Charisma" data-src="images/charisma.png">
+		                    <span class="counter-right"></span>
+		                </div>
+		                <div class="counter-block">
+		                    <span class="counter-left"></span>
+		                    <input type="text" class="counter-num" value="" name="Intelligence" data-src="images/intelligence.png">
+		                    <span class="counter-right"></span>
+		                </div>
+		                <div class="counter-block">
+		                    <span class="counter-left"></span>
+		                    <input type="text" class="counter-num" value="" name="Agility" data-src="images/agility.png">
+		                    <span class="counter-right"></span>
+		                </div>
+		                <div class="counter-block">
+		                    <span class="counter-left"></span>
+		                    <input type="text" class="counter-num" value="" name="Luck" data-src="images/luck.png">
+		                    <span class="counter-right"></span>
+		                </div>
+					</div>
+					<div class="right sex-block">
+						<input id="man" type="radio" name="sex">
+						<label for="man"></label>
+						<input id="woman" type="radio" name="sex">
+						<label for="woman"></label>
+						<div class="sex-man">
+							<img src="images/strength.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="form-footer clearfix">
+					<div class="left">
+						<span class="count">5</span>
+						<p>Points Available</p>
+						<a href="#" class="reset">Reset</a><a href="#" class="random">Random</a><br>
+						<button type="submit">Send</button>
+					</div>
+					<div class="right">
+						<p>Tell us about yourself! Vault-Tec needs to know what kind of citizen you are to ensure your future happiness.</p>
+					</div>
+				</div>
+			</form>
+		</div>
+	</main>
+
+	<script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

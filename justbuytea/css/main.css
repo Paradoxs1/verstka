@@ -1,0 +1,1490 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,700";
+body {
+  background: url(../img/footer-bg.jpg) no-repeat 52% bottom;
+  padding-bottom: 300px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; }
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+.wrap {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto; }
+
+ul {
+  list-style: none; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+#vk_groups {
+  margin-bottom: 35px; }
+
+/* START HEADER */
+header {
+  height: 38px;
+  background: #373739;
+  border-bottom: 3px solid #fa9f1b;
+  color: #fff; }
+  header .top-menu ul li {
+    font-size: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    height: 38px; }
+    header .top-menu ul li.phone-icon {
+      margin-right: 0;
+      margin-left: 15px;
+      font-weight: 700;
+      font-size: 13px; }
+    header .top-menu ul li i {
+      color: #fff; }
+    header .top-menu ul li a {
+      display: block;
+      font-size: 11px;
+      color: #fff;
+      line-height: 38px; 
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+}
+header .top-menu ul li span a{
+  line-height: 11px;
+}
+      header .top-menu ul li a:hover, header .top-menu ul li a.active {
+        color: #fa9f1b;
+        text-decoration: none; }
+      header .top-menu ul li a.mail {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 12px; }
+      header .top-menu ul li a.entrance {
+        text-decoration: none;
+        color: #fa9f1b;
+        font-size: 13px; 
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+}
+        header .top-menu ul li a.entrance:hover {
+          color: #fff; }
+    header .top-menu ul li.coll {
+      vertical-align: middle;
+      display: inline-block;
+      height: auto; }
+      header .top-menu ul li.coll div {
+        display: inline-block; }
+      header .top-menu ul li.coll span {
+        display: inline-block;
+        line-height: normal;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 11px;
+        text-decoration: underline;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+}
+        header .top-menu ul li.coll span:hover, header .top-menu ul li.coll span.active {
+          color: #fa9f1b;
+          text-decoration: none;
+          cursor: pointer; }
+        
+  main .owl-pagination {
+    display: none; }
+  main h2 {
+    font: 41px / 73.12px 'pfdintextcomppro-light';
+    color: #414143;
+    text-align: center; }
+  main h3 {
+    color: #78787c;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 30px; }
+  main .top-bar {
+    margin: 18px 0 10px; }
+    main .top-bar form {
+      padding-top: 3px;
+      height: 44px; }
+      main .top-bar form a {
+        width: 133px;
+        margin: 7px 0 0 25px; 
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+}
+        main .top-bar form a:hover {
+          -moz-box-shadow: 2px 2px 5px #414143;
+          -webkit-box-shadow: 2px 2px 5px #414143;
+          -o-box-shadow: 2px 2px 5px #414143;
+          box-shadow: 2px 2px 5px #414143; }
+      .button-block{
+        display: inline-block;
+      }
+      main .top-bar form a,
+      main .top-bar form input,
+      main .top-bar form button {
+        display: inline-block;
+        height: 44px;
+        margin-top: 7px; 
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+}
+      main .top-bar form .search {
+        margin: 0 18px 0 25px;
+        position: relative;
+        width: 298px; }
+        main .top-bar form .search input {
+          width: 100%;
+          padding: 0 10px;
+          margin: 7px 0 0 0; }
+        main .top-bar form .search button {
+          position: absolute;
+          right: 16px;
+          background: transparent;
+          color: #414143;
+          border: none; }
+      main .top-bar form button {
+        background: transparent;
+        border: 1px solid #e3e3e3;
+        color: #414143; }
+        main .top-bar form button.favorite, main .top-bar form button.backet {
+          width: 42px; }
+        main .top-bar form button.backet {
+          margin-left: 14px; }
+        main .top-bar form button.count {
+          margin-left: -5px;
+          margin-right: -5px;
+          padding: 0 8px; }
+        main .top-bar form button.price {
+          padding: 0 5px; }
+        main .top-bar form button:hover {
+          color: black;
+          cursor: pointer;
+          background: #dadadc; 
+          -webkit-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;          
+}
+          main .top-bar form button:hover.search-btn {
+            background: none; }
+  main nav.main-nav ul {
+    margin: 10px 0 20px;
+    display: table;
+    width: 100%;
+    text-align: center; }
+    main nav.main-nav ul li {
+      display: table-cell;
+      padding: 10px 10px 0;
+      border-top: 2px solid #e3e3e3; 
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+}
+      main nav.main-nav ul li:hover {
+        border-top-color: #fa9f1b; }
+      main nav.main-nav ul li a {
+        font-size: 15px;
+        color: #78787c;
+        text-decoration: none; }
+
+
+
+
+  
+.toggle-block{
+  display: none;
+  height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  cursor: pointer;
+  background: #6B8E23;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid #6B8E23;
+  color: #fff;
+}
+.toggle-block span{
+  margin-right: 10px;
+  font: normal 24px/50px "Open Sans";
+  color: #fff;
+}
+.toggle-mnu {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+  }
+.toggle-mnu span:after, 
+.toggle-mnu span:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+.toggle-mnu span:after{
+    top: 18px;
+}
+.toggle-mnu span{
+  position: relative;
+  display: block;
+}
+
+.toggle-mnu span, 
+.toggle-mnu span:after, 
+.toggle-mnu span:before{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+}
+.toggle-mnu.on span { background-color: transparent;}
+.toggle-mnu.on span:before {transform: rotate(45deg) translate(-1px, 0px);}
+.toggle-mnu.on span:after {transform: rotate(-45deg) translate(6px, -7px);}
+
+
+
+
+
+
+  main .baners .carousel {
+    width: 69.4%;
+    margin-right: 2.1%; }
+    main .baners .carousel .owl-prev,
+    main .baners .carousel .owl-next {
+      width: 18px;
+      height: 43px;
+      top: 42%;
+      position: absolute;
+      -webkit-transition-property: none;
+      -moz-transition-property: none;
+      -o-transition-property: none;
+      transition-property: none; }
+    main .baners .carousel .owl-prev {
+      background: url(../img/main-carousel/btn-carousel.png) no-repeat;
+      background-position: -18px -0px;
+      left: 0%; }
+      main .baners .carousel .owl-prev:hover {
+        background: url(../img/main-carousel/btn-carousel.png) no-repeat;
+        background-position: -0px -0px; }
+    main .baners .carousel .owl-next {
+      right: 0%;
+      margin-right: 1px;
+      background: url(../img/main-carousel/btn-carousel.png) no-repeat;
+      background-position: -18px -43px; }
+      main .baners .carousel .owl-next:hover {
+        background: url(../img/main-carousel/btn-carousel.png) no-repeat;
+        background-position: -0px -43px; }
+  main .baners .min-baners {
+    width: 28.5%; }
+    main .baners .min-baners a {
+      display: block;
+      margin-bottom: 20px; }
+    main .baners .min-baners a img{
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+      main .baners .min-baners a img:hover {
+        -moz-box-shadow: 2px 2px 10px #414143;
+        -webkit-box-shadow: 2px 2px 10px #414143;
+        -o-box-shadow: 2px 2px 10px #414143;
+        box-shadow: 2px 2px 10px #414143; }
+  main .left-col {
+    width: 245px;
+    margin-right: 20px;
+    padding-left: 48px; }
+    main .left-col .left-nav {
+      padding-top: 15px;
+      background: #f4f2ed;
+      margin-bottom: 47px; }
+      main .left-col .left-nav li a {
+        padding: 10px 17px 5px;
+        font-size: 15px;
+        line-height: 18px;
+        color: #999898;
+        text-decoration: none;
+        display: block; 
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+}
+        main .left-col .left-nav li a:hover {
+          color: #666565;
+          background: #d3dfc9; }
+      main .left-col .left-nav li:first-child {
+        font-size: 15px;
+        padding: 0 0 5px 0;
+        margin: 0 17px 5px;
+        border-bottom: 1px solid #ccc;
+        color: #8cb30c;
+        text-transform: uppercase; }
+    main .left-col .news {
+      border: 1px solid #ababab;
+      position: relative;
+      padding: 0 2px;
+      margin: 33px 0; }
+      main .left-col .news .news-border {
+        border: 1px solid #ababab;
+        margin: 2px;
+        padding: 0 10px; }
+      main .left-col .news .news-block {
+        padding-top: 8px; }
+        main .left-col .news .news-block:first-child {
+          padding-top: 0; }
+        main .left-col .news .news-block:last-child p:before {
+          content: "";
+          height: 0px; }
+      main .left-col .news h3 {
+        font-size: 12px;
+        letter-spacing: 1px;
+        color: #544c45;
+        margin-bottom: 0;
+        position: relative;
+        top: -14px;
+        left: 29%;
+        padding: 0 10px;
+        background: #fff;
+        display: inline-block; }
+      main .left-col .news .time {
+        color: #b9bbcd;
+        font-size: 11px;
+        padding-bottom: 8px; }
+      main .left-col .news a {
+        color: #544c45;
+        font-size: 12px; 
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+}
+      main .left-col .news a:hover{
+        text-decoration: none;
+      }
+        main .left-col .news a p {
+          padding-bottom: 15px;
+          position: relative; }
+          main .left-col .news a p:before {
+            position: absolute;
+            content: "";
+            width: 50%;
+            height: 1px;
+            bottom: 0;
+            left: 25%;
+            background: #ababab; }
+  main .right-col {
+    width: 72.6%;
+    margin-bottom: 100px; }
+  main .carousel {
+    width: 100%; }
+  main .owl-prev,
+  main .owl-next {
+    width: 24px;
+    height: 23px;
+    top: -23%;
+    position: absolute;
+    -webkit-transition-property: none;
+    -moz-transition-property: none;
+    -o-transition-property: none;
+    transition-property: none; }
+  main .owl-prev {
+    background: url(../img/carousel-min.png) no-repeat;
+    background-position: -24px -23px;
+    right: 78px; }
+    main .owl-prev:hover {
+      background: url(../img/carousel-min.png) no-repeat;
+      background-position: -24px -0px; }
+  main .owl-next {
+    right: 54px;
+    margin-right: 1px;
+    background: url(../img/carousel-min.png) no-repeat;
+    background-position: -0px -23px; }
+    main .owl-next:hover {
+      background: url(../img/carousel-min.png) no-repeat;
+      background-position: -0px -0px; }
+  main .stock,
+  main .recommends {
+    width: 100%;
+    position: relative; }
+    main .stock .tea-card,
+    main .recommends .tea-card {
+      width: 147px;
+      text-align: center;
+      position: relative;
+      margin-left: 20px; }
+      main .stock .tea-card:nth-child(4n+1),
+      main .recommends .tea-card:nth-child(4n+1) {
+        margin-left: 0; }
+      main .stock .tea-card:after,
+      main .recommends .tea-card:after {
+        content: attr(data-name);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 700;
+        color: #fff;
+        background: #adc88f; }
+      main .stock .tea-card:last-child:after,
+      main .recommends .tea-card:last-child:after {
+        height: 0px;
+        width: 0px; }
+      main .stock .tea-card img.stock-tea,
+      main .recommends .tea-card img.stock-tea {
+        margin-bottom: 25px; }
+      main .stock .tea-card img.recommends-tea,
+      main .recommends .tea-card img.recommends-tea {
+        margin-bottom: 10px; }
+      main .stock .tea-card p.price,
+      main .recommends .tea-card p.price {
+        font-size: 10px;
+        color: #9abc74;
+        margin: 10px 0 12px; }
+        main .stock .tea-card p.price span,
+        main .recommends .tea-card p.price span {
+          color: #544c45;
+          text-decoration: line-through; }
+      main .stock .tea-card a,
+      main .recommends .tea-card a {
+        font-size: 12px;
+        color: #3086be; 
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+}
+      main .stock .tea-card a:hover,
+      main .recommends .tea-card a:hover{
+        text-decoration: none;
+      }
+        main .stock .tea-card a.in-backet,
+        main .recommends .tea-card a.in-backet {
+          width: 75px;
+          height: 25px;
+          border: 1px solid #fa9f1b;
+          text-decoration: none;
+          font-size: 10px;
+          font-weight: 700;
+          text-align: center;
+          line-height: 25px;
+          color: #585858;
+          text-transform: uppercase; 
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+}
+          main .stock .tea-card a.in-backet:hover,
+          main .recommends .tea-card a.in-backet:hover {
+            background: #fa9f1b;
+            color: #fff; }
+      main .stock .tea-card .btn-additionally i,
+      main .recommends .tea-card .btn-additionally i {
+        font-size: 18px;
+        color: #aaa;
+        margin-right: 8px; }
+  main .recommends {
+    padding: 35px 0 0 0; }
+  main .why-we {
+    margin-top: 50px; }
+    main .why-we h3 {
+      font-size: 15px;
+      text-transform: uppercase; }
+    main .why-we ul {
+      margin: 40px 0; }
+      main .why-we ul li {
+        text-align: center;
+        width: 30%;
+        display: inline-block; }
+        main .why-we ul li h3 {
+          margin-top: 38px; }
+  main .brands ul li {
+    text-align: center;
+    display: inline-block;
+    width: 22%; }
+
+/* END MAIN*/
+/* START FOOTER */
+footer {
+  padding-top: 10px; }
+  footer .wrap {
+    background: #f8f0d5;
+    padding: 0 18px;
+    background-size: cover; }
+  footer .servise-lists .best-quality {
+    width: 123px;
+    height: 123px; }
+  footer .servise-lists ul{
+    text-align: center;
+  }
+  footer .servise-lists ul li {
+    display: inline-block;
+    margin: 18px 35px 0 0; 
+    
+}
+    footer .servise-lists ul li:last-child {
+      margin-left: 30px; }
+    footer .servise-lists ul li:hover a {
+      text-shadow: 1px 1px 1px #351b08; }
+    footer .servise-lists ul li a {
+      text-decoration: none; 
+              -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+}
+    footer .servise-lists ul li .servise {
+      width: 90px;
+      height: 90px;
+      margin-bottom: 10px;
+      background: url(../img/servises.png) no-repeat; }
+      footer .servise-lists ul li .servise.delivery {
+        background-position: -0px -0px; }
+      footer .servise-lists ul li .servise.shares {
+        background-position: -90px -0px; }
+      footer .servise-lists ul li .servise.gifts {
+        background-position: -0px -90px; }
+      footer .servise-lists ul li .servise.reviews {
+        background-position: -90px -90px; }
+      footer .servise-lists ul li .servise.communication {
+        background-position: -0px -180px; }
+    footer .servise-lists ul li h3 {
+      color: #bb601b;
+      font-size: 14px;
+      text-align: center; }
+  footer .bottom-nav {
+    padding: 17px 0 20px;
+    color: #fff; }
+    footer .bottom-nav .social,
+    footer .bottom-nav .link,
+    footer .bottom-nav .contact {
+      width: 30%; }
+    footer .bottom-nav ul,
+    footer .bottom-nav li {
+      display: inline-block; }
+    footer .bottom-nav .social {
+      padding-top: 15px; }
+      footer .bottom-nav .social a.social-btn {
+        display: block;
+        width: 26px;
+        height: 28px;
+        background: url(../img/social.png) no-repeat; }
+        footer .bottom-nav .social a.social-btn.vk {
+          background-position: -0px -28px; }
+        footer .bottom-nav .social a.social-btn.od {
+          background-position: -0px -56px; }
+        footer .bottom-nav .social a.social-btn.facebook {
+          background-position: -0px -84px; }
+        footer .bottom-nav .social a.social-btn.twitter {
+          background-position: -0px -112px; }
+        footer .bottom-nav .social a.social-btn.google-plus {
+          background-position: -0px -140px; }
+        footer .bottom-nav .social a.social-btn.mail {
+          background-position: -0px -168px; }
+        footer .bottom-nav .social a.social-btn.plus {
+          background-position: -0px -0px;
+          width: 27px; }
+    footer .bottom-nav .link {
+      margin-top: 22px;
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 700; }
+      footer .bottom-nav .link li a {
+        font-size: 13px;
+        font-weight: 700;
+        color: #fff; }
+      footer .bottom-nav .link li:last-child {
+        display: block;
+        text-align: center; }
+    footer .bottom-nav .contact li {
+      display: block;
+      font-size: 13px; 
+      color: #fff;
+}
+  
+      footer .bottom-nav .contact li a {
+        font-size: 13px;
+        color: #fff;
+        text-decoration: none; 
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+}
+  
+    footer .bottom-nav .link li a:hover{
+      text-decoration: none;
+    }
+/* END FOOTER */
+/* scroll */
+.cd-top {
+  display: inline-block;
+  height: 53px;
+  width: 41px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: url(../img/up.png) no-repeat center;
+  background-size: contain;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s 0s, visibility 0s .3s; }
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  transition: opacity .3s 0s, visibility 0s 0s; }
+
+.cd-top.cd-is-visible {
+  visibility: visible;
+  opacity: 1; }
+
+.cd-top.cd-fade-out {
+  opacity: .5; }
+
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1; }
+
+/* modal */
+.blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px); }
+
+.modal-wrapper, .modal-wrapper2 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(192, 192, 192, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+
+.modal-wrapper.open, .modal-wrapper2.open {
+  opacity: 1;
+  visibility: visible; }
+
+.modal {
+  max-width: 350px;
+  width: 100%;
+  height: 450px;
+  display: block;
+  margin: 50% 0 0 -150px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+.modal-wrapper.open .modal, .modal-wrapper2.open .modal {
+  margin-top: -200px;
+  opacity: 1;
+  border-radius: 15px; }
+
+.head {
+  width: 100%;
+  height: 15px;
+  padding: 1.5em 10%;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: 700; }
+
+.btn-close {
+  width: 32px;
+  height: 32px;
+  display: block;
+  float: right;
+  color: silver; }
+
+.btn-close::before, .btn-close::after {
+  content: '';
+  width: 32px;
+  height: 6px;
+  display: block;
+  background: silver; }
+
+.btn-close::before {
+  margin-top: 12px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.btn-close::after {
+  margin-top: -6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.content {
+  padding: 5%; }
+
+.modal-wrapper form label {
+  display: block; }
+
+.modal-wrapper form input {
+  width: 100%;
+  margin: 10px auto;
+  height: 30px;
+  border-radius: 10px;
+  padding: 0 10px;
+  border: 1px solid silver; }
+
+.modal-wrapper form span {
+  color: red; }
+
+.modal-wrapper form input[type='submit'] {
+  width: 100%;
+  background: #8cb30c;
+  color: #369;
+  font-weight: 700;
+  font-size: 14px; }
+
+.modal-wrapper form input[type='submit']:hover {
+  background: #8cb32f;
+  cursor: pointer;
+  color: #fff; }
+
+.modal-wrapper form p {
+  margin: 20px 0;
+  padding: 25px 0;
+  text-align: center;
+  border: 1px dashed #8cb30c; }
+
+
+
+
+/***********************DELIVERY*******************************/
+
+
+ main .right-col .delivery h1 {
+      font-size: 50px;
+      line-height: 70px;
+      font-weight: 400;
+      text-align: center;
+      color: #464646;
+      text-transform: uppercase; }
+    main .right-col .delivery h3 {
+      font-size: 20px;
+      line-height: 70px;
+      font-weight: 400;
+      text-align: center;
+      color: #b3b3b3; }
+    main .right-col .delivery ul {
+      margin-top: 17px; }
+      main .right-col .delivery ul li {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 220px;
+        width: 100%;
+        text-align: center;
+        margin-right: 20px; }
+        main .right-col .delivery ul li:last-child {
+          margin-right: 0; }
+        main .right-col .delivery ul li:hover a {
+          text-shadow: 1px 1px 1px black; }
+        main .right-col .delivery ul li:hover img {
+          width: 100%; }
+        main .right-col .delivery ul li a {
+          text-decoration: none; }
+          main .right-col .delivery ul li a img {
+            width: 98%; 
+            height: auto;
+          }
+          main .right-col .delivery ul li a h2 {
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-top: 30px;
+            font-size: 16px;
+            color: #464646; }
+
+
+/***********************COURIER*******************************/
+
+ main .right-col .courier {
+      background: url(../img/delivery-courier.png) no-repeat left 80%;
+      background-size: 25%; }
+      main .right-col .courier h1 {
+        font-size: 46px;
+        color: #464646;
+        font-weight: 400;
+        margin-bottom: 55px;
+        text-align: center; }
+      main .right-col .courier h4 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 25px;
+        margin-left: 28%; }
+      main .right-col .courier ul {
+        list-style: disc;
+        margin-left: 30%; }
+        main .right-col .courier ul li {
+          font-size: 14px;
+          line-height: 25px; }
+
+
+/***********************CARD*******************************/
+main ul.catalog {
+    margin-bottom: 5px; }
+    main ul.catalog li {
+      font-size: 12px;
+      display: inline-block; }
+      main ul.catalog li a {
+        font-size: 12px;
+        color: #3086be; }
+main ul.catalog li a:hover{
+  text-decoration: none;
+}
+  main .tea-card .tea-card {
+    width: 320px; }
+  main .tea-card h2 {
+    color: #676767;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ededed;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400; }
+  main .tea-card .stars {
+    color: #ffdd00;
+    font-size: 12px; }
+  main .tea-card .btns {
+    margin-right: 40px; }
+    main .tea-card .btns li {
+      color: #bfbfbf;
+      display: inline-block;
+      margin-left: 13px; }
+      main .tea-card .btns li a {
+        color: #bfbfbf;
+        font-size: 10px; }
+    main .tea-card .btns li a:hover{
+      text-decoration: none;
+    }
+  main .tea-card .info-tea {
+    padding-top: 7px; }
+  .images-part{
+    width: 300px;
+  }
+  .text-part{
+    width: 410px;
+  }
+    main .tea-card .info-tea .images-part .main-img {
+      width: 300px;
+      padding: 0 10px 10px 0; }
+    main .tea-card .info-tea .images-part .additional-img img {
+      margin-right: 5px;
+      border: 3px solid transparent;
+      width: 88px;
+      height: 88px; 
+      cursor: pointer;
+}
+      main .tea-card .info-tea .images-part .additional-img img:hover, main .tea-card .info-tea .images-part .additional-img img.active {
+        border: 3px solid #f99f1b; }
+    main .tea-card .info-tea .text-part h1 {
+      font-size: 26px;
+      color: #575757;
+      margin: 0 92px 15px 0; }
+    main .tea-card .info-tea .text-part .buy {
+      font-size: 10px;
+      font-weight: 700;
+      color: #575757;
+      width: 127px;
+      height: 27px;
+      text-align: center;
+      line-height: 27px;
+      border: 1px solid #d08c2c;
+      text-decoration: none;
+      margin-top: 5px;
+      text-transform: uppercase; 
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+}
+      main .tea-card .info-tea .text-part .buy:hover {
+        background: #d08c2c;
+        color: #fff; }
+    main .tea-card .info-tea .text-part table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px; }
+      main .tea-card .info-tea .text-part table tr:nth-child(2) {
+        background: #eee; }
+      main .tea-card .info-tea .text-part table td {
+        color: #544c39;
+        padding: 10px;
+        border: 1px solid #bfbfbf;
+        font-size: 12px; }
+        main .tea-card .info-tea .text-part table td:first-child {
+          font-weight: 700; }
+    main .tea-card .info-tea .text-part .artic {
+      font-size: 10px;
+      color: #544c39;
+      margin-bottom: 10px; }
+      main .tea-card .info-tea .text-part .artic span {
+        color: #aaa; }
+    main .tea-card .info-tea .text-part form.mass label {
+      display: block;
+      font-size: 10px; }
+      main .tea-card .info-tea .text-part form.mass label span {
+        font-size: 15px;
+        color: #709e17; }
+      main .tea-card .info-tea .text-part form.mass label.count {
+        margin-top: 15px; }
+        main .tea-card .info-tea .text-part form.mass label.count span {
+          width: 12px;
+          height: 13px;
+          border-radius: 50%;
+          margin: 0 5px;
+          display: inline-block;
+          background: url(../img/social.png) no-repeat;
+          border: none; }
+          main .tea-card .info-tea .text-part form.mass label.count span:hover {
+            cursor: pointer; }
+          main .tea-card .info-tea .text-part form.mass label.count span.min {
+            background-position: -12px -196px; }
+          main .tea-card .info-tea .text-part form.mass label.count span.plus {
+            background-position: -0px -196px; }
+        main .tea-card .info-tea .text-part form.mass label.count input {
+          width: 35px;
+          height: 20px;
+          text-align: center;
+          color: #000; }
+    main .tea-card .info-tea .text-part .sum {
+      font-size: 30px;
+      color: #5d5d5d;
+      border-bottom: 1px solid #bfbfbf;
+      padding-bottom: 13px;
+      margin-bottom: 25px; }
+      main .tea-card .info-tea .text-part .sum span {
+        color: #709e17;
+        margin-left: 50px; }
+      main .tea-card .info-tea .text-part .sum a.in-basket {
+        display: inline-block;
+        width: 75px;
+        height: 25px;
+        color: #544c39;
+        border: 1px solid #d08c2c;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+        line-height: 25px; 
+        -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+        cursor: pointer;
+}
+        main .tea-card .info-tea .text-part .sum a.in-basket:hover {
+          background: #d08c2c;
+          color: #fff; }
+    main .tea-card .info-tea .text-part .other-btn {
+      color: #aaa;
+      font-size: 11px; }
+      main .tea-card .info-tea .text-part .other-btn a {
+        color: #3c91c8;
+        font-size: 11px; }
+    main .tea-card .info-tea .text-part .other-btn a:hover{
+      text-decoration: none;
+    }
+      main .tea-card .info-tea .text-part .other-btn p {
+        margin-bottom: 10px; }
+      main .tea-card .info-tea .text-part .other-btn .share {
+        margin: 5px 10px 0 0; }
+      main .tea-card .info-tea .text-part .other-btn .share,
+      main .tea-card .info-tea .text-part .other-btn ul {
+        display: inline-block; }
+        main .tea-card .info-tea .text-part .other-btn .share li,
+        main .tea-card .info-tea .text-part .other-btn ul li {
+          display: inline-block; }
+          main .tea-card .info-tea .text-part .other-btn .share li a.social,
+          main .tea-card .info-tea .text-part .other-btn ul li a.social {
+            display: inline-block;
+            width: 22px;
+            height: 24px;
+            background: url(../img/card-social.png) no-repeat; }
+            main .tea-card .info-tea .text-part .other-btn .share li a.social.vk,
+            main .tea-card .info-tea .text-part .other-btn ul li a.social.vk {
+              background-position: -0px -0px; }
+            main .tea-card .info-tea .text-part .other-btn .share li a.social.facebook,
+            main .tea-card .info-tea .text-part .other-btn ul li a.social.facebook {
+              background-position: -22px -0px; }
+            main .tea-card .info-tea .text-part .other-btn .share li a.social.tweeter,
+            main .tea-card .info-tea .text-part .other-btn ul li a.social.tweeter {
+              background-position: -0px -24px; }
+            main .tea-card .info-tea .text-part .other-btn .share li a.social.mail,
+            main .tea-card .info-tea .text-part .other-btn ul li a.social.mail {
+              background-position: -22px -24px; }
+            main .tea-card .info-tea .text-part .other-btn .share li a.social.od,
+            main .tea-card .info-tea .text-part .other-btn ul li a.social.od {
+              background-position: -0px -48px; }
+            main .tea-card .info-tea .text-part .other-btn .share li a.social.g-plus,
+            main .tea-card .info-tea .text-part .other-btn ul li a.social.g-plus {
+              background-position: -22px -48px; }
+  main .stock,
+  main .recommends {
+    width: 100%;
+    position: relative; }
+    main .stock .tea-card,
+    main .recommends .tea-card {
+      width: 147px;
+      text-align: center;
+      position: relative;
+      margin-left: 20px; }
+      main .stock .tea-card:nth-child(4n+1),
+      main .recommends .tea-card:nth-child(4n+1) {
+        margin-left: 0; }
+      main .stock .tea-card:last-child:after,
+      main .recommends .tea-card:last-child:after {
+        height: 0px;
+        width: 0px; }
+      main .stock .tea-card img.stock-tea,
+      main .recommends .tea-card img.stock-tea {
+        margin-bottom: 25px; }
+      main .stock .tea-card img.recommends-tea,
+      main .recommends .tea-card img.recommends-tea {
+        margin-bottom: 10px; }
+      main .stock .tea-card p.price,
+      main .recommends .tea-card p.price {
+        font-size: 10px;
+        color: #9abc74;
+        margin: 10px 0 12px; }
+        main .stock .tea-card p.price span,
+        main .recommends .tea-card p.price span {
+          color: #544c39;
+          text-decoration: line-through; }
+      main .stock .tea-card a,
+      main .recommends .tea-card a {
+        font-size: 12px;
+        color: #3086be; }
+        main .stock .tea-card a.in-backet,
+        main .recommends .tea-card a.in-backet {
+          width: 75px;
+          height: 25px;
+          border: 1px solid #fa9f1b;
+          text-decoration: none;
+          font-size: 10px;
+          font-weight: 700;
+          text-align: center;
+          line-height: 25px;
+          color: #585858;
+          text-transform: uppercase; }
+          main .stock .tea-card a.in-backet:hover,
+          main .recommends .tea-card a.in-backet:hover {
+            background: #fa9f1b;
+            color: #fff; }
+      main .stock .tea-card .btn-additionally i,
+      main .recommends .tea-card .btn-additionally i {
+        font-size: 18px;
+        color: #aaa;
+        margin-right: 8px; }
+  main .tabs-menu {
+    margin: 65px 40px 20px 0; }
+    main .tabs-menu #tabs {
+      border-bottom: 1px solid #fa9f1b; }
+      main .tabs-menu #tabs li {
+        display: inline-block;
+        font-size: 12px;
+        color: #000;
+        margin-right: 13px;
+        padding-bottom: 5px;
+        text-decoration: underline; }
+        main .tabs-menu #tabs li span {
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          background: url(../img/card-social.png) no-repeat;
+          background-position: -0px -0px;
+          background-size: 28px 42px;
+          margin: 0 0 -4px 5px; }
+        main .tabs-menu #tabs li.active, main .tabs-menu #tabs li:hover {
+          cursor: pointer;
+          text-decoration: none;
+          border-bottom: 1px solid #fa9f1b; }
+    main .tabs-menu .overview {
+      font-size: 11px; }
+      main .tabs-menu .overview p {
+        margin-top: 25px; }
+      main .tabs-menu .overview .img-example {
+        margin-top: 25px;
+        background: url(../img/best-quality.png) no-repeat 83% top;
+        background-size: 184px; }
+        main .tabs-menu .overview .img-example .example {
+          width: 60%; }
+          main .tabs-menu .overview .img-example .example img {
+            margin-right: 20px; }
+      main .tabs-menu .overview ul {
+        list-style: disc;
+        margin: 25px 0 0 20px; }
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 992px){
+  footer .contact{
+    margin-left: 10px;
+  }
+  .top-bar>a>img,
+  .top-bar>form{
+    float: none;
+    display: table;
+    margin: 0 auto;
+  }
+  .baners .min-baners img,
+  .baners .owl-carousel img{
+    width: 100%;
+    height: auto;
+  }
+  main .baners .min-baners a {
+    margin-bottom: 15px;
+  }
+  main .left-col {
+    width: 200px;
+    padding-left: 3px;
+  }
+  main .right-col{
+    width: 69%;
+  }
+  main .owl-prev, main .owl-next{
+    top: -11%;
+  }
+  .brands img{
+    width: 100%;
+    height: auto;
+  }
+  main .right-col .delivery ul li,
+  main .right-col .delivery ul li:last-child
+  {
+    display: table;
+    margin: 0 auto;
+  }
+  main .right-col .courier ul{
+    margin-left: 0;
+  }
+  main .right-col .courier h1 {
+    margin-bottom: 260px;
+  }
+  main .right-col .courier {
+    background-position: center 90px;
+    background-size: auto;
+  }
+  main .right-col .courier h4{
+    margin-left: 0;
+    text-align: center;
+  }
+  .images-part,
+  .text-part{
+    width: auto;
+    float: none;
+    display: table;
+    margin: 0 auto;
+  }
+  main .stock h3{
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 768px){
+  header .top-menu ul li:last-child{
+    display: none;
+  }
+  header .top-menu .coll strong,
+  header .top-menu .coll span:not(.trigger){
+    display: none;
+  }
+  header .top-menu ul .trigger{
+    position: relative;
+    top: -8px;
+    right: -3px;
+  }
+  .top-menu ul{
+    float: none;
+    display: table;
+    margin: 0 auto;
+  }
+  footer .servise-lists ul li:last-child{
+    margin-left: 0;
+  }
+  .bottom-nav{
+    text-align: center;
+  }
+  .bottom-nav nav{
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+  }
+  footer .bottom-nav .link li {
+    display: list-item;
+    text-align: left;
+  }
+  footer .bottom-nav .link li:last-child{
+    text-align: left;
+  }
+  footer .bottom-nav .link li:nth-child(2),
+  footer .bottom-nav .link li:nth-child(4){
+    display: none;
+  }
+  footer .bottom-nav .link {
+    width: auto !important;
+    margin: 8px 30px 0;
+  }
+  .button-block{
+    display: block;
+    text-align: center;
+  }
+  .top-bar>form>a{
+    float: none;
+    margin: 0 auto !important;
+    display: table !important;
+  }
+  .top-bar>form>a img{
+    display: block;
+  }
+  main .top-bar form .search{
+    float: none;
+  }
+  main .top-bar form .search{
+    width: 400px;
+  }
+  #menu{
+    display: none;
+  }
+  .toggle-block{
+    display: block;
+  }
+  #menu{
+    margin: 0; 
+  }
+  #menu li:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  main nav.main-nav ul li{
+    display: block;
+    border-top: 0px;
+    text-align: left;
+    padding-left: 30px;
+    border-bottom: 1px solid #78787c;
+  }
+  main nav.main-nav ul li a{
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 600;
+    -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+  }
+  main nav.main-nav ul li a:hover{
+    color: #333;
+  }
+  .baners{
+    margin-top: 20px;
+  }
+  main .baners .carousel{
+    float: none;
+    width: 100%;
+  }
+  main .baners .min-baners{
+    width: 100%;
+    text-align: center;
+  }
+  main .baners .min-baners a{
+    display: inline-block;
+    margin-left: 10px;
+  }
+  .min-baners img{
+    width: auto;
+    height: auto;
+  }
+  .right-col, .left-col{
+    float: none;
+  }
+  main .right-col{
+    padding-left: 20px;
+    width: 100%;
+  }
+  main .left-col .left-nav{
+    display: none;
+  }
+  #owl-stock .owl-item,
+  #owl-recommends .owl-item{
+    text-align: center;
+  }
+  main .stock .tea-card, main .recommends .tea-card{
+    float: none;
+    display: inline-block;
+  }
+  main .why-we ul li {
+    vertical-align: top;
+  }
+  main .left-col {
+    width: 100%;
+  }
+.left-col{
+  text-align: center;
+}
+  .left-col #vk_groups,
+  .left-col iframe{
+    display: inline-block;
+    vertical-align: top;
+  }
+  .left-col #vk_groups{
+    margin-right: 30px;
+  }
+  main .left-col .news{
+    text-align: left;
+  }
+  main .left-col .news a p:before {
+    width: 100%;
+    left: 0;
+  }
+  .courier{
+    margin-left: 20px;
+  }
+  main .right-col .courier h1 {
+    margin-bottom: 270px;
+  }
+  main .right-col .courier {
+    background-position: center 130px;
+  }
+  main .tabs-menu .overview .img-example .example{
+    width: 100%;
+  }
+  main .tabs-menu .overview .img-example{
+    background: none;
+  }
+}
+@media only screen and (max-width: 480px){
+  header{
+    height: 80px;
+  }
+  header .top-menu ul li.phone-icon{
+    display: block;
+    margin-left: 30px;
+  }
+  header .top-menu ul li.coll {
+    position: relative;
+    top: -43px;
+    right: -45px;
+  }
+  footer .bottom-nav .social{
+    display: none;
+  }
+  footer .bottom-nav .link{
+    margin: 0 10px 0 0;
+  }
+  footer .bottom-nav .contact {
+    width: 50%;
+  }
+  main .top-bar form .search{
+    width: 260px;
+  }
+  main .baners .min-baners a{
+    margin-left: 0;
+  }
+  main .why-we ul li,
+  main .brands ul li{
+    display: table;
+    margin: 0 auto;
+  }
+  main .brands ul li{
+    margin-bottom: 10px;
+  }
+  main .why-we ul li h3 {
+    margin-top: 8px;
+  }
+  main h2 {
+    line-height: 50px;
+  }
+  .brands img{
+    width: auto;
+  }
+  .left-col #vk_groups{
+    margin-right: 0;
+  }
+  .courier{
+    margin-left: 0;
+  }
+  main .right-col .courier ul{
+    list-style-position: inside;
+  }
+  main .tea-card .btns li{
+    display: list-item;
+  }
+  main .tea-card h2 {
+    line-height: 26px;
+  }
+  main .tea-card .info-tea .images-part .main-img {
+    width: 260px;
+  }
+  main .tea-card .info-tea .text-part h1{
+    margin-right: 10px;
+  }
+  main .tabs-menu .overview .img-example .example{
+    text-align: center;
+  }
+  main .tabs-menu .overview .img-example .example img{
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+  

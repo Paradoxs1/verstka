@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'UniSansThinCaps';
+  src: url('UniSansThinCaps.eot?#iefix') format('embedded-opentype'),  url('UniSansThinCaps.otf')  format('opentype'),
+	     url('UniSansThinCaps.woff') format('woff'), url('UniSansThinCaps.ttf')  format('truetype'), url('UniSansThinCaps.svg#UniSansThinCaps') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

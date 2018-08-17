@@ -1,0 +1,306 @@
+@font-face {
+	font-family: 'RobotoBold';
+	src: url('../fonts/RobotoBold/Roboto-Bold.eot');
+	src: url('../fonts/RobotoBold/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/RobotoBold/Roboto-Bold.woff') format('woff'),
+		 url('../fonts/RobotoBold/Roboto-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-Regular.eot');
+	src: url('../fonts/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Roboto/Roboto-Regular.woff') format('woff'),
+		 url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  font: normal 14px/16px 'Roboto';
+  color: #464646;
+  background: rgba(0, 0, 0, 0.9) url('../images/woman.jpg') no-repeat center top;
+}
+main {overflow: hidden;}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus, *:active {
+  outline: none !important;
+  text-decoration: none !important;
+}
+a,
+a:hover{
+  text-decoration: none;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.container{
+  position: relative;
+  max-width: 1020px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0 10px;
+}
+
+/*******************HEADER********************/
+header{
+	padding: 20px 0;
+	background: rgba(0, 0, 0, 0.6);
+}
+header p{
+	padding-top: 30px;
+	font: normal 20px/20px 'RobotoBold';
+	text-transform: uppercase;
+}
+.logo{
+	max-width: 200px;
+	width: 100%;
+	height: 50px;
+}
+main{
+	padding: 50px 0;
+}
+.boy{
+	max-width: 300px;
+	width: 100%;
+	height: auto;
+}
+.fallout-form{
+	width: 555px;
+	padding: 30px 25px;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	background: rgba(0, 0, 0, 0.5);
+	color: #14F074;
+}
+.form-title {
+    padding-bottom: 30px;
+    color: #14F074;
+    font: normal 20px/20px 'RobotoBold';
+}
+.name-hero input{
+	margin-bottom: 25px;
+	border-radius: 5px;
+	padding: 0 5px;
+	border: none;
+	background-color: transparent;
+	width: 120px;
+	height: 30px;
+	font: normal 14px/16px 'Roboto';
+	color: #14F074;
+	text-align: center;
+}
+.name-hero input::-webkit-input-placeholder {color:#14F074;font: normal 14px/16px 'Roboto';}
+.name-hero input::-moz-placeholder          {color:#14F074;font: normal 14px/16px 'Roboto';}
+.name-hero input:-moz-placeholder           {color:#14F074;font: normal 14px/16px 'Roboto';}
+.name-hero input:-ms-input-placeholder      {color:#14F074;font: normal 14px/16px 'Roboto';}
+
+.fallout-form li{
+	padding-bottom: 11px;
+	font-size: 20px;
+}
+.sex-block{
+	text-align: center;
+	width: 220px;
+}
+.sex-block>input[type="radio"]{
+	display: none;
+}
+.sex-block>label{
+	display: inline-block;
+	vertical-align: top;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	cursor: pointer;
+
+	-webkit-transition: all .2s linear;
+       -moz-transition: all .2s linear;
+    	-ms-transition: all .2s linear;
+    	 -o-transition: all .2s linear;
+    		transition: all .2s linear;
+}
+.sex-block>label[for="man"]{
+	margin-right: 10px;
+	background-image: url('../images/sex-man1.png');
+	opacity: .5;
+}
+.sex-block>label[for="woman"]{
+	background-image: url('../images/sex-woman1.png');
+	opacity: .5;
+}
+.sex-block>input[type="radio"]:checked+label,
+.sex-block>label:hover{
+	opacity: 1;
+}
+.sex-man{
+	line-height: 230px;
+	border-bottom: 1px solid #fff;
+}
+.sex-man img{
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+}
+.form-footer .right{
+	width: 220px;
+}
+.form-footer .right p{
+	padding-top: 20px;
+	text-align: left;
+	font-size: 16px;
+	line-height: 20px;
+}
+.hero{
+	width: 140px;
+}
+.counter-left,
+.counter-right{
+	display: inline-block;
+	vertical-align: top;
+	width: 10px;
+	height: 17px;
+	background: url('../images/arrows.png') no-repeat left top;
+	opacity: .7;
+	cursor: pointer;
+
+	-webkit-transition: all .2s linear;
+       -moz-transition: all .2s linear;
+    	-ms-transition: all .2s linear;
+    	 -o-transition: all .2s linear;
+    		transition: all .2s linear;
+}
+.counter-block{
+	text-align: center;
+	padding-bottom: 6px;
+}
+.counter-right{
+	background-position: right top;
+}
+.counter-left:hover,
+.counter-right:hover{
+	opacity: 1;
+}
+.counter-num{
+	margin-top: -5px;
+	border: none;
+	width: 40px;
+	height: 25px;
+	text-align: center;
+	background-color: transparent;
+	font: normal 20px/22px 'Roboto';
+	color: #14F074;
+}
+.form-footer .left{
+	text-align: center;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: 'RobotoBold';
+}
+.form-footer .count{
+	font-size: 36px;
+	line-height: 36px;
+}
+.form-footer .left p{
+	padding: 5px 0;
+	text-transform: uppercase;
+}
+.form-footer .left a,
+.form-footer .left button{
+	display: inline-block;
+	vertical-align: top;
+	height: 30px;
+	border-radius: 5px;
+	background-color: #5ad487;
+	border: 1px solid #5ad487;
+	color: #fff;
+	text-align: center;
+	font: normal 16px/30px 'Roboto';
+	cursor: pointer;
+
+	-webkit-transition: all .2s linear;
+       -moz-transition: all .2s linear;
+    	-ms-transition: all .2s linear;
+    	 -o-transition: all .2s linear;
+    		transition: all .2s linear;
+}
+.form-footer .left a{
+	margin-bottom: 10px;
+	width: 90px;	
+}
+.form-footer .left a+a{
+	margin-left: 10px;
+}
+.form-footer .left a:hover,
+.form-footer .left button:hover{
+	background-color: #fff;
+	color: #5ad487;
+}
+.form-footer .left button{
+	width: 120px;
+}
+
+/****************FOOTER******************/
+footer{
+	padding: 10px 0;
+}
+footer .logo{
+	max-width: 100px;
+}
+footer .right{
+	padding-top: 10px;
+}

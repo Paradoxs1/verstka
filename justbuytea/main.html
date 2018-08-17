@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JustBuyTea</title>
+	
+	<link rel="icon" href="favicon.ico" type="image/x-icon" /> <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/carousel-base.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	
+	<header>
+		<div class="wrap clearfix">
+			<nav class="top-menu ">
+				<ul class="left">
+					<li><a href="main.html" class="active">Главная</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="delivery.html">Доставка</a></li>
+					<li><a href="#">Блог</a></li>
+					<li class="phone-icon"><i class="fa fa-phone"></i></li>
+					<li class="coll">
+						<div>
+							<strong>Позвонить нам:</strong> <span> <a href="tel:">+7(495)532-83-35</a></span>
+							<br> <span>ПН-СБ 11:00-20:00</span> <span class="trigger">Обратный звонок</span></div>
+					</li>
+					<li><a href="mailto:shop@justbuytea.ru" class="mail"><i class="fa fa-envelope"></i> shop@justbuytea.ru</a></li>
+				</ul>
+				<ul class="right">
+					<li><a href="#" class="entrance"><i class="fa fa-user"></i> Вход / Регистрация</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<main class="wrap">
+
+		<div class="top-bar clearfix">
+			<a href="main.html"><img src="img/logo.png" alt="Just Buy Tea" class="left"></a>
+			<form action="/">
+				<a href="#" class="left"><img src="img/pick-up.png" alt="Подобрать чай"></a>
+				<div class="search left">
+					<input type="search" placeholder="Поиск по всем товарам..." class="left">
+					<button class="search-btn left"><i class="fa fa-search"> </i></button>
+				</div>
+				<div class="button-block">
+				  <button class="favorite"><i class="fa fa-heart-o"> </i></button>
+                  <button class="backet"><i class="fa fa-shopping-cart"> </i></button>
+                  <button class="count">0 товаров</button>
+                  <button class="price"><i class="fa fa-rub"> 0.00</i></button>
+				</div>
+			</form>
+		</div>
+		
+		<nav class="main-nav">
+		    <div class="toggle-block">
+                <span>Меню</span>
+                <a href="#" class="toggle-mnu hidden-lg"><span></span></a>
+            </div>
+			<ul id="menu">
+				<li><a href="#">Пуэр</a></li>
+				<li><a href="#">Улун</a></li>
+				<li><a href="#">Зеленый чай</a></li>
+				<li><a href="#">Красный чай</a></li>
+				<li><a href="#">Белый чай</a></li>
+				<li><a href="#">Чайные смеси</a></li>
+				<li><a href="#">Чайные добавки</a></li>
+				<li><a href="#">Бюджетный чай</a></li>
+				<li><a href="#">Посуда</a></li>
+			</ul>
+		</nav>
+		
+		<div class="baners clearfix">
+			<div class="carousel left">
+				<div id="owl-main" class="owl-carousel">
+					<div><img src="img/main-carousel/carousel1.png"></div>
+					<div><img src="img/main-carousel/carousel1.png"></div>
+					<div><img src="img/main-carousel/carousel1.png"></div>
+				</div>
+			</div>
+			<div class="min-baners left">
+				<a href=""><img src="img/baner-top.png" alt="Лечебные травы"></a>
+				<a href=""><img src="img/baner-selection.png" alt="Как выбрать чай"></a>
+			</div>
+		</div>
+		
+		<div class="clearfix">
+			
+			<section class="right-col right">
+				
+				<div class="stock clearfix">
+					<h3>Товары по акции</h3>
+					<div class="carousel left">
+						<div id="owl-stock" class="owl-carousel">
+								<div class="tea-card left" data-name="Скидка!">
+									<img class="stock-tea" src="img/stock/1.png" alt="">
+									<p><a href="#">Молочный улун кат. В - ...</a></p>
+									<p class="price"><span>140 <i class="fa fa-rub"></i></span> 70 <i class="fa fa-rub"></i></p>
+									<div class="btn-card clearfix">
+										<a href="#" class="left in-backet">В корзину</a>
+										<div class="btn-additionally right">
+											<a href="#" class="favorite"><i class="fa fa-heart"></i></a>
+											<a href="#" class="graphic"><img src="img/graphic.png" alt=""></a>
+										</div>
+									</div>
+								</div>
+								<div class="tea-card left" data-name="Скидка!">
+									<img class="stock-tea" src="img/stock/2.png" alt="">
+									<p><a href="#">Персиковый улун китайский чай</a></p>
+									<p class="price"><span>500 <i class="fa fa-rub"></i></span> 250 <i class="fa fa-rub"></i></p>
+									<div class="btn-card clearfix">
+										<a href="#" class="left in-backet">В корзину</a>
+										<div class="btn-additionally right">
+											<a href="#" class="favorite"><i class="fa fa-heart"></i></a>
+											<a href="#" class="graphic"><img src="img/graphic.png" alt=""></a>
+										</div>
+									</div>
+								</div>
+								<div class="tea-card left" data-name="Скидка!">
+									<img class="stock-tea" src="img/stock/3.png" alt="">
+									<p><a href="#">Китайская вишня фруктовый чай</a></p>
+									<p class="price"><span>200 <i class="fa fa-rub"></i></span> 120 <i class="fa fa-rub"></i></p>
+									<div class="btn-card clearfix">
+										<a href="#" class="left in-backet">В корзину</a>
+										<div class="btn-additionally right">
+											<a href="#" class="favorite"><i class="fa fa-heart"></i></a>
+											<a href="#" class="graphic"><img src="img/graphic.png" alt=""></a>
+										</div>
+									</div>
+								</div>
+								<div class="tea-card left" data-name="Скидка!">
+									<img class="stock-tea" src="img/stock/4.png" alt="">
+									<p><a href="#">Тегуаньинь кат.С китайский ...</a></p>
+									<p class="price"><span>200 <i class="fa fa-rub"></i></span> 120 <i class="fa fa-rub"></i></p>
+									<div class="btn-card clearfix">
+										<a href="#" class="left in-backet">В корзину</a>
+										<div class="btn-additionally right">
+											<a href="#" class="favorite"><i class="fa fa-heart"></i></a>
+											<a href="#" class="graphic"><img src="img/graphic.png" alt=""></a>
+										</div>
+									</div>
+								</div>
+								<div class="tea-card left" data-name="Скидка!">
+									<img class="stock-tea" src="img/stock/4.png" alt="">
+									<p><a href="#">Тегуаньинь кат.С китайский ...</a></p>
+									<p class="price"><span>200 <i class="fa fa-rub"></i></span> 120 <i class="fa fa-rub"></i></p>
+									<div class="btn-card clearfix">
+										<a href="#" class="left in-backet">В корзину</a>
+										<div class="btn-additionally right">
+											<a href="#" class="favorite"><i class="fa fa-heart"></i></a>
+											<a href="#" class="graphic"><img src="img/graphic.png" alt=""></a>
+										</div>
+									</div>
+								</div>
+								<div class="tea-card left" data-name="Скидка!">
+									<img class="stock-tea" src="img/stock/3.png" alt="">
+									<p><a href="#">Китайская вишня фруктовый чай</a></p>
+									<p class="price"><span>200 <i class="fa fa-rub"></i></span> 120 <i class="fa fa-rub"></i></p>
+									<div class="btn-card clearfix">
+										<a href="#" class="left in-backet">В корзину</a>
+										<div class="btn-additionally right">
+											<a href="#" class="favorite"><i class="fa fa-heart"></i></a>
+											<a href="#" class="graphic"><img src="img/graphic.png" alt=""></a>
+										</div>
+									</div>
+								</div>
+								<div class="tea-card left" data-name="Скидка!">
+									<img class="stock-tea" src="img/stock/2.png" alt="">
+									<p><a href="#">Персиковый улун китайский чай</a></p>
+									<p class="price"><span>500 <i class="fa fa-rub"></i></span> 250 <i class="fa fa-rub"></i></p>
+									<div class="btn-card clearfix">
+										<a href="#" class="left in-backet">В корзину</a>
+										<div class="btn-additionally right">
+											<a href="#" class="favorite"><i class="fa fa-heart"></i></a>
+											<a href="#" class="graphic"><img src="img/graphic.png" alt=""></a>
+										</div>
+									</div>
+								</div>
+								<div class="tea-card left" data-name="Скидка!">
+									<img class="stock-tea" src="img/stock/1.png" alt="">
+									<p><a href="#">Молочный улун кат. В - ...</a></p>
+									<p class="price"><span>140 <i class="fa fa-rub"></i></span> 70 <i class="fa fa-rub"></i></p>
+									<div class="btn-card clearfix">
+										<a href="#" class="left in-backet">В корзину</a>
+										<div class="btn-additionally right">
+											<a href="#" class="favorite"><i class="fa fa-heart"></i></a>
+											<a href="#" class="graphic"><img src="img/graphic.png" alt=""></a>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="stock recommends clearfix">
+					<h3>JustBuyTea Рекомендует</h3>
+					<div class="carousel left">
+						<div id="owl-recommends" class="owl-carousel">
+								<div class="tea-card left" data-name="Скидка!">
+									<img class="recommends-tea" src="img/recomment/recomment1.png" alt="">
+									<p><a href="#">Хризантема куньлунь</a></p>
+									<p class="price">300 <i class="fa fa-rub"></i></p>
+									<div class="btn-card clearfix">
+										<a href="#" class="left in-backet">В корзину</a>
+										<div class="btn-additionally right">
+											<a href="#" class="favorite"><i class="fa fa-heart"></i></a>
+											<a href="#" class="graphic"><img src="img/graphic.png" alt=""></a>
+										</div>
+									</div>
+								</div>
+								<div class="tea-card left" data-name="Скидка!">
+									<img class="recommends-tea" src="img/recomment/recomment2.png" alt="">
+									<p><a href="#">Красный Лич жи</a></p>
+									<p class="price">50 <i class="fa fa-rub"></i></p>
+									<div class="btn-card clearfix">
+										<a href="#" class="left in-backet">В корзину</a>
+										<div class="btn-additionally right">
+											<a href="#" class="favorite"><i class="fa fa-heart"></i></a>
+											<a href="#" class="graphic"><img src="img/graphic.png" alt=""></a>
+										</div>
+									</div>
+								</div>
+								<div class="tea-card left" data-name="Скидка!">
+									<img class="recommends-tea" src="img/recomment/recomment3.png" alt="">
+									<p><a href="#">Ягоды годжи</a></p>
+									<p class="price">150 <i class="fa fa-rub"></i></p>
+									<div class="btn-card clearfix">
+										<a href="#" class="left in-backet">В корзину</a>
+										<div class="btn-additionally right">
+											<a href="#" class="favorite"><i class="fa fa-heart"></i></a>
+											<a href="#" class="graphic"><img src="img/graphic.png" alt=""></a>
+										</div>
+									</div>
+								</div>
+								<div class="tea-card left" data-name="Скидка!">
+									<img class="recommends-tea" src="img/recomment/recomment4.png" alt="">
+									<p><a href="#">Сенча</a></p>
+									<p class="price">40 <i class="fa fa-rub"></i></p>
+									<div class="btn-card clearfix">
+										<a href="#" class="left in-backet">В корзину</a>
+										<div class="btn-additionally right">
+											<a href="#" class="favorite"><i class="fa fa-heart"></i></a>
+											<a href="#" class="graphic"><img src="img/graphic.png" alt=""></a>
+										</div>
+									</div>
+								</div>
+								<div class="tea-card left" data-name="Скидка!">
+									<img class="recommends-tea" src="img/recomment/recomment4.png" alt="">
+									<p><a href="#">Сенча</a></p>
+									<p class="price">40 <i class="fa fa-rub"></i></p>
+									<div class="btn-card clearfix">
+										<a href="#" class="left in-backet">В корзину</a>
+										<div class="btn-additionally right">
+											<a href="#" class="favorite"><i class="fa fa-heart"></i></a>
+											<a href="#" class="graphic"><img src="img/graphic.png" alt=""></a>
+										</div>
+									</div>
+								</div>
+								<div class="tea-card left" data-name="Скидка!">
+									<img class="recommends-tea" src="img/recomment/recomment3.png" alt="">
+									<p><a href="#">Ягоды годжи</a></p>
+									<p class="price">150 <i class="fa fa-rub"></i></p>
+									<div class="btn-card clearfix">
+										<a href="#" class="left in-backet">В корзину</a>
+										<div class="btn-additionally right">
+											<a href="#" class="favorite"><i class="fa fa-heart"></i></a>
+											<a href="#" class="graphic"><img src="img/graphic.png" alt=""></a>
+										</div>
+									</div>
+								</div>
+								<div class="tea-card left" data-name="Скидка!">
+									<img class="recommends-tea" src="img/recomment/recomment2.png" alt="">
+									<p><a href="#">Красный Лич жи</a></p>
+									<p class="price">50 <i class="fa fa-rub"></i></p>
+									<div class="btn-card clearfix">
+										<a href="#" class="left in-backet">В корзину</a>
+										<div class="btn-additionally right">
+											<a href="#" class="favorite"><i class="fa fa-heart"></i></a>
+											<a href="#" class="graphic"><img src="img/graphic.png" alt=""></a>
+										</div>
+									</div>
+								</div>
+								<div class="tea-card left" data-name="Скидка!">
+									<img class="recommends-tea" src="img/recomment/recomment1.png" alt="">
+									<p><a href="#">Хризантема куньлунь</a></p>
+									<p class="price">300 <i class="fa fa-rub"></i></p>
+									<div class="btn-card clearfix">
+										<a href="#" class="left in-backet">В корзину</a>
+										<div class="btn-additionally right">
+											<a href="#" class="favorite"><i class="fa fa-heart"></i></a>
+											<a href="#" class="graphic"><img src="img/graphic.png" alt=""></a>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="why-we clearfix">
+					<h2>Почему стоит заказывать у нас?</h2>
+					<ul>
+						<li>
+							<img src="img/why1.png" alt="">
+							<h3>Доставка в день заказа</h3>
+						</li>
+						<li>
+							<img src="img/why2.png" alt="">
+							<h3>Удобные варианты оплаты</h3>
+						</li>
+						<li>
+							<img src="img/why3.png" alt="">
+							<h3>Прямые поставки из Китая</h3>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="brands">
+					<h3>Популяные бренды</h3>
+					<ul>
+						<li><img src="img/brands/brand1.png" alt=""></li>
+						<li><img src="img/brands/brand2.png" alt=""></li>
+						<li><img src="img/brands/brand3.png" alt=""></li>
+						<li><img src="img/brands/brand4.png" alt=""></li>
+
+					</ul>
+				</div>
+			</section>
+			<aside class="left-col left">
+				<nav class="left-nav">
+					<ul>
+						<li>Разделы сайта</li>
+						<li><a href="main.html">Главная</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="delivery.html">Доставка</a></li>
+						<li><a href="#">Блог</a></li>
+					</ul>
+				</nav>
+				
+				<div id="vk_groups"></div>
+				
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FJustBuyTea%2F%3Ffref%3Dts&tabs&width=199&height=270&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="199" height="175" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				
+				<div class="news">
+					<div class="news-border">
+						<h3>Новости</h3>
+						<div class="news-block">
+							<div class="time">18.03.2015</div>
+							<a href="#">
+								<p>Молочный улун В мире распространенно большое количество чая различного цвета, вида,...</p>
+							</a>
+						</div>
+						<div class="news-block">
+							<div class="time">18.03.2015</div>
+							<a href="#">
+								<p>Молочный улун В мире распространенно большое количество чая различного цвета, вида,...</p>
+							</a>
+						</div>
+						<div class="news-block">
+							<div class="time">18.03.2015</div>
+							<a href="#">
+								<p>Молочный улун В мире распространенно большое количество чая различного цвета, вида,...</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</div>
+		
+		
+	</main>
+	
+	<footer>
+		<div class="wrap">
+			<div class="servise-lists">
+				<ul>
+					<li>
+						<a href="#">
+							<div class="servise delivery"></div>
+							<h3>Доставка</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="servise shares"></div>
+							<h3>Акции</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="servise gifts"></div>
+							<h3>Подарки</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="servise reviews"></div>
+							<h3>Отзывы</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="servise communication"></div>
+							<h3>&nbsp;</h3>
+						</a>
+					</li>
+					<li><img src="img/best-quality.png" alt="Лучшее качество" class="best-quality"></li>
+				</ul>
+			</div>
+			<div class="bottom-nav clearfix">
+				<nav class="social left">
+					<ul>
+						<li>
+							<a href="#" class="social-btn vk"></a>
+						</li>
+						<li>
+							<a href="#" class="social-btn od"></a>
+						</li>
+						<li>
+							<a href="#" class="social-btn facebook">
+							</a>
+						</li>
+						<li>
+							<a href="#" class="social-btn twitter"></a>
+						</li>
+						<li>
+							<a href="#" class="social-btn google-plus"></a>
+						</li>
+						<li>
+							<a href="#" class="social-btn mail"></a>
+						</li>
+						<li>
+							<a href="#" class="social-btn plus"></a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="link left">
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li>|</li>
+						<li><a href="#">Контакты</a></li>
+						<li>|</li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Блог</a></li>
+					</ul>
+				</nav>
+				<nav class="contact left">
+					<ul>
+						<li><i class="fa fa-map-marker"></i> Москва, 1-я улица Бухвостова, 12/11к12</li>
+						<li><i class="fa fa-phone"></i> <a href="tel:+7495 517-11-40">+7495 517-11-40</a></li>
+						<li><i class="fa fa-envelope"></i> <a href="mailto:justbuytea@gmail.com">justbuytea@gmail.com</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</footer>
+	
+	<div class="modal-wrapper">
+	  <div class="modal">
+		<div class="head">
+		 Заказать звонок
+		  <a class="btn-close trigger" href="javascript:;"></a>
+		</div>
+		<div class="content">
+		<form action="">
+			<label for="tel">Ваш телефон <span>*</span></label><input type="text" id="tel" name="telephone">
+			<label for="name">Ваше имя  <span>*</span></label><input type="text" id="name" name="name">
+			<label for="mail">Ваш email  <span>*</span></label><input type="text" id="mail" name="email">
+			<input type="submit" value="Ждать звонка">
+			<p>Перезваниваем пн-вс с 9:00 до 19:00</p>
+		</form>
+		</div>
+	  </div>
+	</div>
+	
+	<a href="#0" class="cd-top">Top</a>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://vk.com/js/api/openapi.js?127"></script>
+	<script type="text/javascript" src="js/scroll.js"></script>
+	<script src="js/carousel.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#owl-main").owlCarousel({
+				autoPlay: 3000,
+				stopOnHover: true,
+				navigation: true,
+				paginationSpeed: 1000,
+				goToFirstSpeed: 2000,
+				singleItem: true,
+				autoHeight: true,
+				transitionStyle: "fade"
+			});
+          $("#owl-stock, #owl-recommends").owlCarousel({
+                items: 4,
+				autoPlay: 3000,
+                stopOnHover: true,
+				navigation: true,
+                paginationSpeed: 1000,
+				goToFirstSpeed: 2000,
+				autoHeight: true,
+				transitionStyle: "fade"
+			});
+			VK.Widgets.Group("vk_groups", {
+				mode: 4,
+				width: "199",
+				height: "270",
+				color1: 'FFFFFF',
+				color2: '000000',
+				color3: '5E81A8'
+			}, 46511318);
+			$('.trigger').click(function() { $('.modal-wrapper').toggleClass('open');$('.page-wrapper').toggleClass('blur');return false;});
+		});
+	</script>
+</body>
+
+</html>

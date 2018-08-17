@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="lib/owl.carousel.css">
+		<link rel="stylesheet" href="lib/normalize.css">
+		<link rel="stylesheet" href="lib/select2.min.css">
+		<link rel="stylesheet" href="lib/social-likes_birman.css">
+		<link rel="stylesheet" href="lib/jquery.fancybox.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" async></script>
+		<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+		<script src="//yastatic.net/share2/share.js" async></script>
+		<script src="lib/jquery-3.0.0.min.js"></script>
+		<script src="lib/jquery-migrate-3.0.0.min.js"></script>
+		<script src="lib/owl.carousel.min.js"></script>
+		<script src="lib/jquery.fancybox.pack.js"></script>
+		<script src="lib/jquery.fancybox-media.js"></script>
+		<script src="script.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div class="header">
+			<div class="header__wrap wrap wrap--big">
+				<div class="js-burger header__burger circle-icon circle-icon--burger"></div><a class="header__logo logo" href="/"><img class="logo__image" src="img/logo.png"><img class="logo__text logo__text--header" src="img/logo-text.png"></a>
+				<div class="header__nav nav"><a class="nav__item" href="/">О клинике</a><a class="nav__item" href="/">Услуги</a><a class="nav__item" href="/">Работы</a><a class="nav__item" href="/">Партнёры</a><a class="nav__item" href="/">Акции</a><a class="nav__item" href="/">Контакты</a></div>
+				<div class="js-phone header__phone phone">
+					<div class="circle-icon circle-icon--phone"></div>
+					<div class="phone__main phone__main--header">
+						<div class="phone__number">+7 (495) 226 35 00</div>
+						<div class="phone__link">Заказать обратный звонок</div>
+						<div class="phone__info">(We speak english)</div>
+					</div>
+				</div><a class="header__language" href="/">English</a>
+			</div>
+		</div>
+		<div class="main-image main-image--small" style="background-image: url(pic/smile.jpg)">
+			<div class="main-image__wrap main-image__wrap--h-left wrap wrap--small">
+				<div class="text text--middle-title text--w">О клинике Invisalign®</div>
+				<div class="l-slide-menu slide-menu"><a class="slide-menu__item is-active" href="">Пункт меню</a><a class="slide-menu__item" href="">Пункт меню</a><a class="slide-menu__item" href="">Пункт меню</a><a class="slide-menu__item" href="">Пункт меню</a><a class="slide-menu__item" href="">Пункт меню</a><a class="slide-menu__item" href="">Пункт меню</a><a class="slide-menu__item" href="">Пункт меню</a><a class="slide-menu__item" href="">Пункт меню</a><a class="slide-menu__item" href="">Пункт меню</a></div>
+			</div>
+			<div class="l-social-block"><a class="social-icon social-icon--v social-icon--vk-white" href="/"></a><a class="social-icon social-icon--v social-icon--facebook-white" href="/"></a><a class="social-icon social-icon--v social-icon--instagram-white" href="/"></a></div>
+		</div>
+		<div class="l-big-container">
+			<div class="wrap wrap--small">
+				<div class="l-contacts">
+					<div class="container">
+						<div class="l-contacts__block">
+							<div class="l-contact-address contact contact--address">Москва ул. Правды д. 24 стр.4</div>
+							<div class="l-contact-time contact contact--time">Часы работы</div>
+							<div class="l-contact-schedule contact contact--schedule">С понедельника по субботу:  <span>09:00 — 18:00 </span><br> Воскреcенье:  <span>09:00 — 21:00</span></div>
+						</div>
+						<div class="l-contacts__block">
+							<div class="l-contact-mail contact contact--mail">info@invisaligncenter.ru </div>
+							<div class="contact contact--phone">+7 (495) 226 35 00</div>
+							<div class="contact contact--phone contact--phone_no-icon">+7 (495) 226 35 00</div>
+							<div class="contact contact--phone contact--phone_no-icon">+7 (495) 226 35 00</div>
+						</div>
+					</div>
+					<div class="l-contacts__button"><a class="button button--regular button--regular_b button--round button--transparent_ab_gb" href="/">Подписаться на акции</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="map js-map" id="contact-map"></div>
+		<div class="two-blocks">
+			<div class="two-blocks__item two-blocks__item--left two-blocks__item--image" style="background-image: url(pic/smile.jpg)">
+				<div class="two-blocks__title">Получить консульацию ведущиз специалистов</div><a class="js-modal button button--regular button--regular_m button--round button--white button--white_ab" href="" data-modal="appeal">Записаться на приём</a>
+			</div>
+			<div class="two-blocks__item two-blocks__item--right two-blocks__item--color" style="background-color: #2745b3">
+				<div class="two-blocks__title">Узнайте сколько будет стоить ваше лечение </div><a class="js-modal button button--regular button--regular_m button--round button--transparent button--transparent_white" href="" data-modal="price">Узнать цену лечения</a>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer__wrap wrap wrap--big">
+				<div class="footer__nav-add nav-add"><a class="nav-add__item" href="/">Органы РФ по надзору ОМС</a><a class="nav-add__item" href="/">Права и обязанности граждан</a><a class="nav-add__item" href="/">Правила диагностики</a><a class="nav-add__item" href="/">Правила и сроки госпитализации</a><a class="nav-add__item" href="/">Лекарственные препараты</a><a class="nav-add__item" href="/">Прайс-лист</a></div>
+				<div class="footer__social"><a class="social-icon social-icon--h social-icon--vk-blue" href="/"></a><a class="social-icon social-icon--h social-icon--facebook-blue" href="/"></a><a class="social-icon social-icon--h social-icon--instagram-blue" href="/"></a></div>
+				<div class="footer__info">© 2014–2016 <b>Международный Ортодонтический Центр Invisalign®</b> <br>Лицензия № ЛО-77-01-00-9290 от 14 ноября 2014 года.</div>
+				<div class="footer__copyright">
+					 Сделано в <a href="/">Skydental</a></div>
+			</div>
+		</div>
+		<div class="overlay js-modal-overlay-close">
+			<div class="modal" data-modal="appeal">
+				<div class="js-modal-close modal__close"></div>
+				<form class="form">
+					<div class="form__title text text--subtitle">Записаться на приём</div>
+					<div class="form__inner">
+						<div class="form__row">
+							<div class="form__input form__input--half input">
+								<input class="input__control input__control--bb" placeholder="Имя">
+							</div>
+							<div class="form__input form__input--half input">
+								<input class="input__control input__control--bb" placeholder="E-mail">
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__input form__input--full input">
+								<input class="input__control input__control--bb" placeholder="Как вы узнали о нас?">
+							</div>
+						</div>
+					</div>
+					<input class="form__submit button button--regular button--regular_m button--round button--ab" value="Записаться на приём" type="submit">
+				</form>
+			</div>
+			<div class="modal" data-modal="price">
+				<div class="js-modal-close modal__close"></div>
+				<form class="form">
+					<div class="form__title text text--subtitle">Узнать цену лечения</div>
+					<div class="form__inner">
+						<div class="form__row">
+							<div class="form__input form__input--half input">
+								<input class="input__control input__control--bb" placeholder="Имя">
+							</div>
+							<div class="form__input form__input--half input">
+								<input class="input__control input__control--bb" placeholder="E-mail">
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__input form__input--full input">
+								<input class="input__control input__control--bb" placeholder="Как вы узнали о нас?">
+							</div>
+						</div>
+					</div>
+					<input class="form__submit button button--regular button--regular_m button--round button--ab" value="Узнать цену лечения" type="submit">
+				</form>
+			</div>
+		</div>
+		<div class="js-adaptive-popup adaptive-popup">
+			<div class="adaptive-popup__header">
+				<div class="js-close-burger circle-icon circle-icon--cross"></div>
+			</div>
+			<div class="container">
+				<div class="mobile-menu-item mobile-menu-item--list is-active">
+					<div class="mobile-menu-item__control mobile-menu-item__control--list">О клинике</div>
+					<div class="mobile-menu-item__list"><a class="mobile-menu-item__list-item" href="">Информация</a><a class="mobile-menu-item__list-item is-active" href="">Информация</a><a class="mobile-menu-item__list-item" href="">Информация</a><a class="mobile-menu-item__list-item" href="">Информация</a></div>
+				</div>
+				<div class="mobile-menu-item"><a class="mobile-menu-item__control" href="">Услуги</a></div>
+				<div class="mobile-menu-item"><a class="mobile-menu-item__control" href="">Услуги</a></div>
+				<div class="mobile-menu-item"><a class="mobile-menu-item__control" href="">Услуги</a></div>
+				<div class="mobile-menu-item"><a class="mobile-menu-item__control" href="">Услуги</a></div>
+			</div>
+			<div class="adaptive-popup__footer"><a class="social-icon social-icon--h social-icon--vk-blue" href="/"></a><a class="social-icon social-icon--h social-icon--facebook-blue" href="/"></a><a class="social-icon social-icon--h social-icon--instagram-blue" href="/"></a></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+@charset 'UTF-8';
+
+/* Arrows */
+.slick-prev,
+.slick-next{
+  font-size: 0;
+  position: absolute;
+  z-index: 10;
+  top: -50px;
+  right: 7px;
+  display: block;
+  border: none;
+  border-radius: 2px;
+  width: 30px;
+  height: 22px;
+  background: #edf6f6 url('../img/sprites.png') no-repeat;
+  cursor: pointer;
+}
+.slick-prev{
+  right: 42px;
+  background-position: -558px -111px;
+}
+.slick-prev:hover{
+  background-color: #edf6f6;
+  background-position: -458px -111px;
+}
+.slick-next{
+  background-position: -606px -111px;
+}
+.slick-next:hover{
+  background-color: #edf6f6;
+  background-position: -511px -111px;
+}

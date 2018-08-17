@@ -1,0 +1,67 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Звездатый рейтинг</title>
+    
+    
+<style type="text/css">
+.raiting_star   {margin:15px 0;}
+.raiting {position:relative; height:22px; width:175px; float:left} /* Блок рейтинга*/
+.raiting_blank, .raiting_votes {height:22px; position:absolute}
+.raiting_blank { background:url(rating_icon.png); width:175px; } /* "Чистые" звездочки */
+.raiting_votes {background:url(rating_icon.png) 0 -22px;text-indent: -9999px;} /*  Закрашенные звездочки */ 
+.clear {clear: both;}
+</style>
+    
+    
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$(".raiting_star").each(function(){
+var total_reiting = parseFloat($(this).find(".raiting_votes span").html());
+var star_widht = total_reiting*34.9;
+$(this).find('.raiting_votes').width(star_widht);
+var margin_doc = $(this).find(".raiting").offset();
+});  
+});   
+</script>
+    
+    
+</head>
+<body>
+<div class="raiting_star">
+<div class="raiting">
+<div class="raiting_blank"></div>
+<div class="raiting_votes"><span>1.5</span></div>
+</div>
+</div>
+<div class="clear"></div>
+    
+<div class="raiting_star">
+<div class="raiting">
+<div class="raiting_blank"></div>
+<div class="raiting_votes"><span>2.5</span></div>
+</div>
+</div>
+<div class="clear"></div>
+    
+<div class="raiting_star">
+<div class="raiting">
+<div class="raiting_blank"></div>
+<div class="raiting_votes"><span>3.5</span></div>
+</div>
+</div>
+<div class="clear"></div>
+    
+<div class="raiting_star">
+<div class="raiting">
+<div class="raiting_blank"></div>
+<div class="raiting_votes"><span>4.5</span></div>
+</div>
+</div>
+<div class="clear"></div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+@font-face {
+    font-family:'TrebuchetMS-Regular';
+    src: url('../fonts/trebuchetreg/TrebuchetMS_gdi.eot');
+    src: url('../fonts/trebuchetreg/TrebuchetMS_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/trebuchetreg/TrebuchetMS_gdi.woff') format('woff'),
+    url('../fonts/trebuchetreg/TrebuchetMS_gdi.ttf') format('truetype'),
+    url('../fonts/trebuchetreg/TrebuchetMS_gdi.otf') format('opentype'),
+    url('../fonts/trebuchetreg/TrebuchetMS_gdi.svg#TrebuchetMS-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2219;
+}
+
+@font-face {
+    font-family:'TrebuchetMS-Bold';
+    src: url('../fonts/terbuchetbold/TrebuchetMS-Bold_gdi.eot');
+    src: url('../fonts/terbuchetbold/TrebuchetMS-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/terbuchetbold/TrebuchetMS-Bold_gdi.woff') format('woff'),
+    url('../fonts/terbuchetbold/TrebuchetMS-Bold_gdi.ttf') format('truetype'),
+    url('../fonts/terbuchetbold/TrebuchetMS-Bold_gdi.otf') format('opentype'),
+    url('../fonts/terbuchetbold/TrebuchetMS-Bold_gdi.svg#TrebuchetMS-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2219;
+}
+@font-face {
+    font-family: 'museo_sans_cyrl500';
+    src: url('../fonts/museo500/museosanscyrl_1-webfont.eot');
+    src: url('../fonts/museo500/museosanscyrl_1-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/museo500/museosanscyrl_1-webfont.woff2') format('woff2'),
+    url('../fonts/museo500/museosanscyrl_1-webfont.woff') format('woff'),
+    url('../fonts/museo500/museosanscyrl_1-webfont.ttf') format('truetype'),
+    url('../fonts/museo500/museosanscyrl_1-webfont.svg#museo_sans_cyrl500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

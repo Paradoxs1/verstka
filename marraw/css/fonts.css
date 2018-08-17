@@ -1,0 +1,21 @@
+
+@font-face {
+  font-family: 'UniSansThinCaps';
+  src:  url('../fonts/UniSansThinCaps/UniSansThinCaps.eot?#iefix') format('embedded-opentype'),  
+        url('../fonts/UniSansThinCaps/UniSansThinCaps.otf')  format('opentype'),
+        url('../fonts/UniSansThinCaps/UniSansThinCaps.woff') format('woff'), 
+        url('../fonts/UniSansThinCaps/UniSansThinCaps.ttf')  format('truetype'), 
+        url('../fonts/UniSansThinCaps/UniSansThinCaps.svg#UniSansThinCaps') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'UniSansHeavyCaps';
+  src:  url('../fonts/UniSansHeavyCaps/UniSansHeavyCaps.eot?#iefix') format('embedded-opentype'),  
+        url('../fonts/UniSansHeavyCaps/UniSansHeavyCaps.otf')  format('opentype'),
+        url('../fonts/UniSansHeavyCaps/UniSansHeavyCaps.woff') format('woff'), 
+        url('../fonts/UniSansHeavyCaps/UniSansHeavyCaps.ttf')  format('truetype'), 
+        url('../fonts/UniSansHeavyCaps/UniSansHeavyCaps.svg#UniSansHeavyCaps') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

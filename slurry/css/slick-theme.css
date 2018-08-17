@@ -1,0 +1,117 @@
+
+.slick-prev,
+.slick-next{
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  margin-top: -21px;
+  display: block;
+  width: 20px;
+  height: 42px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: url('../img/slide-arrow.png') no-repeat left top;
+}
+.gallery-product .slick-prev,
+.gallery-product .slick-next{
+  width: 19px;
+  height: 33px;
+  background: url('../img/arrow3.png') no-repeat left top;
+}
+.gallery-product .slick-prev{
+  left: 0;
+}
+.gallery-product .slick-next{
+  right: 0;
+}
+.slick-prev{
+  left: -45px;
+}
+.slick-prev:hover{
+  background-position: right top;
+  
+  -webkit-transform: rotate(-180deg);
+     -moz-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+       -o-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.slick-next{
+  right: -45px;
+  
+  -webkit-transform: rotate(-180deg);
+     -moz-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+       -o-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.slick-next:hover{
+  background-position: right top;
+  
+  -webkit-transform: rotate(-360deg);
+     -moz-transform: rotate(-360deg);
+      -ms-transform: rotate(-360deg);
+       -o-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+
+/* Dots */
+.slick-dots
+{
+	max-width: 1140px;
+	margin: 0 auto;
+    position: relative;
+    bottom: 80px;
+    width: 100%;
+    padding: 0;
+    padding-left: 100px;
+    list-style: none;
+    text-align: left;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 25px;
+    height: 25px;
+    margin: 0 3px;
+    padding: 0;
+    border: 3px solid #c4c4c4;
+    border-radius: 50%; 
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 9px;
+    height: 9px;
+    border: none;
+    cursor: pointer;
+
+    color: transparent;
+    border-radius: 50%; 
+    outline: none;
+    background: transparent;
+}
+.slick-dots .slick-active button{
+    background: #faea1c;
+}
+.slick-dots .slick-active{
+  border-color: #faea1c;
+}
